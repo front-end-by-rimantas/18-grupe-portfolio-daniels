@@ -9,7 +9,7 @@ const heightWorks = document.querySelector(".works").clientHeight + heightServic
 const heightClients = document.querySelector(".clients").clientHeight + heightWorks;
 const heightblog = document.querySelector(".blog").clientHeight + heightClients;
 const heightContact = document.querySelector(".contact").clientHeight + heightblog;
-console.log(heightWorks);
+
 window.onscroll = function() {
     // jei nenuscrolinta
     if (document.body.scrollTop >= heightAbout - 50 || document.documentElement.scrollTop >= heightAbout - 50) {
@@ -71,4 +71,43 @@ window.onscroll = function() {
 
 function homeOnLoad() {
     document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
+    textPrint();
+}
+
+// teksto spausdinimas visu triju besikeicianciu
+let sizeTextLoad = 0;
+var wordWhich = 0;
+let wordDiv = "";
+
+function textPrint() {
+    if (wordWhich == 0) {
+        wordDiv = "one";
+        wordWidth = 290;
+    }
+    if (wordWhich == 1) {
+        wordDiv = "two";
+        wordWidth = 251;
+    }
+    if (wordWhich == 2) {
+        wordDiv = "three";
+        wordWidth = 222;
+    }
+    sizeTextLoad += 10;
+    if (sizeTextLoad < wordWidth) {
+        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
+        setTimeout(textPrint);
+    } else {
+        setTimeout(textDelete, 5000);
+    }
+}
+
+function textDelete() {
+    sizeTextLoad -= 10;
+    if (sizeTextLoad > -10) {
+        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
+        setTimeout(textDelete);
+    } else {
+        if (wordWhich < 2) { wordWhich++; } else { wordWhich = 0; }
+        setTimeout(textPrint);
+    }
 }

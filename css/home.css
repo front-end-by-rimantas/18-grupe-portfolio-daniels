@@ -50,9 +50,19 @@
     font-weight: 700;
 }
 
-.row.home #larry {
+.row.home #one,
+.row.home #two,
+.row.home #three {
     overflow: hidden;
-    display: inline-block;
+    display: inline;
+    white-space: nowrap;
+    height: 60px;
+    width: 0px;
+}
+
+.row.home #endtext {
+    margin-top: -20px;
+    margin-left: -10px;
 }
 
 .row.home .icons {
