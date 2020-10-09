@@ -7,16 +7,16 @@
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/18b-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/18-grupe-portfolio-daniels/
 
-Design: [Mitech portfolio template](https://demo.hasthemes.com/mitech-preview/index-infotechno.html)
+Design: [Daniels porftolio template](http://www.innovationplans.com/idesign/daniels/particles.html#0)
 
 
 ## Project features
+- 
 - responsive design
-- repetitive content is generated/rendered;
-- multi-page
+- one page
+- repetitive content is generated/rendered
 - no AJAX
-
 ## Authors
-[Rimantas](https://github.com/belauzas)
+[Lenar Garifulin](https://github.com/legarifulin), [Kristijonas Jurksas](https://github.com/KristijonasJurk), [Edvardas Nugaris](https://github.com/qreilas), [Marek Jankovskij](https://github.com/mjankovskij), [Eimantas Andrejevas](https://github.com/eimuc)
