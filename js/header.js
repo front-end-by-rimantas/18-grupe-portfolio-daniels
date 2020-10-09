@@ -14,7 +14,6 @@ window.onscroll = function() {
     // jei nenuscrolinta
     if (document.body.scrollTop >= heightAbout - 50 || document.documentElement.scrollTop >= heightAbout - 50) {
         var x = document.querySelector("header").style;
-        x.backgroundColor = "#ffffff";
         x.paddingBottom = "10px";
         x.paddingTop = "30px";
         var z = document.getElementsByClassName("container")[0].style;
@@ -30,7 +29,6 @@ window.onscroll = function() {
     } else {
         // jei nenuscrolitna, virsus
         var x = document.querySelector("header").style;
-        x.backgroundColor = null;
         x.paddingTop = "40px";
         x.paddingBottom = "0px";
 
