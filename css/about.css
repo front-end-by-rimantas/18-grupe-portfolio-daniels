@@ -1,0 +1,7 @@
+/* z-index 0 butinai */
+
+.container.about {
+    z-index: 0;
+    background: white;
+    height: 200px;
+}

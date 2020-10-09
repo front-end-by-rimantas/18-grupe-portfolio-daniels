@@ -68,3 +68,7 @@ window.onscroll = function() {
         document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
     }
 };
+
+function homeOnLoad() {
+    document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
+}
