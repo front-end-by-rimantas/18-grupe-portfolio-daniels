@@ -19,22 +19,25 @@ body {
 
 /* Savo conteinerio nustatymai, pagrinde spalvos, zemiau pvz.*/
 
+
+/* 
 .container.home {
     background: black;
-}
+} */
 
 
 /* Sitas bendras, neliesti */
 
 .container>.row {
     grid-column: 2 / 3;
-    height: 500px;
+    min-height: 500px;
 }
 
 
 /* row.pasirinktas_kazkas, zemiau pvz. */
 
-.row.home {
+
+/* .row.home {
     background: grey;
-    height: 500px;
-}
+    min-height: 500px;
+} */

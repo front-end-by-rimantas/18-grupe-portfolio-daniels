@@ -5,16 +5,19 @@
     left: 0;
     padding-top: 40px;
     width: 1140px;
-    background: #ebe7e7;
+    z-index: 1;
+    /* background: #ebe7e7; */
     /* istrint atsidarus fonui */
 }
 
 .container:first-child {
-    background: #ebe8e8;
+    /* background: #ebe8e8; */
+    position: relative;
     /* istrint atsidarus fonui */
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .container>header a,

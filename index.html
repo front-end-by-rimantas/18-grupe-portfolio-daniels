@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="css/particles.css">
     <!-- components -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -25,28 +26,27 @@
 
 <body>
 
-
-
     <div class="container">
         <!-- header -->
         <header>
             <a href="#">DANIELS</a>
             <nav>
-                <p onclick="scrollUp(700)">Contact</p>
-                <p onclick="scrollUp(600)">Blog</p>
-                <p onclick="scrollUp(500)">Clients</p>
-                <p onclick="scrollUp(400)">Works</p>
-                <p onclick="scrollUp(300)">Services</p>
-                <p onclick="scrollUp(200)">About</p>
-                <p onclick="scrollUp(100)">Home</p>
 
+                <p onclick="scrollUp(heightContact)">Contact</p>
+                <p onclick="scrollUp(heightblog)">Blog</p>
+                <p onclick="scrollUp(heightClients)">Clients</p>
+                <p onclick="scrollUp(heightWorks)">Works</p>
+                <p onclick="scrollUp(heightServices)">Services</p>
+                <p onclick="scrollUp(heightAbout)">About</p>
+                <p onclick="scrollUp(0)">Home</p>
             </nav>
         </header>
     </div>
     <!-- Home -->
     <div class="container home">
         <div class="row home">
-            HOME
+            <div id="particles-js"></div>
+            <!-- HOME -->
         </div>
     </div>
 
@@ -97,6 +97,8 @@
     </footer>
     <script src="./js/main.js" type="module"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app_particles.js"></script>
 </body>
 
 </html>
