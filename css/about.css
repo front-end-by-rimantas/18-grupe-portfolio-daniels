@@ -92,6 +92,23 @@
     transition: all 1s;
 }
 
-.about_content>.about_nav {
+.about_nav>a {
+    display: inline-block;
     text-decoration: none;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color:white;
+    background-color: black;
+}
+ 
+.about_nav>a:last-of-type {
+    color: black;
+    line-height: 1.4;
+    background-color: white;
 }
