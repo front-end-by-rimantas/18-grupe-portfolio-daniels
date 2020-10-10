@@ -3,9 +3,16 @@ function scrollUp(x) {
     window.scrollTo(0, x);
 }
 
+const heightAbout = document.querySelector(".home").clientHeight - 120;
+const heightServices = document.querySelector(".services").clientHeight + heightAbout;
+const heightWorks = document.querySelector(".works").clientHeight + heightServices + 240;
+const heightClients = document.querySelector(".clients").clientHeight + heightWorks;
+const heightblog = document.querySelector(".blog").clientHeight + heightClients;
+const heightContact = document.querySelector(".contact").clientHeight + heightblog;
+console.log(heightWorks);
 window.onscroll = function() {
     // jei nenuscrolinta
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop >= heightAbout - 50 || document.documentElement.scrollTop >= heightAbout - 50) {
         var x = document.querySelector("header").style;
         x.backgroundColor = "#ffffff";
         x.paddingBottom = "10px";
@@ -46,19 +53,20 @@ window.onscroll = function() {
     }
 
 
-    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+
+    if (document.body.scrollTop >= heightContact || document.documentElement.scrollTop >= heightContact) {
         document.querySelectorAll(".container>header p")[0].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    } else if (document.body.scrollTop >= heightblog || document.documentElement.scrollTop >= heightblog) {
         document.querySelectorAll(".container>header p")[1].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    } else if (document.body.scrollTop >= heightClients || document.documentElement.scrollTop >= heightClients) {
         document.querySelectorAll(".container>header p")[2].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    } else if (document.body.scrollTop >= heightWorks || document.documentElement.scrollTop >= heightWorks) {
         document.querySelectorAll(".container>header p")[3].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    } else if (document.body.scrollTop >= heightServices || document.documentElement.scrollTop >= heightServices) {
         document.querySelectorAll(".container>header p")[4].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    } else if (document.body.scrollTop >= heightAbout || document.documentElement.scrollTop >= heightAbout) {
         document.querySelectorAll(".container>header p")[5].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
+    } else if (document.body.scrollTop < heightAbout || document.documentElement.scrollTop < heightAbout) {
         document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
     }
 };
