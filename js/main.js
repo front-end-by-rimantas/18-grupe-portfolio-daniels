@@ -1,8 +1,5 @@
-// header import
-// hero import
-// about import
+import data from './data.js';
+import renderServices from './renderServices.js';
+const {services} = data;
 
-
-// header logic
-// hero logic
-// about logic
+renderServices(services);
