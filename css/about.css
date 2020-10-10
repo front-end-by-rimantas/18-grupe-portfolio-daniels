@@ -1,5 +1,7 @@
 .container.about {
     padding: 100px;
+    z-index: 0;
+    background: white;
 }
 
 .about>.about_img {
