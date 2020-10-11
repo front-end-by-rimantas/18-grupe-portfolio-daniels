@@ -19,6 +19,18 @@
     height: auto;
     vertical-align: middle;
 }
+.about_img>.about_dot {
+    background-image: url(../img/dots.png);
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    background-repeat: repeat;
+    z-index: -1;
+    
+}
 .about>.about_content {
     display: inline-block;
     float:left;
@@ -126,10 +138,21 @@
     font-weight: 400;
     color:white;
     background-color: black;
+    transition: all .5s;
 }
  
 .about_nav>a:last-of-type {
     color: black;
     line-height: 1.4;
     background-color: white;
+}
+
+.about_nav>a:hover {
+    background: white;
+    color: black;
+}
+
+.about_nav>a:last-of-type:hover {
+    background: black;
+    color: white;
 }
