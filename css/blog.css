@@ -1,9 +1,11 @@
 .container.blog {
     background-color: #F7F7F7;
+    padding: 100px;
 }
 
 .blog>.our_blog {
     display: inline-block;
+    position: relative;
     text-align: center;
     width: 100%;
     margin-bottom: 80px;
@@ -17,6 +19,16 @@
     line-height: 1.1;
     font-family: sans-serif;
     color: #343434;
+}
+/* Progress bar
+============================== */
+
+.blog>.glide {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: auto;
 }
 
 .glide__slides {
@@ -76,5 +88,33 @@
     border-bottom: 2px solid #333333;
     display: inline-block;
     color: #343434;
+    font-weight: 400;
+}
+
+/* dots 
+====================*/
+
+.blog>.blog_dots {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.blog_dots>.blog_dot {
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+}
+.blog_dot>.dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    display: block;
+    border-radius: 30px;
+    background: #d6d6d6;
+    display: inline-block;
+    zoom: 1;
+    text-align: center;
     font-weight: 400;
 }
