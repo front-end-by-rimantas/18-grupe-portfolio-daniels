@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="css/particles.css">
     <!-- components -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./css/works.css">
     <link rel="stylesheet" href="./css/clients.css">
     <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
@@ -25,66 +27,185 @@
 
 <body>
 
-
-
     <div class="container">
         <!-- header -->
-        <header>HEADER</header>
+        <header>
+            <a href="#">DANIELS</a>
+            <nav>
+
+                <p onclick="scrollUp(heightContact)">Contact</p>
+                <p onclick="scrollUp(heightblog)">Blog</p>
+                <p onclick="scrollUp(heightClients)">Clients</p>
+                <p onclick="scrollUp(heightWorks)">Works</p>
+                <p onclick="scrollUp(heightServices)">Services</p>
+                <p onclick="scrollUp(heightAbout)">About</p>
+                <p onclick="scrollUp(0)">Home</p>
+            </nav>
+        </header>
     </div>
     <!-- Home -->
     <div class="container home">
         <div class="row home">
-            HOME
+            <div id="particles-js"></div>
+            <!-- HOME -->
         </div>
     </div>
 
     <!-- About -->
     <div class="container about">
         <div class="row about">
-            ABOUT
-        </div>
-    </div>
+            <div class="about_img">
+                <img class="hero_image" src="./img/hero.jpg" alt="hero image">
+            </div>
+            <div class="about_content">
+                <h6 class="content">About Me.</h6>
+                <span class="sub_title">UI / UX DESIGNER & WEB DEVELOPER</span>
+                <p class="about_text">
+                    I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printi
+                    ng and typesetting industry. Lorem Ipsum has been the industry's standard 
+                    dummy text ever It has survived not only five centuries, but also the
+                     leap into electronic but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                </p>
+                <div class="progress_bar">
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Web Design</h6>
+                        <span data-value="95%" style="width: 95%">::after</span>
+                    </div>
+                </div>
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Branding</h6>
+                        <span data-value="80%" style="width: 80%">::after</span>
+                    </div>
+                </div>
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Development</h6>
+                        <span data-value="90%" style="width: 90%">::after</span>
+                    </div>
+                    </div> 
+                    </div>
+                    <div class="about_nav">
+                        <a href="#">Download C.V</a>
+                        <a href="#">Contact Me</a>
+                    </div>
+                    </div> <!-- about_content -->
+                </div> <!--about progress-->
+            </div>  <!--- row-->
+        </div>  <!-- container-->
+            
+                        
+                        
+                        
+        
     <!-- services -->
     <div class="container services">
         <div class="row services">
             <h1>Services</h1>
         </div>
     </div>
-    <!-- our company -->
+    <!-- works -->
     <div class="container works">
         <div class="row works">
             WORKS
         </div>
     </div>
-    <!-- hire us -->
+    <!-- clients -->
     <div class="container clients">
         <div class="row clients">
-            CLIENTS
+            <section class="testimonials">
+                <h1>Testimonials.</h1>
+                <img src="./img/alex.jpg" alt="Alex-photo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus, non placeat ut sed ab nemo illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione consequatur laboriosam adipisci, voluptatibus quibusdam!</p>
+                <h3>Alex Smith</h3>
+                <p>Envato Customer</p>
+                <div class="clientButtons">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
         </div>
     </div>
-    <!-- achievements -->
+    <!-- client numbers -->
+    <div class="container clientNumbers">
+        <div class="row clientNumbers">
+            <div class="happyCustomers">
+                <i class="fa fa-users clientIcon" aria-hidden="true"></i>
+                <div>850</div>
+                <p>Happy Customers</p>
+            </div>
+            <div class="completeProjects">
+                <i class="fa fa-thumbs-up clientIcon" aria-hidden="true"></i>
+                <div>230</div>
+                <p>Complete Projects</p>
+            </div>
+            <div class="linesOfCode">
+                <i class="fa fa-bullhorn clientIcon" aria-hidden="true"></i>
+                <div>9450</div>
+                <p>Lines Of Code</p>
+            </div>
+            <div class="filesDownloaded">
+                <i class="fa fa-cloud-download clientIcon" aria-hidden="true"></i>
+                <div>780</div>
+                <p>Files Downloaded</p>
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
     <div class="container blog">
         <div class="row blog">
             BLOG
         </div>
     </div>
-    <!-- watch video -->
+    <!-- Contact -->
+
     <div class="container contact">
         <div class="row contact">
-            CONTACT
+            <h1>Contact Us.</h1>
+            <div class="contact-row">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <h2>Address</h2>
+                <p>6834 Hollywood Blvd - Los Angeles CA</p>
+            </div>
+            <div class="contact-row">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h2>Email</h2>
+                <p>Support@website.com</p>
+            </div>
+            <div class="contact-row">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h2>Phone</h2>
+                <p>+20 010 2517 8918</p>
+            </div>
+            <div class="form">
+                <div class="form-name">
+                    <input id="name" type="text" placeholder="Name">
+                </div>
+                <div class="form-email">
+                    <input id="email" type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea id="form_message" name="message" placeholder="Message" 
+                rows="4" required="required" style="margin: 0px; height: 100px; width: 200px;">
+                </textarea>
+            </div>
+            <div class="btn">Submit</div>
         </div>
     </div>
-
-    </div>
-
-
     <!-- footer -->
     <footer class="container footer">
         <div class="row footer">
-            FOOTER
+            <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app_particles.js"></script>
 </body>
 
 </html>
