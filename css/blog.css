@@ -25,10 +25,10 @@
 
 .blog>.glide {
     display: inline-block;
-    position: relative;
     width: 100%;
     z-index: 1;
     height: auto;
+    overflow: hidden;
 }
 
 .glide__slides {
