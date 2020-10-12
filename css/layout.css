@@ -2,14 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .container {
     display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
+    grid-template-columns: 210px 1fr 210px;
 }
 
 .container>header {

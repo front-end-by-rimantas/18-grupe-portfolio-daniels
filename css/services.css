@@ -2,6 +2,7 @@
     background-color: #F7F7F7;
     position: relative;
 }
+
 .services>.item {
     display: inline-block;
     background-color: white;
@@ -13,24 +14,36 @@
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.services>.item:nth-child(2),.services>.item:nth-child(5) {
+
+.services>.item:nth-child(2),
+.services>.item:nth-child(5) {
     margin-left: 0px;
 }
-.services>.item:nth-child(2),.services>.item:nth-child(3),.services>.item:nth-child(4) {
+
+.services>.item:nth-child(2),
+.services>.item:nth-child(3),
+.services>.item:nth-child(4) {
     margin-top: 80px;
 }
-.services>.item:nth-child(5),.services>.item:nth-child(6),.services>.item:nth-child(7) {
+
+.services>.item:nth-child(5),
+.services>.item:nth-child(6),
+.services>.item:nth-child(7) {
     margin-top: 40px;
     margin-bottom: 80px;
 }
+
 .services>h1 {
     font-size: 40px;
     text-align: center;
     color: #343434;
     position: absolute;
     top: 80px;
-    right: 605px;
+    right: 570px;
+    font-family: "Montserrat";
+    font-weight: 900;
 }
+
 .services>.item>.fa {
     font-size: 30px;
     margin-bottom: 20px;
@@ -41,16 +54,23 @@
     border-radius: 50%;
     transition: all .5s;
 }
+
 .services>.item:hover .fa {
     background-color: black;
     color: white;
 }
+
 .services>.item>h2 {
     margin-bottom: 20px;
     font-size: 18px;
     color: #343434;
+    font-family: "Montserrat";
+    font-weight: 800;
 }
+
 .services>.item>p {
     font-size: 14px;
     color: #81888D;
+    font-family: "Poppins";
+    font-weight: 400;
 }

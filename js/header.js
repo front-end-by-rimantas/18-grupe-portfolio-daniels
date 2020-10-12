@@ -5,7 +5,7 @@ function scrollUp(x) {
 
 const heightAbout = document.querySelector(".home").clientHeight - 120;
 const heightServices = document.querySelector(".services").clientHeight + heightAbout;
-const heightWorks = document.querySelector(".works").clientHeight + heightServices + 240;
+const heightWorks = document.querySelector(".works").clientHeight + heightServices;
 const heightClients = document.querySelector(".clients").clientHeight + heightWorks;
 const heightblog = document.querySelector(".blog").clientHeight + heightClients;
 const heightContact = document.querySelector(".contact").clientHeight + heightblog;
@@ -26,8 +26,16 @@ window.onscroll = function() {
         for (let i = 0; i < lengthLinks; i++) {
             document.querySelectorAll(".container>header p")[i].style.color = "#000000";
         }
+
+
+        document.getElementById("particles-js").style.height = "690px";
+
     } else {
         // jei nenuscrolitna, virsus
+        document.getElementById("particles-js").style.height = "752px";
+
+
+
         var x = document.querySelector("header").style;
         x.paddingTop = "40px";
         x.paddingBottom = "0px";
