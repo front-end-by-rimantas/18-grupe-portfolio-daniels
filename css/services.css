@@ -39,7 +39,9 @@
     color: #343434;
     position: absolute;
     top: 80px;
-    right: 605px;
+    right: 570px;
+    font-family: "Montserrat";
+    font-weight: 900;
 }
 
 .services>.item>.fa {
@@ -62,9 +64,13 @@
     margin-bottom: 20px;
     font-size: 18px;
     color: #343434;
+    font-family: "Montserrat";
+    font-weight: 800;
 }
 
 .services>.item>p {
     font-size: 14px;
     color: #81888D;
+    font-family: "Poppins";
+    font-weight: 400;
 }
