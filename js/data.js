@@ -37,5 +37,23 @@ const services = [
     }
 ]
 
-const data = {services};
+const contactUs = [
+    {
+        icon2: 'fa fa-location-arrow',
+        title2: 'Address',
+        text2: '6834 Hollywood Blvd - Los Angeles CA'
+    },
+    {
+        icon2: 'fa fa-envelope',
+        title2: 'Email',
+        text2: 'Support@website.com'
+    },
+    {
+        icon2: 'fa fa-phone',
+        title2: 'Phone',
+        text2: '+20 010 2517 8918'
+    }
+]
+
+const data = {services, contactUs};
 export default data;
