@@ -18,7 +18,6 @@ document.querySelectorAll("p")[2].addEventListener("click", () => scrollUp(heigh
 document.querySelectorAll("p")[1].addEventListener("click", () => scrollUp(heightBlog));
 document.querySelectorAll("p")[0].addEventListener("click", () => scrollUp(heightContact));
 
-console.log(heightAbout, heightServices, heightWorks, heightClients, heightBlog, heightContact);
 
 window.onscroll = function() {
     // jei nenuscrolinta
