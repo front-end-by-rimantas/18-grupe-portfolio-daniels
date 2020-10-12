@@ -2,46 +2,60 @@
 function scrollUp(x) {
     window.scrollTo(0, x);
 }
-const heightAbout = document.querySelector(".home").scrollHeight - 120;
-const heightServices = document.querySelector(".services").scrollHeight + heightAbout;
-const heightWorks = document.querySelector(".works").scrollHeight + heightServices;
-const heightClients = document.querySelector(".clients").scrollHeight + heightWorks;
-const heightBlog = document.querySelector(".blog").scrollHeight + heightClients;
-const heightContact = document.querySelector(".contact").scrollHeight + heightBlog;
+// reikia perkelt i data
+const menuDate = [
+    { menuTitle: 'Home' },
+    { menuTitle: 'About' },
+    { menuTitle: 'Services' },
+    { menuTitle: 'Works' },
+    { menuTitle: 'Clients' },
+    { menuTitle: 'Blog' },
+    { menuTitle: 'Contact' }
+]
 
-// events vietoj buvusiu onclick index.html
-document.querySelectorAll("nav p")[6].addEventListener("click", () => scrollUp(0));
-document.querySelectorAll("nav p")[5].addEventListener("click", () => scrollUp(heightAbout));
-document.querySelectorAll("nav p")[4].addEventListener("click", () => scrollUp(heightServices));
-document.querySelectorAll("nav p")[3].addEventListener("click", () => scrollUp(heightWorks));
-document.querySelectorAll("nav p")[2].addEventListener("click", () => scrollUp(heightClients));
-document.querySelectorAll("nav p")[1].addEventListener("click", () => scrollUp(heightBlog));
-document.querySelectorAll("nav p")[0].addEventListener("click", () => scrollUp(heightContact));
-
+// prideda meniu i 
+let totalHeightMenu = -120;
+window.onload = function() {
+    for (let i = 0; i < menuDate.length; i++) {
+        let nameThisMenu = menuDate[i].menuTitle;
+        totalHeightMenu += document.querySelectorAll(".container")[i].scrollHeight;
+        document.querySelector("nav p").innerHTML += `<p onclick=scrollUp(${totalHeightMenu})>${nameThisMenu}</p>`;
+    }
+    // document.querySelectorAll("nav p p")[1].style.borderBottom = "solid 2px #ffffff";
+    textPrint();
+}
 
 window.onscroll = function() {
+    // per mobile menu, jei pasirenka, auto uzdaro ji
+    document.querySelector("nav").style.height = `0px`;
+    dropdowns = 0;
+
     // jei nenuscrolinta
-    if (document.body.scrollTop >= heightAbout - 50 || document.documentElement.scrollTop >= heightAbout - 50) {
+    if (document.documentElement.scrollTop > 620) {
         var x = document.querySelector("header").style;
         x.paddingBottom = "10px";
         x.paddingTop = "30px";
         var z = document.getElementsByClassName("container")[0].style;
         z.backgroundColor = "#ffffff";
         z.position = "fixed";
+        z.boxShadow = "0 1px 50px 5px #e7e6e63b";
 
         var y = document.querySelector(".container>header a").style;
         y.color = "#000000";
+
         let lengthLinks = document.querySelectorAll(".container>header p").length;
         for (let i = 0; i < lengthLinks; i++) {
             document.querySelectorAll(".container>header p")[i].style.color = "#000000";
         }
 
         document.getElementById("particles-js").style.height = "690px";
+        document.querySelector(".container>header>.menuChoices").style.marginTop = "-10px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#000";
 
     } else {
         // jei nenuscrolitna, virsus
         document.getElementById("particles-js").style.height = "752px";
+        document.querySelector(".container>header>.menuChoices").style.marginTop = "0px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#fff";
 
         var x = document.querySelector("header").style;
@@ -51,14 +65,19 @@ window.onscroll = function() {
         var z = document.getElementsByClassName("container")[0].style;
         z.backgroundColor = null;
         z.position = "relative";
+        z.boxShadow = null;
 
         var y = document.querySelector(".container>header a").style;
         y.color = "#ffffff";
-        let lengthLinks = document.querySelectorAll(".container>header p").length;
-        for (let i = 0; i < lengthLinks; i++) {
-            document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
+
+        if (window.innerWidth >= 800) {
+            let lengthLinks = document.querySelectorAll(".container>header p").length;
+            for (let i = 0; i < lengthLinks; i++) {
+                document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
+            }
         }
     }
+    // Reikia pridet pabraukimus po pasirinkta meniu dalim !!!!!!!!!!!!
     // pabraukimas apacioj
 
     let lengthLinks = document.querySelectorAll(".container>header p").length;
@@ -66,33 +85,32 @@ window.onscroll = function() {
         document.querySelectorAll(".container>header p")[i].style.borderBottom = null;
     }
 
-    if (document.body.scrollTop >= heightContact || document.documentElement.scrollTop >= heightContact) {
-        document.querySelectorAll(".container>header p")[0].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightBlog || document.documentElement.scrollTop >= heightBlog) {
-        document.querySelectorAll(".container>header p")[1].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightClients || document.documentElement.scrollTop >= heightClients) {
-        document.querySelectorAll(".container>header p")[2].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightWorks || document.documentElement.scrollTop >= heightWorks) {
-        document.querySelectorAll(".container>header p")[3].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightServices || document.documentElement.scrollTop >= heightServices) {
-        document.querySelectorAll(".container>header p")[4].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightAbout || document.documentElement.scrollTop >= heightAbout) {
-        document.querySelectorAll(".container>header p")[5].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop < heightAbout || document.documentElement.scrollTop < heightAbout) {
-        document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
-    }
+    // Reikia pridet pabraukimus po pasirinkta meniu dalim !!!!!!!!!!!!
+
+    // if (document.body.scrollTop >= heightContact || document.documentElement.scrollTop >= heightContact) {
+    //     document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop >= heightBlog || document.documentElement.scrollTop >= heightBlog) {
+    //     document.querySelectorAll(".container>header p")[5].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop >= heightClients || document.documentElement.scrollTop >= heightClients) {
+    //     document.querySelectorAll(".container>header p")[4].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop >= heightWorks || document.documentElement.scrollTop >= heightWorks) {
+    //     document.querySelectorAll(".container>header p")[3].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop >= heightServices || document.documentElement.scrollTop >= heightServices) {
+    //     document.querySelectorAll(".container>header p")[2].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop >= heightAbout || document.documentElement.scrollTop >= heightAbout) {
+    //     document.querySelectorAll(".container>header p")[1].style.borderBottom = "solid 2px #000000";
+    // } else if (document.body.scrollTop < heightAbout || document.documentElement.scrollTop < heightAbout) {
+    //     document.querySelectorAll(".container>header p")[0].style.borderBottom = "solid 2px #ffffff";
+    // }
 };
 
-function homeOnLoad() {
-    document.querySelectorAll(".container>header p")[6].style.borderBottom = "solid 2px #ffffff";
-    textPrint();
-}
 
 // teksto spausdinimas visu triju besikeicianciu
 let sizeTextLoad = 0;
 var wordWhich = 0;
 let wordDiv = "";
 
+// teksto spausdinimas
 function textPrint() {
     if (wordWhich == 0) {
         wordDiv = "one";
@@ -114,7 +132,7 @@ function textPrint() {
         setTimeout(textDelete, 5000);
     }
 }
-
+// teksto trinimas po 5 sec
 function textDelete() {
     sizeTextLoad -= 10;
     if (sizeTextLoad > -10) {
@@ -123,5 +141,35 @@ function textDelete() {
     } else {
         if (wordWhich < 2) { wordWhich++; } else { wordWhich = 0; }
         setTimeout(textPrint);
+    }
+}
+
+// dropdown menu funkcijos
+// dropdown menu uzdarymas/atidarymas
+let dropdowns = 0;
+document.getElementsByClassName("menuChoices")[0].addEventListener("click", function() {
+    if (dropdowns < 1) {
+        dropdowns++;
+        document.querySelector("nav").style.height = `500px`;
+
+    } else {
+        dropdowns = 0;
+        document.querySelector("nav").style.height = `0px`;
+    }
+});
+
+
+// dropdown papildymas
+window.onresize = function() {
+    if (window.innerWidth > 800) {
+        let lengthLinks = document.querySelectorAll(".container>header p").length;
+        for (let i = 0; i < lengthLinks; i++) {
+            document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
+        }
+    } else {
+        let lengthLinks = document.querySelectorAll(".container>header p").length;
+        for (let i = 0; i < lengthLinks; i++) {
+            document.querySelectorAll(".container>header p")[i].style.color = "#000000";
+        }
     }
 }
