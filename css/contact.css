@@ -2,19 +2,21 @@
     text-align: center;
     margin-bottom: 60px;
     margin-top: 60px;
+    font-weight: 900px;
+    font-size: 40px;
 }
-.contact>.contact-row {
+.contact>.renderedDiv>.contact-row {
     display: inline-block;
     width: 300px;
     text-align: center;
     margin-left: 60px;
     margin-bottom: 50px;
 }
-.contact>.contact-row:hover .fa {
+.contact>.renderedDiv>.contact-row:hover .fa {
     background-color: black;
     color: white;
 }
-.contact>.contact-row>.fa {
+.contact>.renderedDiv>.contact-row>.fa {
     font-size: 25px;
     margin-bottom: 15px;
     width: 60px;
@@ -24,12 +26,12 @@
     border-radius: 50%;
     transition: all .5s;
 }
-.contact>.contact-row>h2 {
+.contact>.renderedDiv>.contact-row>h2 {
     margin-bottom: 10px;
     font-size: 16px;
     color: #343434;
 }
-.contact>.contact-row>p {
+.contact>.renderedDiv>.contact-row>p {
     font-size: 15px;
     color: #81888D;
 }
