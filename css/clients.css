@@ -5,20 +5,22 @@
     background-color: #F7F7F7;
     grid-column: 1 / 8;
 }
-
 .testimonials>h1 {
+    display: inline-block;
+    text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 900;
+    position: relative;
 }
 .clientSlider {
     display: flex;
+    width: 255%;
 }
 #i1, #i2, #i3 {
     display: none;
 }
-
 .nav {
     height: 100px;
     width: 100%;
@@ -42,8 +44,9 @@
 
 
 .clientSlide {
-    margin-left: 310px;
+    margin-left: 36px;
     transition: 1s;
+    overflow: hidden;
 }
 .clientSlide>img {
     width: 90px;
@@ -68,6 +71,22 @@
     color: #7C8889;
     width: 900px;
 }
+
+#i1:checked ~ #one{
+    margin-left: 8%;
+}
+#i2:checked ~ #one{
+    margin-left: -16.1%;
+}
+#i3:checked ~ #one{
+    margin-left: -40.4%;
+}
+
+/* #i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+background-color: rgb(84, 92, 92);
+} */ */
 /* .testimonials>.clientButtons {
     display: inline-block;
     width: 100%;
