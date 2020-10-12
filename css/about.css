@@ -1,22 +1,26 @@
 
-.container.about {
-    padding: 100px;
+.container>.about {
+    padding: 100px 0px;
     z-index: 0;
     background: white;
+    padding-bottom: 70px;
+    height: 700px;
 }
-/* Image
-======================= */
+
+.row>.about {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .about>.about_img {
     float: left;
     position: relative;
     width: 41%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px 30px;
 }
-.about_img>.hero_image {
-    padding: 0 0 0 30px;
-    margin-bottom: 30px;
+  .about_img>.hero_image {
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -24,25 +28,15 @@
 .about_img::before {
     background-image: url(../img/dots.png);
     content: '';
-    width: 80%;
+    width: 90%;
     height: 80%;
     position: absolute;
     left: 0px;
-    bottom: -2px;
+    bottom: -5px;
     background-repeat: repeat;
     z-index: -1;
 }
-.about_img>::after {
-    background-image: url(../img/dots.png);
-    content: '';
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    left: 0px;
-    bottom: -2px;
-    background-repeat: repeat;
-    z-index: -1;
-}
+
 /* Tekstas
 ========================= */
 
@@ -97,28 +91,23 @@
     position: relative;
 }
 .bar>h6 {
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     position: relative;
     z-index: 2;
     font-family: sans-serif;
     margin: 0;
-    font-weight: 300;
-}
-.bar>h5 {
-    position: relative;
-    float: right;
-    margin: 0;
-    z-index: 2;
+    font-weight: 500;
 }
 .progress_bar>.items>.bar>span {
     position: absolute;
     display: inline-block;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: 100%;
     border-radius: 5px;
+    background-color: transparent;
 }
 .progress_bar>.items>.bar>span::after {
     content: attr(data-value);
@@ -136,12 +125,10 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    background-color: #1c1c1c;
+    background-color: black;
     animation-name: loading;
     animation-duration: 1s;
 }
-
-
 @keyframes loading {
     10% {
         width: 10%;
@@ -187,4 +174,16 @@
 /* Media
 ============================= */
 
-
+@media (max-width: 990px) {
+    .about {
+        width: 600px;
+        margin-left: calc((100% - 600px) / 2);
+        margin-right: calc((100% - 600px) / 2);
+        margin-bottom: 40px;
+    }
+        .hero_image {
+            width: 41%;
+        }
+}       .about_content {
+        width: 58%;
+}
