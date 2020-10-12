@@ -9,91 +9,297 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <!-- 3rd party -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="css/particles.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/works.css">
+    <link rel="stylesheet" href="./css/clients.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- custom -->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
-<body>
-    <!-- header -->
-    <header class="container-fluid">
-        <div class="row">
-            HEADER
-        </div>
-    </header>
-    <!-- hero -->
+<body onload="homeOnLoad()">
+
     <div class="container">
-        <div class="row">
-            HERO
+        <!-- header -->
+        <header>
+            <a href="#">DANIELS</a>
+            <nav>
+
+                <p onclick="scrollUp(heightContact)">Contact</p>
+                <p onclick="scrollUp(heightblog)">Blog</p>
+                <p onclick="scrollUp(heightClients)">Clients</p>
+                <p onclick="scrollUp(heightWorks)">Works</p>
+                <p onclick="scrollUp(heightServices)">Services</p>
+                <p onclick="scrollUp(heightAbout)">About</p>
+                <p onclick="scrollUp(0)">Home</p>
+            </nav>
+        </header>
+    </div>
+    <!-- Home -->
+    <div class="container home">
+        <div class="row home">
+            <div id="particles-js">
+            </div>
+            <div id="hello">Hello</div>
+            <div id="iam">I Am
+                <span id="one">BIT student</span>
+                <span id="two">Developer</span>
+                <span id="three">Designer</span>
+                <span id="endtext">|</span>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-behance" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container about">
+        <div class="row about">
+            <div class="about_img">
+                <img class="hero_image" src="./img/hero.jpg" alt="hero image">
+            </div>
+            <div class="about_content">
+                <h6 class="content">About Me.</h6>
+                <span class="sub_title">UI / UX DESIGNER & WEB DEVELOPER</span>
+                <p class="about_text">
+                    I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printi
+                    ng and typesetting industry. Lorem Ipsum has been the industry's standard 
+                    dummy text ever It has survived not only five centuries, but also the
+                     leap into electronic but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                </p>
+                <div class="progress_bar">
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Web Design</h6>
+                        <span data-value="95%" style="width: 95%">::after</span>
+                    </div>
+                </div>
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Branding</h6>
+                        <span data-value="80%" style="width: 80%">::after</span>
+                    </div>
+                </div>
+                    <div class="items">
+                    <div class="bar">
+                        <h6>Development</h6>
+                        <span data-value="90%" style="width: 90%">::after</span>
+                    </div>
+                    </div> 
+                    </div>
+                    <div class="about_nav">
+                        <a href="#">Download C.V</a>
+                        <a href="#">Contact Me</a>
+                    </div>
+                    </div> <!-- about_content -->
+                </div> <!--about progress-->
+            </div>  <!--- row-->
+        </div>  <!-- container-->
+            
+                        
+                        
+                        
+        
+    <!-- services -->
+    <div class="container services">
+        <div class="row services">
+            <h1>Services</h1>
+        </div>
+    </div>
+    <!-- works -->
+    <div class="container works">
+        <div class="row works">
+            WORKS
         </div>
     </div>
     <!-- clients -->
-    <div class="container">
-        <div class="row">
-            CLIENTS
+    <div class="container clients">
+        <div class="row clients">
+            <section class="testimonials">
+                <h1>Testimonials.</h1>
+                <img src="./img/alex.jpg" alt="Alex-photo">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus, non placeat ut sed ab nemo illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione consequatur laboriosam adipisci, voluptatibus quibusdam!</p>
+                <h3>Alex Smith</h3>
+                <p>Envato Customer</p>
+                <div class="clientButtons">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
         </div>
-    </div>
-    <!-- services -->
-    <div class="container">
-        <div class="row">
-            SERVICES
-        </div>
-    </div>
-    <!-- our company -->
-    <div class="container">
-        <div class="row">
-            OUR COMPANY
-        </div>
-    </div>
-    <!-- hire us -->
-    <div class="container">
-        <div class="row">
-            HIRE US
-        </div>
-    </div>
-    <!-- achievements -->
-    <div class="container">
-        <div class="row">
-            ACHIEVEMENTS
-        </div>
-    </div>
-    <!-- watch video -->
-    <div class="container-fluid">
-        <div class="row">
-            WATCH VIDEO
-        </div>
-    </div>
-    <!-- case studies -->
-    <div class="container">
-        <div class="row">
-            CASE STUDIES
-        </div>
-    </div>
-    <!-- testimonials -->
-    <div class="container-fluid">
-        <div class="row">
-            TESTIMONIALS
+        <div class="row clientNumbers">
+            <div class="happyCustomers">
+                <i class="fa fa-users clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="850">0</div>
+                <p>Happy Customers</p>
+            </div>
+            <div class="completeProjects">
+                <i class="fa fa-thumbs-up clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="230">0</div>
+                <p>Complete Projects</p>
+            </div>
+            <div class="linesOfCode">
+                <i class="fa fa-bullhorn clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="9450">0</div>
+                <p>Lines Of Code</p>
+            </div>
+            <div class="filesDownloaded">
+                <i class="fa fa-cloud-download clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="780">0</div>
+                <p>Files Downloaded</p>
+            </div>
         </div>
     </div>
     <!-- blog -->
-    <div class="container">
-        <div class="row">
-            BLOG
+    <div class="container blog">
+        <div class="row blog">
+            <div class="our_blog">
+                <h3>Our Blog.</h3>
+            </div>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <!-- <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog1.jpg" alt="blog1">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li> -->
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog2.jpg" alt="blog2">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog3.jpg" alt="blog3">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog4.jpg" alt="blog4">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog_dots">
+                <div class="blog_dot">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+              </div>
         </div>
     </div>
-    <!-- contact -->
-    <div class="container">
-        <div class="row">
-            CONTACT
+    <!-- Contact -->
+
+    <div class="container contact">
+        <div class="row contact">
+            <h1>Contact Us.</h1>
+            <div class="contact-row">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <h2>Address</h2>
+                <p>6834 Hollywood Blvd - Los Angeles CA</p>
+            </div>
+            <div class="contact-row">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h2>Email</h2>
+                <p>Support@website.com</p>
+            </div>
+            <div class="contact-row">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h2>Phone</h2>
+                <p>+20 010 2517 8918</p>
+            </div>
+            <div class="form">
+                <div class="form-name">
+                    <input id="name" type="text" placeholder="Name">
+                </div>
+                <div class="form-email">
+                    <input id="email" type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+
+                <textarea id="form_message" placeholder="Message">
+                </textarea>
+            </div>
+            <div class="btn">Submit</div>
         </div>
     </div>
     <!-- footer -->
-    <footer class="container">
-        <div class="row">
-            FOOTER
+    <footer class="container footer">
+        <div class="row footer">
+            <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app_particles.js"></script>
+    <script src="./js/clients.js"></script>
 </body>
 
 </html>
