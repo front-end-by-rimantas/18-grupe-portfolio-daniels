@@ -2,13 +2,23 @@
 function scrollUp(x) {
     window.scrollTo(0, x);
 }
+const heightAbout = document.querySelector(".home").scrollHeight - 120;
+const heightServices = document.querySelector(".services").scrollHeight + heightAbout;
+const heightWorks = document.querySelector(".works").scrollHeight + heightServices;
+const heightClients = document.querySelector(".clients").scrollHeight + heightWorks;
+const heightBlog = document.querySelector(".blog").scrollHeight + heightClients;
+const heightContact = document.querySelector(".contact").scrollHeight + heightBlog;
 
-const heightAbout = document.querySelector(".home").clientHeight - 120;
-const heightServices = document.querySelector(".services").clientHeight + heightAbout;
-const heightWorks = document.querySelector(".works").clientHeight + heightServices;
-const heightClients = document.querySelector(".clients").clientHeight + heightWorks;
-const heightblog = document.querySelector(".blog").clientHeight + heightClients;
-const heightContact = document.querySelector(".contact").clientHeight + heightblog;
+// events vietoj buvusiu onclick index.html
+document.querySelectorAll("p")[6].addEventListener("click", () => scrollUp(0));
+document.querySelectorAll("p")[5].addEventListener("click", () => scrollUp(heightAbout));
+document.querySelectorAll("p")[4].addEventListener("click", () => scrollUp(heightServices));
+document.querySelectorAll("p")[3].addEventListener("click", () => scrollUp(heightWorks));
+document.querySelectorAll("p")[2].addEventListener("click", () => scrollUp(heightClients));
+document.querySelectorAll("p")[1].addEventListener("click", () => scrollUp(heightBlog));
+document.querySelectorAll("p")[0].addEventListener("click", () => scrollUp(heightContact));
+
+console.log(heightAbout, heightServices, heightWorks, heightClients, heightBlog, heightContact);
 
 window.onscroll = function() {
     // jei nenuscrolinta
@@ -27,14 +37,13 @@ window.onscroll = function() {
             document.querySelectorAll(".container>header p")[i].style.color = "#000000";
         }
 
-
         document.getElementById("particles-js").style.height = "690px";
+        document.getElementsByClassName("menuChoices")[0].style.color = "#000";
 
     } else {
         // jei nenuscrolitna, virsus
         document.getElementById("particles-js").style.height = "752px";
-
-
+        document.getElementsByClassName("menuChoices")[0].style.color = "#fff";
 
         var x = document.querySelector("header").style;
         x.paddingTop = "40px";
@@ -58,11 +67,9 @@ window.onscroll = function() {
         document.querySelectorAll(".container>header p")[i].style.borderBottom = null;
     }
 
-
-
     if (document.body.scrollTop >= heightContact || document.documentElement.scrollTop >= heightContact) {
         document.querySelectorAll(".container>header p")[0].style.borderBottom = "solid 2px #000000";
-    } else if (document.body.scrollTop >= heightblog || document.documentElement.scrollTop >= heightblog) {
+    } else if (document.body.scrollTop >= heightBlog || document.documentElement.scrollTop >= heightBlog) {
         document.querySelectorAll(".container>header p")[1].style.borderBottom = "solid 2px #000000";
     } else if (document.body.scrollTop >= heightClients || document.documentElement.scrollTop >= heightClients) {
         document.querySelectorAll(".container>header p")[2].style.borderBottom = "solid 2px #000000";

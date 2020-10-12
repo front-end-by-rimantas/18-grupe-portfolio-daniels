@@ -39,3 +39,26 @@
     display: block;
     cursor: pointer;
 }
+
+.container>header>.menuChoices {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .container>header>nav {
+        position: absolute;
+        right: 20px;
+        margin-top: 10px;
+        overflow: hidden;
+        width: 100px;
+        height: 0px;
+    }
+    .container>header>.menuChoices {
+        position: absolute;
+        display: block;
+        top: 45px;
+        right: 20px;
+        color: #fff;
+    }
+}
