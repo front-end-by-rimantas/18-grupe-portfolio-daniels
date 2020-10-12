@@ -10,13 +10,13 @@ const heightBlog = document.querySelector(".blog").scrollHeight + heightClients;
 const heightContact = document.querySelector(".contact").scrollHeight + heightBlog;
 
 // events vietoj buvusiu onclick index.html
-document.querySelectorAll("p")[6].addEventListener("click", () => scrollUp(0));
-document.querySelectorAll("p")[5].addEventListener("click", () => scrollUp(heightAbout));
-document.querySelectorAll("p")[4].addEventListener("click", () => scrollUp(heightServices));
-document.querySelectorAll("p")[3].addEventListener("click", () => scrollUp(heightWorks));
-document.querySelectorAll("p")[2].addEventListener("click", () => scrollUp(heightClients));
-document.querySelectorAll("p")[1].addEventListener("click", () => scrollUp(heightBlog));
-document.querySelectorAll("p")[0].addEventListener("click", () => scrollUp(heightContact));
+document.querySelectorAll("nav p")[6].addEventListener("click", () => scrollUp(0));
+document.querySelectorAll("nav p")[5].addEventListener("click", () => scrollUp(heightAbout));
+document.querySelectorAll("nav p")[4].addEventListener("click", () => scrollUp(heightServices));
+document.querySelectorAll("nav p")[3].addEventListener("click", () => scrollUp(heightWorks));
+document.querySelectorAll("nav p")[2].addEventListener("click", () => scrollUp(heightClients));
+document.querySelectorAll("nav p")[1].addEventListener("click", () => scrollUp(heightBlog));
+document.querySelectorAll("nav p")[0].addEventListener("click", () => scrollUp(heightContact));
 
 
 window.onscroll = function() {
