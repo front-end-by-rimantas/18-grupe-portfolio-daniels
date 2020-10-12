@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
-<body>
+<body onload="homeOnLoad()">
 
     <div class="container">
         <!-- header -->
@@ -46,8 +46,22 @@
     <!-- Home -->
     <div class="container home">
         <div class="row home">
-            <div id="particles-js"></div>
-            <!-- HOME -->
+            <div id="particles-js">
+            </div>
+            <div id="hello">Hello</div>
+            <div id="iam">I Am
+                <span id="one">BIT student</span>
+                <span id="two">Developer</span>
+                <span id="three">Designer</span>
+                <span id="endtext">|</span>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-behance" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
@@ -103,6 +117,7 @@
     <!-- services -->
     <div class="container services">
         <div class="row services">
+            <h1>Services</h1>
         </div>
     </div>
     <!-- works -->
@@ -127,28 +142,25 @@
                 </div>
             </section>
         </div>
-    </div>
-    <!-- client numbers -->
-    <div class="container clientNumbers">
         <div class="row clientNumbers">
             <div class="happyCustomers">
                 <i class="fa fa-users clientIcon" aria-hidden="true"></i>
-                <div>850</div>
+                <div class="counter" data-target="850">0</div>
                 <p>Happy Customers</p>
             </div>
             <div class="completeProjects">
                 <i class="fa fa-thumbs-up clientIcon" aria-hidden="true"></i>
-                <div>230</div>
+                <div class="counter" data-target="230">0</div>
                 <p>Complete Projects</p>
             </div>
             <div class="linesOfCode">
                 <i class="fa fa-bullhorn clientIcon" aria-hidden="true"></i>
-                <div>9450</div>
+                <div class="counter" data-target="9450">0</div>
                 <p>Lines Of Code</p>
             </div>
             <div class="filesDownloaded">
                 <i class="fa fa-cloud-download clientIcon" aria-hidden="true"></i>
-                <div>780</div>
+                <div class="counter" data-target="780">0</div>
                 <p>Files Downloaded</p>
             </div>
         </div>
@@ -156,7 +168,89 @@
     <!-- blog -->
     <div class="container blog">
         <div class="row blog">
-            BLOG
+            <div class="our_blog">
+                <h3>Our Blog.</h3>
+            </div>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <!-- <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog1.jpg" alt="blog1">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li> -->
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog2.jpg" alt="blog2">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog3.jpg" alt="blog3">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="post_img">
+                            <img src="./img/blog4.jpg" alt="blog4">
+                        </div>
+                        <div class="content">
+                            <h6 class="tag">
+                                <a href="#">Trends</a>
+                            </h6>
+                            <h4>
+                                <a href="#">Master These Awesome 
+                                    New Skills in March 2018</a>
+                            </h4>
+                            <span class="more">
+                                <a href="#">Read More</a>
+                            </span>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog_dots">
+                <div class="blog_dot">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+              </div>
         </div>
     </div>
     <!-- Contact -->
@@ -188,8 +282,8 @@
                 </div>
             </div>
             <div class="form-group">
-                <textarea id="form_message" name="message" placeholder="Message" 
-                rows="4" required="required" style="margin: 0px; height: 100px; width: 200px;">
+
+                <textarea id="form_message" placeholder="Message">
                 </textarea>
             </div>
             <div class="btn">Submit</div>
@@ -205,6 +299,7 @@
     <script src="./js/header.js"></script>
     <script src="./js/particles.min.js"></script>
     <script src="./js/app_particles.js"></script>
+    <script src="./js/clients.js"></script>
 </body>
 
 </html>

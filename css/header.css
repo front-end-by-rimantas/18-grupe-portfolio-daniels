@@ -6,6 +6,7 @@
     padding-top: 40px;
     width: 1140px;
     z-index: 1;
+    transition: 0.5s;
     /* background: #ebe7e7; */
     /* istrint atsidarus fonui */
 }

@@ -30,7 +30,7 @@ body {
 
 .container>.row {
     grid-column: 2 / 3;
-    min-height: 500px;
+    min-height: 10px;
 }
 
 
