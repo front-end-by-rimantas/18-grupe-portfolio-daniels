@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
-<body>
+<body onload="homeOnLoad()">
 
     <div class="container">
         <!-- header -->
@@ -46,8 +46,22 @@
     <!-- Home -->
     <div class="container home">
         <div class="row home">
-            <div id="particles-js"></div>
-            <!-- HOME -->
+            <div id="particles-js">
+            </div>
+            <div id="hello">Hello</div>
+            <div id="iam">I Am
+                <span id="one">BIT student</span>
+                <span id="two">Developer</span>
+                <span id="three">Designer</span>
+                <span id="endtext">|</span>
+            </div>
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-behance" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
@@ -268,6 +282,7 @@
                 </div>
             </div>
             <div class="form-group">
+
                 <textarea id="form_message" placeholder="Message">
                 </textarea>
             </div>
