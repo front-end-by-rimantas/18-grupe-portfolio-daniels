@@ -1,11 +1,8 @@
 .container>header {
-    margin: auto;
-    top: 0;
-    right: 0;
-    left: 0;
     padding-top: 40px;
-    width: 1140px;
     z-index: 1;
+    transition: 0.5s;
+    grid-column: 2 / 3;
     /* background: #ebe7e7; */
     /* istrint atsidarus fonui */
 }
