@@ -32,8 +32,6 @@
     display: block;
 }
 
-nav p p {}
-
 .container>header>nav {
     float: right;
     transition: height 0.5s;
