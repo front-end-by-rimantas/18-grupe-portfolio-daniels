@@ -32,8 +32,8 @@
     width: 90%;
     height: 80%;
     position: absolute;
-    left: 0px;
-    bottom: -5px;
+    left: -10px;
+    bottom: 0px;
     background-repeat: repeat;
     z-index: -1;
 }
