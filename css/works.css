@@ -24,7 +24,6 @@ img {
      }
      .row>.works> h2 {
     font-size: 3.25rem;
-    position: absolute;
     left: 50%;
     margin-top: 0px;
     color: #343434;
@@ -34,9 +33,7 @@ img {
 }
 .row>.works>h2::after {
     background: url(../img/dots.png);
-    content: "";
     right: 5px;
-    position: absolute;
     top: 25px;
     left: -20px;
     z-index: -2;
