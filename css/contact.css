@@ -5,6 +5,7 @@
     font-weight: 900px;
     font-size: 40px;
 }
+
 .contact>.renderedDiv>.contact-row {
     display: inline-block;
     width: 300px;
@@ -26,11 +27,13 @@
     border-radius: 50%;
     transition: all .5s;
 }
+
 .contact>.renderedDiv>.contact-row>h2 {
     margin-bottom: 10px;
     font-size: 16px;
     color: #343434;
 }
+
 .contact>.renderedDiv>.contact-row>p {
     font-size: 15px;
     color: #81888D;
