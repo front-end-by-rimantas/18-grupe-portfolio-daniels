@@ -21,6 +21,7 @@
     padding: 0 15px 30px;
 }
   .about_img>.hero_image {
+    position: relative;
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -176,14 +177,26 @@
 
 @media (max-width: 990px) {
     .about {
-        width: 600px;
-        margin-left: calc((100% - 600px) / 2);
-        margin-right: calc((100% - 600px) / 2);
-        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 750px;
+        height: 1500px;
+        margin-left: calc((100% - 750px) / 2);
+        margin-right: calc((100% - 750px) / 2);
     }
-        .hero_image {
-            width: 41%;
+       .about>.about_img {
+           position: relative;
+           width: 100%;
+
         }
-}       .about_content {
-        width: 58%;
+       .about>.about_content {
+          width: 100%;
+          margin-top: 30px;
+       }
+       .about_img::before {
+           bottom: 0px;
+           left: -10px;
+       }
 }
