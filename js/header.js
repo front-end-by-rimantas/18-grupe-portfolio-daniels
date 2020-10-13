@@ -11,7 +11,7 @@ function scrollUp(whichItem) {
     window.scrollTo(0, totalHeightMenu);
 }
 
-// TODO: perkelti i date
+// TODO: perkelti i data
 const menuDate = [
     { menuTitle: 'Home' },
     { menuTitle: 'About' },
@@ -169,10 +169,12 @@ let dropdowns = 0;
 document.getElementsByClassName("menuChoices")[0].addEventListener("click", function() {
     if (dropdowns < 1) {
         dropdowns++;
+        document.querySelector("nav").style.transition = `0.5s`;
         document.querySelector("nav").style.height = `500px`;
 
     } else {
         dropdowns = 0;
+        document.querySelector("nav").style.transition = `0.5s`;
         document.querySelector("nav").style.height = `0px`;
     }
 });
@@ -181,11 +183,14 @@ document.getElementsByClassName("menuChoices")[0].addEventListener("click", func
 // dropdown papildymas
 window.onresize = function() {
     if (window.innerWidth > 800) {
+        document.querySelector("nav").style.transition = `0s`;
         if (document.documentElement.scrollTop < 620) {
             let lengthLinks = document.querySelectorAll(".container>header p").length;
             for (let i = 0; i < lengthLinks; i++) {
                 document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
             }
+
+            document.querySelector("nav").style.height = `0px`;
         }
     } else {
         let lengthLinks = document.querySelectorAll(".container>header p").length;
