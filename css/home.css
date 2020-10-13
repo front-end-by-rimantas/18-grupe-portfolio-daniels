@@ -101,4 +101,7 @@
     .row.home #iam {
         width: 300px;
     }
+    .row.home #iam #endtext {
+        margin-top: -5px;
+    }
 }
