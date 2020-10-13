@@ -191,8 +191,9 @@ window.onresize = function() {
         let lengthLinks = document.querySelectorAll(".container>header p").length;
         for (let i = 0; i < lengthLinks; i++) {
             document.querySelectorAll(".container>header p")[i].style.color = "#000000";
-            document.querySelectorAll("nav p")[i].style.borderBottom = "solid 2px #fff";
+            document.querySelectorAll("nav p")[i].style.borderBottom = null;
         }
+        document.querySelectorAll("nav p")[0].style.borderBottom = "solid 2px #fff";
     }
 
 }
