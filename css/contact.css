@@ -1,62 +1,104 @@
-.container.services {
-    background-color: #F7F7F7;
-    position: relative;
-}
-.services>.item {
-    display: inline-block;
-    background-color: white;
-    width: 360px;
-    height: 270px;
-    padding: 50px 20px;
+.contact>h1 {
     text-align: center;
-    margin-left: 30px;
-    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-.services>.item:nth-child(2),.services>.item:nth-child(5) {
-    margin-left: 0px;
-}
-.services>.item:nth-child(2),.services>.item:nth-child(3),.services>.item:nth-child(4) {
-    margin-top: 80px;
-}
-.services>.item:nth-child(5),.services>.item:nth-child(6),.services>.item:nth-child(7) {
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-.services>h1 {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    font-weight: 900px;
     font-size: 40px;
-    text-align: center;
-    color: #343434;
-    position: absolute;
-    top: 80px;
-    right: 570px;
-    font-family: "Montserrat";
-    font-weight: 900;
 }
-.services>.item>.fa {
-    font-size: 30px;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+
+.contact>.renderedDiv>.contact-row {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+.contact>.renderedDiv>.contact-row:hover .fa {
+    background-color: black;
+    color: white;
+}
+.contact>.renderedDiv>.contact-row>.fa {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     background: #f4f4f4;
     border-radius: 50%;
     transition: all .5s;
 }
-.services>.item:hover .fa {
-    background-color: black;
-    color: white;
-}
-.services>.item>h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
+
+.contact>.renderedDiv>.contact-row>h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
     color: #343434;
-    font-family: "Montserrat";
-    font-weight: 800;
 }
-.services>.item>p {
-    font-size: 14px;
+
+.contact>.renderedDiv>.contact-row>p {
+    font-size: 15px;
     color: #81888D;
-    font-family: "Poppins";
-    font-weight: 400;
+}
+.contact>.form {
+    display: inline-block;
+}
+.contact>.form>.form-name {
+    display: inline-block;
+    width: 480px;
+    margin-left: 80px;
+}
+.contact>.form>.form-email {
+    display: inline-block;
+    width: 480px;
+    margin-left: 30px;
+}
+.contact>.form>.form-name>input {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contact>.form>.form-email>input {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contact>.form-group {
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 15px;
+
+}
+.contact>.form-group>#form_message {
+    width: 990px;
+    max-width: 990px;
+    height: 150px;
+    max-height: 150px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contact>.btn {
+    width: 120px;
+    height: 40px;
+    background: #1c1c1c;
+    color: #eee;
+    cursor: pointer;
+    padding: 10px 40px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    margin-left: 80px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.contact>.btn:hover {
+    background: #eee;
+    color: #1c1c1c;
 }
