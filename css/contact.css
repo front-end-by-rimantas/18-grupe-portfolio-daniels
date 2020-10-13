@@ -12,7 +12,7 @@
     display: inline-block;
     width: 300px;
     text-align: center;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-bottom: 50px;
 }
 .contact>.renderedDiv>.contact-row:hover .fa {
@@ -50,7 +50,7 @@
 .contact>.form>.form-name {
     display: inline-block;
     width: 450px;
-    margin-left: 65px;
+    margin-left: 45px;
 }
 .contact>.form>.form-email {
     display: inline-block;
@@ -75,7 +75,7 @@
     display: inline-block;
     width: 400px;
     height: 100px;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-top: 15px;
 
 }
@@ -100,7 +100,7 @@
     border-radius: 5px;
     font-size: 13px;
     transition: all .5s;
-    margin-left: 65px;
+    margin-left: 45px;
     margin-top: 70px;
     margin-bottom: 80px;
 }
