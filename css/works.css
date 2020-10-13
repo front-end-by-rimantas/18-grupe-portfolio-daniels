@@ -1,21 +1,3 @@
-.galerija {
-    width: 24%;
-    height: auto;
-    margin: 11px;
-}
-    .filter-buttons {
-        color: #222;
-        font-weight: 700;
-        font-size: 18px;
-        cursor: pointer;
-        margin-bottom: 45px;
-        font-family: 'Montserrat', sans-serif;
-}
-    .works {
-    display: inline-block;
-    text-align: center;
-    padding: 50px 0px;
-}
 .portf {
     font-weight: 900;
     font-size: 40px;
@@ -23,6 +5,25 @@
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
 }
+.filter-buttons {
+    color: #222;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+.galerija {
+    width: 24%;
+    height: auto;
+    margin: 11px;
+}
+    .works {  /*row*/
+    display: inline-block;
+    text-align: center;
+    padding: 50px 0px;
+}
+
 .row>.works>.filter-buttons {
     justify-content: center;
     padding-top: 140px;
