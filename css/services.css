@@ -1,38 +1,34 @@
 .container.services {
     background-color: #F7F7F7;
+    position: relative;
 }
-
-.services>.item {
+.services>.renderedServices {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.services>.renderedServices>.item {
     display: inline-block;
     background-color: white;
-    width: 360px;
+    width: 320px;
     height: 270px;
     padding: 50px 20px;
     text-align: center;
     margin-left: 30px;
+    margin-bottom: 40px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-
-.services>.item:nth-child(1),
-.item:nth-child(4) {
-    margin-left: 0px;
+.services>h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #343434;
+    position: absolute;
+    top: 80px;
+    right: 650px;
+    font-family: "Montserrat";
+    font-weight: 900;
 }
-
-.services>.item:nth-child(1),
-.item:nth-child(2),
-.item:nth-child(3) {
-    margin-top: 80px;
-}
-
-.services>.item:nth-child(4),
-.item:nth-child(5),
-.item:nth-child(6) {
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-
-.services>.item>.fa {
+.services>.renderedServices>.item>.fa {
     font-size: 30px;
     margin-bottom: 20px;
     width: 70px;
@@ -42,19 +38,20 @@
     border-radius: 50%;
     transition: all .5s;
 }
-
-.services>.item:hover .fa {
+.services>.renderedServices>.item:hover .fa {
     background-color: black;
     color: white;
 }
-
-.services>.item>h2 {
-    margin-bottom: 20px;
+.services>.renderedServices>.item>h2 {
+    margin-bottom: 15px;
     font-size: 18px;
     color: #343434;
+    font-family: "Montserrat";
+    font-weight: 800;
 }
-
-.services>.item>p {
+.services>.renderedServices>.item>p {
     font-size: 14px;
     color: #81888D;
+    font-family: "Poppins";
+    font-weight: 400;
 }

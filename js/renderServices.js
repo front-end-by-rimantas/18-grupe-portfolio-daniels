@@ -6,7 +6,7 @@ function renderServices(data) {
         const services = data[i];
         HTML += renderSingleServices(services);
     }
-    const servicesDOM = document.getElementsByClassName('services')[1];
+    const servicesDOM = document.getElementsByClassName('renderedServices')[0];
     servicesDOM.innerHTML += HTML;
 }
 

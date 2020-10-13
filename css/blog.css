@@ -11,6 +11,7 @@
     margin-bottom: 80px;
     margin-top: 80px;
 }
+
 .our_blog>h3 {
     font-size: 40px;
     font-weight: 900;
@@ -20,6 +21,8 @@
     font-family: sans-serif;
     color: #343434;
 }
+
+
 /* Progress bar
 ============================== */
 
@@ -49,6 +52,7 @@
 .post_img {
     width: 100%;
 }
+
 .post_img>img {
     display: inline-block;
     width: 100%;
@@ -56,8 +60,8 @@
 
 .glide__slide>.content {
     padding: 30px 15px;
-    
 }
+
 .content>.tag {
     margin: 0px 0px 10px;
 }
@@ -68,12 +72,12 @@
     color: #888888;
     font-weight: 900;
     text-decoration: none;
-    
 }
+
 .content>h4 {
     margin: 0px 0px 15px;
-    
 }
+
 .content>h4>a {
     font-size: 20px;
     color: #343434;
@@ -81,6 +85,7 @@
     text-decoration: none;
     font-weight: 900;
 }
+
 .content>.more>a {
     font-size: 14px;
     font-family: sans-serif;
@@ -91,6 +96,7 @@
     font-weight: 400;
 }
 
+
 /* dots 
 ====================*/
 
@@ -100,11 +106,13 @@
     display: block;
     text-align: center;
 }
+
 .blog_dots>.blog_dot {
     display: inline-block;
     zoom: 1;
     cursor: pointer;
 }
+
 .blog_dot>.dot {
     position: relative;
     width: 10px;
