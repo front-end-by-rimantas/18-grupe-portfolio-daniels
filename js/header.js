@@ -11,7 +11,7 @@ function scrollUp(whichItem) {
     window.scrollTo(0, totalHeightMenu);
 }
 
-// Data ateityje perkelsiu i date.js ar kita...
+// TODO: perkelti i date
 const menuDate = [
     { menuTitle: 'Home' },
     { menuTitle: 'About' },
