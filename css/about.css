@@ -105,12 +105,11 @@
     display: inline-block;
     top: 0;
     left: 0;
-    width: 95%;
     height: 100%;
     border-radius: 5px;
     background-color: transparent;
 }
-.progress_bar>.items>.bar>span::after {
+.progress_bar>.items>.bar>span:after {
     content: attr(data-value);
     position: absolute;
     top: 6px;
@@ -175,7 +174,7 @@
 /* Media
 ============================= */
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
     .about {
         display: flex;
         flex-direction: column;
@@ -189,7 +188,80 @@
        .about>.about_img {
            position: relative;
            width: 100%;
+        }
+       .about>.about_content {
+          width: 100%;
+          margin-top: 30px;
+       }
+       .about_img::before {
+           bottom: 0px;
+           left: -10px;
+       }
+}
 
+@media (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        height: 1400px;
+        margin-left: calc((100% - 550px) / 2);
+        margin-right: calc((100% - 550px) / 2);
+    }
+       .about>.about_img {
+           position: relative;
+           width: 100%;
+        }
+       .about>.about_content {
+          width: 100%;
+          margin-top: 30px;
+       }
+       .about_img::before {
+           bottom: 0px;
+           left: -10px;
+       }
+}
+
+@media (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 1300px;
+        margin-left: calc((100% - 450px) / 2);
+        margin-right: calc((100% - 450px) / 2);
+    }
+       .about>.about_img {
+           position: relative;
+           width: 100%;
+        }
+       .about>.about_content {
+          width: 100%;
+          margin-top: 30px;
+       }
+       .about_img::before {
+           bottom: 0px;
+           left: -10px;
+       }
+}
+@media (max-width: 500px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 1300px;
+        margin-left: calc((100% - 350px) / 2);
+        margin-right: calc((100% - 350px) / 2);
+    }
+       .about>.about_img {
+           position: relative;
+           width: 100%;
         }
        .about>.about_content {
           width: 100%;
