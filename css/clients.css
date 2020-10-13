@@ -55,6 +55,10 @@
     display: flex;
     margin-left: 300px;
     width: 936px;
+    cursor: grab;
+}
+.sliding:active {
+    cursor: grabbing;
 }
 
 .clientSlide {
