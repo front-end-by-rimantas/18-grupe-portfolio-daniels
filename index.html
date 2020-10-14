@@ -111,7 +111,7 @@
                 </div>
             </div> <!-- about_content -->
         </div>
-        <!--about progress-->
+        <!-- about_content -->
     </div>
     <!--- row-->
     </div> <!-- container-->
@@ -132,20 +132,20 @@
     <div class="container works">
         <div class="row works">
             <h2>Portfolio.</h2>
-           <div class="filter-buttons" id="filtering">
-               <span data-category="all" class="active">All</span>
-               <span data-category="brand">Brand</span>
-               <span data-category="design">Design</span>
-               <span data-category="graphic">Graphic</span>
-    </div>
+            <div class="filter-buttons" id="filtering">
+                <span data-category="all" class="active">All</span>
+                <span data-category="brand">Brand</span>
+                <span data-category="design">Design</span>
+                <span data-category="graphic">Graphic</span>
+            </div>
             <div class="gallery">
-            <img src="./img/1.jpg" alt="img1" class="image">
-            <img src="./img/2.jpg" alt="img2" class="image">
-            <img src="./img/3.jpg" alt="img3" class="image">
-            <img src="./img/4.jpg" alt="img4" class="image">
-            <img src="./img/5.jpg" alt="img5" class="image">
-            <img src="./img/6.jpg" alt="img6" class="image">
-        </div>
+                <img src="./img/1.jpg" alt="img1" class="image">
+                <img src="./img/2.jpg" alt="img2" class="image">
+                <img src="./img/3.jpg" alt="img3" class="image">
+                <img src="./img/4.jpg" alt="img4" class="image">
+                <img src="./img/5.jpg" alt="img5" class="image">
+                <img src="./img/6.jpg" alt="img6" class="image">
+            </div>
         </div>
     </div>
     <!-- clients -->
@@ -153,16 +153,52 @@
         <div class="row clients">
             <section class="testimonials">
                 <h1>Testimonials.</h1>
-                <img src="./img/alex.jpg" alt="Alex-photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus, non placeat ut
-                    sed ab nemo illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
-                    consequatur laboriosam adipisci, voluptatibus quibusdam!</p>
-                <h3>Alex Smith</h3>
-                <p>Envato Customer</p>
+                <div class="clientSlider">
+                    <div class="sliding">
+                        <input type="radio" name="quote" id="i1" checked>
+                        <input type="radio" name="quote" id="i2">
+                        <input type="radio" name="quote" id="i3">
+                        <div class="clientSlide" id="one">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="two">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="three">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <label for="i1" class="dotsBtn" id="dot1"></label>
+                        <label for="i2" class="dotsBtn" id="dot2"></label>
+                        <label for="i3" class="dotsBtn" id="dot3"></label>
+                    </div>
+                </div>
                 <div class="clientButtons">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <span id="checked1" class="dot"></span>
+                    <span id="checked2" class="dot"></span>
+                    <span id="checked3" class="dot"></span>
                 </div>
             </section>
         </div>
