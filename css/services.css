@@ -26,6 +26,7 @@
     font-weight: 900;
     position: absolute;
     top: 80px;
+    right: 650px;
 }
 .services>.renderedServices>.item>.fa {
     font-size: 30px;
