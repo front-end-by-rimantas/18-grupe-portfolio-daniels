@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- favicon -->
+    <link href="img/favicon.ico" rel="icon" type="image/png">
     <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen" href="css/particles.css">
+    <link rel="stylesheet" href="./css/fontface.css">
     <!-- components -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -25,21 +28,15 @@
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
-<body onload="homeOnLoad()">
+<body>
 
     <div class="container">
         <!-- header -->
         <header>
             <a href="#">DANIELS</a>
+            <div class="menuChoices fa fa-bars"></div>
             <nav>
-
-                <p onclick="scrollUp(heightContact)">Contact</p>
-                <p onclick="scrollUp(heightblog)">Blog</p>
-                <p onclick="scrollUp(heightClients)">Clients</p>
-                <p onclick="scrollUp(heightWorks)">Works</p>
-                <p onclick="scrollUp(heightServices)">Services</p>
-                <p onclick="scrollUp(heightAbout)">About</p>
-                <p onclick="scrollUp(0)">Home</p>
+                <!-- here goes menu choices -->
             </nav>
         </header>
     </div>
@@ -50,9 +47,7 @@
             </div>
             <div id="hello">Hello</div>
             <div id="iam">I Am
-                <span id="one">BIT student</span>
-                <span id="two">Developer</span>
-                <span id="three">Designer</span>
+                <span id="textplace"></span>
                 <span id="endtext">|</span>
             </div>
             <div class="icons">
@@ -76,54 +71,79 @@
                 <span class="sub_title">UI / UX DESIGNER & WEB DEVELOPER</span>
                 <p class="about_text">
                     I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printi
-                    ng and typesetting industry. Lorem Ipsum has been the industry's standard 
+                    ng and typesetting industry. Lorem Ipsum has been the industry's standard
                     dummy text ever It has survived not only five centuries, but also the
-                     leap into electronic but also the leap into electronic typesetting
-                    , remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                    leap into electronic but also the leap into electronic typesetting
+                    , remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing
                 </p>
                 <div class="progress_bar">
                     <div class="items">
-                    <div class="bar">
-                        <h6>Web Design</h6>
-                        <span data-value="95%" style="width: 95%">::after</span>
+                        <div class="bar">
+                            <h6>Web Design</h6>
+                            <span data-value="95%" style="width: 95%;">
+                                <div class="barwidth"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="bar">
+                            <h6>Branding</h6>
+                            <span data-value="80%" style="width: 80%;">
+                                <div class="barwidth"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="bar">
+                            <h6>Development</h6>
+                            <span data-value="90%" style="width: 90%;">
+                                <div class="barwidth"></div>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                    <div class="items">
-                    <div class="bar">
-                        <h6>Branding</h6>
-                        <span data-value="80%" style="width: 80%">::after</span>
-                    </div>
+                <div class="about_nav">
+                    <a href="#">Download C.V</a>
+                    <a href="#">Contact Me</a>
                 </div>
-                    <div class="items">
-                    <div class="bar">
-                        <h6>Development</h6>
-                        <span data-value="90%" style="width: 90%">::after</span>
-                    </div>
-                    </div> 
-                    </div>
-                    <div class="about_nav">
-                        <a href="#">Download C.V</a>
-                        <a href="#">Contact Me</a>
-                    </div>
-                    </div> <!-- about_content -->
-                </div> <!--about progress-->
-            </div>  <!--- row-->
-        </div>  <!-- container-->
-            
-                        
-                        
-                        
-        
+            </div> <!-- about_content -->
+        </div>
+        <!-- about_content -->
+    </div>
+    <!--- row-->
+    </div> <!-- container-->
+
+
+
+
+
     <!-- services -->
     <div class="container services">
         <div class="row services">
-            <h1>Services</h1>
+            <h1>Services.</h1>
+            <div class="renderedServices">
+            </div>
         </div>
     </div>
     <!-- works -->
     <div class="container works">
         <div class="row works">
-            WORKS
+            <h2>Portfolio.</h2>
+            <div class="filter-buttons" id="filtering">
+                <span data-category="all" class="active">All</span>
+                <span data-category="brand">Brand</span>
+                <span data-category="design">Design</span>
+                <span data-category="graphic">Graphic</span>
+            </div>
+            <div class="gallery">
+                <img src="./img/1.jpg" alt="img1" class="image">
+                <img src="./img/2.jpg" alt="img2" class="image">
+                <img src="./img/3.jpg" alt="img3" class="image">
+                <img src="./img/4.jpg" alt="img4" class="image">
+                <img src="./img/5.jpg" alt="img5" class="image">
+                <img src="./img/6.jpg" alt="img6" class="image">
+            </div>
         </div>
     </div>
     <!-- clients -->
@@ -131,14 +151,52 @@
         <div class="row clients">
             <section class="testimonials">
                 <h1>Testimonials.</h1>
-                <img src="./img/alex.jpg" alt="Alex-photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus, non placeat ut sed ab nemo illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione consequatur laboriosam adipisci, voluptatibus quibusdam!</p>
-                <h3>Alex Smith</h3>
-                <p>Envato Customer</p>
+                <div class="clientSlider">
+                    <div class="sliding">
+                        <input type="radio" name="quote" id="i1" checked>
+                        <input type="radio" name="quote" id="i2">
+                        <input type="radio" name="quote" id="i3">
+                        <div class="clientSlide" id="one">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="two">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="three">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <label for="i1" class="dotsBtn" id="dot1"></label>
+                        <label for="i2" class="dotsBtn" id="dot2"></label>
+                        <label for="i3" class="dotsBtn" id="dot3"></label>
+                    </div>
+                </div>
                 <div class="clientButtons">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <span id="checked1" class="dot"></span>
+                    <span id="checked2" class="dot"></span>
+                    <span id="checked3" class="dot"></span>
                 </div>
             </section>
         </div>
@@ -173,8 +231,8 @@
             </div>
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    <!-- <li class="glide__slide">
+                    <ul class="glide__slides">
+                        <!-- <li class="glide__slide">
                         <div class="post_img">
                             <img src="./img/blog1.jpg" alt="blog1">
                         </div>
@@ -191,66 +249,66 @@
                             </span>
                         </div>
                     </li> -->
-                    <li class="glide__slide">
-                        <div class="post_img">
-                            <img src="./img/blog2.jpg" alt="blog2">
-                        </div>
-                        <div class="content">
-                            <h6 class="tag">
-                                <a href="#">Trends</a>
-                            </h6>
-                            <h4>
-                                <a href="#">Master These Awesome 
-                                    New Skills in March 2018</a>
-                            </h4>
-                            <span class="more">
-                                <a href="#">Read More</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="post_img">
-                            <img src="./img/blog3.jpg" alt="blog3">
-                        </div>
-                        <div class="content">
-                            <h6 class="tag">
-                                <a href="#">Trends</a>
-                            </h6>
-                            <h4>
-                                <a href="#">Master These Awesome 
-                                    New Skills in March 2018</a>
-                            </h4>
-                            <span class="more">
-                                <a href="#">Read More</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="glide__slide">
-                        <div class="post_img">
-                            <img src="./img/blog4.jpg" alt="blog4">
-                        </div>
-                        <div class="content">
-                            <h6 class="tag">
-                                <a href="#">Trends</a>
-                            </h6>
-                            <h4>
-                                <a href="#">Master These Awesome 
-                                    New Skills in March 2018</a>
-                            </h4>
-                            <span class="more">
-                                <a href="#">Read More</a>
-                            </span>
-                        </div>
-                    </li>
-                  </ul>
+                        <li class="glide__slide">
+                            <div class="post_img">
+                                <img src="./img/blog2.jpg" alt="blog2">
+                            </div>
+                            <div class="content">
+                                <h6 class="tag">
+                                    <a href="#">Trends</a>
+                                </h6>
+                                <h4>
+                                    <a href="#">Master These Awesome
+                                        New Skills in March 2018</a>
+                                </h4>
+                                <span class="more">
+                                    <a href="#">Read More</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="post_img">
+                                <img src="./img/blog3.jpg" alt="blog3">
+                            </div>
+                            <div class="content">
+                                <h6 class="tag">
+                                    <a href="#">Trends</a>
+                                </h6>
+                                <h4>
+                                    <a href="#">Master These Awesome
+                                        New Skills in March 2018</a>
+                                </h4>
+                                <span class="more">
+                                    <a href="#">Read More</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="post_img">
+                                <img src="./img/blog4.jpg" alt="blog4">
+                            </div>
+                            <div class="content">
+                                <h6 class="tag">
+                                    <a href="#">Trends</a>
+                                </h6>
+                                <h4>
+                                    <a href="#">Master These Awesome
+                                        New Skills in March 2018</a>
+                                </h4>
+                                <span class="more">
+                                    <a href="#">Read More</a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-              <div class="blog_dots">
+            </div>
+            <div class="blog_dots">
                 <div class="blog_dot">
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
     <!-- Contact -->
@@ -258,20 +316,7 @@
     <div class="container contact">
         <div class="row contact">
             <h1>Contact Us.</h1>
-            <div class="contact-row">
-                <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                <h2>Address</h2>
-                <p>6834 Hollywood Blvd - Los Angeles CA</p>
-            </div>
-            <div class="contact-row">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <h2>Email</h2>
-                <p>Support@website.com</p>
-            </div>
-            <div class="contact-row">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <h2>Phone</h2>
-                <p>+20 010 2517 8918</p>
+            <div class="renderedDiv">
             </div>
             <div class="form">
                 <div class="form-name">
@@ -282,7 +327,6 @@
                 </div>
             </div>
             <div class="form-group">
-
                 <textarea id="form_message" placeholder="Message">
                 </textarea>
             </div>

@@ -2,19 +2,24 @@
     text-align: center;
     margin-bottom: 60px;
     margin-top: 60px;
+    font-weight: 900px;
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: 900;
 }
-.contact>.contact-row {
+
+.contact>.renderedDiv>.contact-row {
     display: inline-block;
     width: 300px;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 45px;
     margin-bottom: 50px;
 }
-.contact>.contact-row:hover .fa {
+.contact>.renderedDiv>.contact-row:hover .fa {
     background-color: black;
     color: white;
 }
-.contact>.contact-row>.fa {
+.contact>.renderedDiv>.contact-row>.fa {
     font-size: 25px;
     margin-bottom: 15px;
     width: 60px;
@@ -24,26 +29,32 @@
     border-radius: 50%;
     transition: all .5s;
 }
-.contact>.contact-row>h2 {
+
+.contact>.renderedDiv>.contact-row>h2 {
     margin-bottom: 10px;
     font-size: 16px;
     color: #343434;
+    font-family: "Montserrat";
+    font-weight: 700;
 }
-.contact>.contact-row>p {
+
+.contact>.renderedDiv>.contact-row>p {
     font-size: 15px;
     color: #81888D;
+    font-family: "Poppins";
+    font-weight: 400;
 }
 .contact>.form {
     display: inline-block;
 }
 .contact>.form>.form-name {
     display: inline-block;
-    width: 480px;
-    margin-left: 80px;
+    width: 450px;
+    margin-left: 45px;
 }
 .contact>.form>.form-email {
     display: inline-block;
-    width: 480px;
+    width: 450px;
     margin-left: 30px;
 }
 .contact>.form>.form-name>input {
@@ -64,13 +75,13 @@
     display: inline-block;
     width: 400px;
     height: 100px;
-    margin-left: 80px;
+    margin-left: 45px;
     margin-top: 15px;
 
 }
 .contact>.form-group>#form_message {
-    width: 990px;
-    max-width: 990px;
+    width: 935px;
+    max-width: 935px;
     height: 150px;
     max-height: 150px;
     border: 0;
@@ -89,7 +100,7 @@
     border-radius: 5px;
     font-size: 13px;
     transition: all .5s;
-    margin-left: 80px;
+    margin-left: 45px;
     margin-top: 70px;
     margin-bottom: 80px;
 }
