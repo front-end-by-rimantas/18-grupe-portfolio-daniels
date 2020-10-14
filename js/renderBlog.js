@@ -6,7 +6,7 @@ function renderBlog(blogData) {
         const blog = blogData[i];
         HTML += renderSingleBlog(blog);
     }
-    const blogDOM = document.getElementsByClassName('renderBlog')[0];
+    const blogDOM = document.getElementsByClassName('owl-stage')[0];
     blogDOM.innerHTML += HTML;
 }
 

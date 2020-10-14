@@ -3,7 +3,7 @@
 
 function renderSingleBlog(blog) {
 
-    return `<div class="item">
+    return `<div class="owl-item">
                 <img class="image" src=${blog.image}>
                 <h6 class="tag">${blog.title}</h6>
                 <h4 class="text">${blog.text}</h4>

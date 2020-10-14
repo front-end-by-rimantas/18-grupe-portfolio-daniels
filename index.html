@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/adaptive.css">
     <!-- 3rd party -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/fontface.css">
     <!-- components -->
@@ -194,16 +196,21 @@
         <div class="row blog">
             <div class="our_blog">
                 <h3>Our Blog.</h3>
-                <div class="renderBlog"></div>
             </div>
-            <div class="blog_dots">
-                <div class="blog_dot">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item"></div>
+                    </div>
                 </div>
+            </div>
+            <div class="owl-dots">
+                <span class="owl-dot active"></span>
+                <span class="owl-dot"></span>
             </div>
         </div>
     </div>
+
     <!-- Contact -->
 
     <div class="container contact">
@@ -237,6 +244,8 @@
     <script src="./js/particles.min.js"></script>
     <script src="./js/app_particles.js"></script>
     <script src="./js/clients.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
