@@ -1,7 +1,7 @@
 .container.blog {
     background-color: #F7F7F7;
-    padding: 100px;
 }
+
 
 .blog>.our_blog {
     display: inline-block;
