@@ -4,7 +4,7 @@
 }
 .services>.renderedServices {
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 .services>.renderedServices>.item {
     display: inline-block;
@@ -22,11 +22,11 @@
     font-size: 40px;
     text-align: center;
     color: #343434;
+    font-family: "Montserrat";
+    font-weight: 900;
     position: absolute;
     top: 80px;
     right: 650px;
-    font-family: "Montserrat";
-    font-weight: 900;
 }
 .services>.renderedServices>.item>.fa {
     font-size: 30px;
