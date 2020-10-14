@@ -1,0 +1,44 @@
+img {
+    width: 293px;
+    height: 244px;
+    margin: 10px;
+}
+    .filtering {
+        color: #222;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 2;
+        margin-bottom: 50px;
+}
+.row>.works {
+    display: inline-block;
+    text-align: center;
+    width: 1200px;   
+    margin: 80px calc(50% - 600px) ;
+}
+
+ .container>.works {
+     display: inline-block;
+     text-align: center;
+     }
+     .row>.works> h2 {
+    font-size: 3.25rem;
+    left: 50%;
+    margin-top: 0px;
+    color: #343434;
+    transform: translate(-50%, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600px;
+}
+.row>.works>h2::after {
+    background: url(../img/dots.png);
+    right: 5px;
+    top: 25px;
+    left: -20px;
+    z-index: -2;
+    display: inline-block;
+    width: 100%;
+    height: 50%;   
+}
+

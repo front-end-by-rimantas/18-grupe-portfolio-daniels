@@ -20,7 +20,7 @@
 .container>header a,
 .container>header p {
     text-decoration: none;
-    color: #ffffff;
+    color: #e7e6e6;
 }
 
 .container>header>a {
@@ -32,10 +32,51 @@
     display: block;
 }
 
-.container>header>nav p {
+.container>header>nav {
     float: right;
+    transition: height 0.5s;
+}
+
+.container>header>nav p {
+    float: left;
     font-size: 16px;
     margin-left: 45px;
     display: block;
     cursor: pointer;
+}
+
+.container>header>.menuChoices {
+    display: none;
+    font-size: 20px;
+    transition: 0.5s;
+    position: absolute;
+    top: 41px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .container>header>nav {
+        position: absolute;
+        text-align: center;
+        margin-top: 30px;
+        overflow: hidden;
+        height: 0px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .container>header>nav p {
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        background: #fff;
+        color: #000;
+        display: block;
+        padding: 18px 0;
+    }
+    .container>header>.menuChoices {
+        display: block;
+    }
 }

@@ -7,6 +7,7 @@
     font-family: "Montserrat";
     font-weight: 900;
 }
+
 .contact>.renderedDiv>.contact-row {
     display: inline-block;
     width: 300px;
@@ -28,6 +29,7 @@
     border-radius: 50%;
     transition: all .5s;
 }
+
 .contact>.renderedDiv>.contact-row>h2 {
     margin-bottom: 10px;
     font-size: 16px;
@@ -35,6 +37,7 @@
     font-family: "Montserrat";
     font-weight: 700;
 }
+
 .contact>.renderedDiv>.contact-row>p {
     font-size: 15px;
     color: #81888D;
