@@ -53,7 +53,7 @@
 .sliding {
     overflow: hidden;
     display: flex;
-    margin-left: 300px;
+    margin-left: 280px;
     width: 936px;
     cursor: grab;
 }
@@ -62,7 +62,7 @@
 }
 
 .clientSlide {
-    margin-left: 36px;
+    margin-left: 27px;
     transition: 1s;
     font-family: 'Poppins', sans-serif;
 }
@@ -71,6 +71,7 @@
     height: 90px;
     border-radius: 40px;
     margin-bottom: 18px;
+    margin-left: 400px;
 }
 
 .testimonials .clientSlide>p:first-of-type {
@@ -180,14 +181,14 @@
     .sliding {
         margin-left: 122px;
         text-align: center;
-    } */
+    }
     #one {
         position: relative;
         width: 100%;
     }
     .testimonials>h1 {
         position: relative;
-        margin-left: 100px;
+        margin-left: 120px;
     }
     .nav {
         margin-left: 50px;
@@ -215,9 +216,8 @@
     .sliding {
         margin-left: 72px;
     }
-
     .testimonials>h1 {
-        margin-left: 50px;
+        margin-left: 100px;
     }
     .nav {
         margin-left: 25px;
@@ -230,7 +230,7 @@
     }
 
     .testimonials>h1 {
-        margin-left: -10px;
+        margin-left: 10px;
     }
     .nav {
         margin-left: 0px;
@@ -240,10 +240,10 @@
 @media only screen and (max-width: 900px) {
     .testimonials .clientSlide>p:first-of-type {
         width: 65%;
-        margin-left: 120px;
+        margin-left: 160px;
     }
     .alex {
-        margin-left: -15px;
+        margin-left: 400px;
     }
     .sliding {
         margin-left: -23px;
@@ -291,14 +291,14 @@
         margin-left: 225px;
     }
     .alex {
-        margin-left: 5px;
+        margin-left: 400px;
     }
     .sliding {
         margin-left: -173px;
     }
 
     .testimonials>h1 {
-        margin-left: -175px;
+        margin-left: -155px;
     }
     .nav {
         margin-top: 35px;
@@ -321,10 +321,10 @@
         margin-left: -275px;
     }
     .alex {
-        margin-left: -10px;
+        margin-left: 400px;
     }
     .testimonials>h1 {
-        margin-left: -275px;
+        margin-left: -258px;
     }
     .nav {
         margin-top: 55px;
