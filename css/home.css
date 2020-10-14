@@ -1,6 +1,6 @@
 .container.home {
-    background-color: grey;
     background-image: url("/img/bg.jpg");
+    background-color: grey;
     margin-top: -62px;
     height: 752px;
     background-size: cover;
@@ -34,51 +34,40 @@
 .row.home #iam {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
     color: #ffffff;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 40px;
+    margin: 40px;
+    font-size: 50px;
     opacity: 1;
-    width: 400px;
 }
 
-.row.home #iam span {
-    overflow: hidden;
-    width: 10px;
-    font-weight: 700;
-    white-space: nowrap;
-    animation-timing-function: linear;
-}
-
-.row.home #iam #endtext {
-    overflow: hidden;
-    width: 10px;
-    margin-top: -7px;
+.row.home span {
+    margin-left: 5px;
     font-weight: 700;
 }
 
-.row.home #endtext {
-    margin-top: -20px;
-}
-
-
-/* 
 .row.home #one,
 .row.home #two,
 .row.home #three {
     overflow: hidden;
     display: inline;
+    white-space: nowrap;
     height: 60px;
     width: 0px;
-} */
+}
+
+.row.home #endtext {
+    margin-top: -20px;
+    margin-left: -10px;
+}
 
 .row.home .icons {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .row.home .fa {
@@ -91,16 +80,4 @@
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-@media only screen and (max-width: 900px) {
-    .row.home #iam {
-        font-size: 30px;
-    }
-    .row.home #iam {
-        width: 300px;
-    }
-    .row.home #iam #endtext {
-        margin-top: -5px;
-    }
 }
