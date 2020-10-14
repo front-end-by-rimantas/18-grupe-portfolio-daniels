@@ -1,6 +1,6 @@
 .container.home {
-    background-image: url("/img/bg.jpg");
     background-color: grey;
+    background-image: url("/img/bg.jpg");
     margin-top: -62px;
     height: 752px;
     background-size: cover;
