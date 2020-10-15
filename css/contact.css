@@ -7,7 +7,6 @@
     font-family: "Montserrat";
     font-weight: 900;
 }
-
 .contact>.renderedDiv>.contact-row {
     display: inline-block;
     width: 300px;
@@ -55,7 +54,7 @@
 .contact>.form>.form-email {
     display: inline-block;
     width: 450px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .contact>.form>.form-name>input {
     width: 100%;
@@ -80,8 +79,8 @@
 
 }
 .contact>.form-group>#form_message {
-    width: 935px;
-    max-width: 935px;
+    width: 925px;
+    max-width: 925px;
     height: 150px;
     max-height: 150px;
     border: 0;
