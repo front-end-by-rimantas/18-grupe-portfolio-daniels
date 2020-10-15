@@ -130,51 +130,37 @@ var wordWhich = 0;
 let wordDiv = "";
 
 // teksto spausdinimas
-// if (wordWhich == 0) {
-//     wordDiv = "one";
-//     wordWidth = 290;
-// }
-// if (wordWhich == 1) {
-//     wordDiv = "two";
-//     wordWidth = 251;
-// }
-// if (wordWhich == 2) {
-//     wordDiv = "three";
-//     wordWidth = 222;
-// }
-// sizeTextLoad += 10;
-
-// TODO: perkelti i data
-const textPrints = [
-    { textPrinted: 'BIT student' },
-    { textPrinted: 'Developer' },
-    { textPrinted: 'Designer' }
-]
-
-let whichTextPrinted = 0;
-
 function textPrint() {
-    let widthForText = textPrints[whichTextPrinted].textPrinted.length;
-    if (widthForText > 9) { widthForText = widthForText - widthForText / 10 + Math.round(widthForText / 10) * 0.3; }
-
-    document.querySelector(".row.home #iam span").style.transition = "width 1.5s";
-    document.querySelector(".row.home #iam #textplace").innerHTML = "&nbsp;" + textPrints[whichTextPrinted].textPrinted;
-    document.querySelector(".row.home #iam span").style.width = `${widthForText*5.7}%`;
-
-
-    setTimeout(textDelete, 3500);
-
+    if (wordWhich == 0) {
+        wordDiv = "one";
+        wordWidth = 290;
+    }
+    if (wordWhich == 1) {
+        wordDiv = "two";
+        wordWidth = 251;
+    }
+    if (wordWhich == 2) {
+        wordDiv = "three";
+        wordWidth = 222;
+    }
+    sizeTextLoad += 10;
+    if (sizeTextLoad < wordWidth) {
+        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
+        setTimeout(textPrint);
+    } else {
+        setTimeout(textDelete, 5000);
+    }
 }
-
 // teksto trinimas po 5 sec
 function textDelete() {
-    document.querySelector(".row.home #iam span").style.transition = "width 0.7s";
-    document.querySelector(".row.home #iam span").style.width = `0px`;
-    whichTextPrinted++;
-    if (whichTextPrinted >= textPrints.length) { whichTextPrinted = 0; }
-
-    setTimeout(textPrint, 700);
-
+    sizeTextLoad -= 10;
+    if (sizeTextLoad > -10) {
+        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
+        setTimeout(textDelete);
+    } else {
+        if (wordWhich < 2) { wordWhich++; } else { wordWhich = 0; }
+        setTimeout(textPrint);
+    }
 }
 
 // dropdown menu funkcijos
