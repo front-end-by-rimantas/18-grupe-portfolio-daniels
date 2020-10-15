@@ -12,7 +12,7 @@
  }
 
 .row.works > h2 {
-    font-size: 3.25rem;
+    font-size: 40px;
     position: absolute;
     left: 50%;
     margin-top: 0px;
@@ -45,7 +45,7 @@
     margin: 0 18px;
     position: relative;
     color: #222;
-    font-size: 1.25rem;
+    font-size: 17px;
     cursor: pointer;
     font-weight: 600;
 }
@@ -72,10 +72,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-.row.works > .gallery > div > img {
-    width: 100%;
+.row.works > .gallery > div > .galerija {
+    width: 96%;
 }
-.row.works > .gallery > div > img:hover {
+.row.works > .gallery > div > .galerija:hover {
     width: 100%;
 }
 .row.works > .gallery > div {
@@ -146,7 +146,7 @@
     align-items: center;
 }
 
-#lightbox img {
+#lightbox .galerija {
     max-width: 90%;
     max-height: 80%;
     padding: 4px;

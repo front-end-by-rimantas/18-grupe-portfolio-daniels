@@ -58,7 +58,7 @@ function galleryImages(filter) {
    if (image.category.includes(filter)){
     HTML = `
     <div class="item" data-src="${image.img}">
-        <img src="${image.img}" alt="images" data-category="${image.category}" class="img">
+        <img src="${image.img}" alt="images" data-category="${image.category}" class="galerija">
             <div class="overlay">
                 <div>
                 <span class="gallery-title"> ${image.title} <span>
