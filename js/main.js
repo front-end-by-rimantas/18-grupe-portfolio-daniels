@@ -8,7 +8,3 @@ renderContact(contactUs);
 
 
 
-import blogData from './data/blog.js';
-import renderBlog from './renderBlog.js';
-
-renderBlog(blogData);

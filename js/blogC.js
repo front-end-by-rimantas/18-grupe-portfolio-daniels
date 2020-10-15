@@ -1,17 +1,17 @@
-$('.sliding').owlCarousel({
+$('.owl-one').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     autoplay: true,
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 1
+            items: 2
         },
         1000: {
-            items: 1
+            items: 3
         }
     }
 })
