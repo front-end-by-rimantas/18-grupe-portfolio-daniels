@@ -55,5 +55,5 @@ const contactUs = [
     }
 ]
 
-const data = {services, contactUs};
+const data = { services, contactUs };
 export default data;

@@ -236,7 +236,9 @@
         margin-left: 0px;
     }
 
+
 }
+
 @media only screen and (max-width: 900px) {
     .testimonials .clientSlide>p:first-of-type {
         width: 65%;
@@ -259,7 +261,7 @@
         margin-left: -202%;
     }
 
-
+}
     .clientNumbers {
         height: 850px;
     }
@@ -311,7 +313,6 @@
         margin-left: -98%;
     }
 
-}
 @media only screen and (max-width: 560px) {
     .testimonials .clientSlide>p:first-of-type {
         width: 35%;
@@ -337,4 +338,4 @@
     #i3:checked ~ #one{
         margin-left: -202%;
     }
-}        
+
