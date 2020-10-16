@@ -159,7 +159,7 @@ function textPrint() {
 
     document.querySelector(".row.home #iam span").style.transition = "width 1.5s";
     document.querySelector(".row.home #iam #textplace").innerHTML = "&nbsp;" + textPrints[whichTextPrinted].textPrinted;
-    document.querySelector(".row.home #iam span").style.width = `${widthForText*5.7}%`;
+    document.querySelector(".row.home #iam span").style.width = `${widthForText*23}px`;
 
 
     setTimeout(textDelete, 3500);
