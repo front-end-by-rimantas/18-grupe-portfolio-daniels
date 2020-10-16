@@ -109,14 +109,7 @@
     border-radius: 5px;
     background-color: transparent;
 }
-.progress_bar>.items>.bar>span:after {
-    content: attr(data-value);
-    position: absolute;
-    top: 6px;
-    color: white;
-    font-size: 12px;
-    right: 10px;
-}
+
 .progress_bar>.items>.bar>span>.barwidth {
     position: relative;
     display: inline-block;
@@ -129,6 +122,15 @@
     animation-name: loading;
     animation-duration: 1s;
 }
+.progress_bar .items .bar span>.barwidth:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    color: white;
+    font-size: 12px;
+    right: 10px;
+}
+
 @keyframes loading {
     10% {
         width: 10%;
