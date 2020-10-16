@@ -1,7 +1,7 @@
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     autoplay: true,
     responsive: {
         0: {
@@ -15,3 +15,22 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// const clientNumbers = document.querySelectorAll('.counter');
+// const speed = 600;
+
+
+// let z = 0;
+// window.onscroll = () => {
+
+//     const windowHeight = window.pageYOffset;
+//     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
+
+//     if (windowHeight > clientNumbersHeight && z < 1) {
+//         z++;
+//         console.log("suveiks");
+//     }
+//     if (windowHeight > clientNumbersHeight + 700) {
+//         z = 0;
+//     }
+// }
