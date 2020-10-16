@@ -152,18 +152,14 @@ const textPrints = [
 ]
 
 let whichTextPrinted = 0;
-let pixText = 0;
-
 
 function textPrint() {
-    if (window.innerWidth < 900) { pixText = 17.5; } else { pixText = 23; }
     let widthForText = textPrints[whichTextPrinted].textPrinted.length;
     if (widthForText > 9) { widthForText = widthForText - widthForText / 10 + Math.round(widthForText / 10) * 0.3; }
 
     document.querySelector(".row.home #iam span").style.transition = "width 1.5s";
     document.querySelector(".row.home #iam #textplace").innerHTML = "&nbsp;" + textPrints[whichTextPrinted].textPrinted;
-    document.querySelector(".row.home #iam span").style.width = `${widthForText*pixText}px`;
-    console.log(pixText, window.innerWidth);
+    document.querySelector(".row.home #iam span").style.width = `${widthForText*5.7}%`;
 
     setTimeout(textDelete, 3500);
 
