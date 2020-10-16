@@ -33,7 +33,10 @@ window.onload = function() {
     textPrint();
 }
 
+
 window.onscroll = function() {
+
+    console.log("aa");
     // per mobile menu, jei pasirenka, auto uzdaro ji
     document.querySelector("nav").style.height = `0px`;
     dropdowns = 0;
@@ -43,7 +46,6 @@ window.onscroll = function() {
         var x = document.querySelector("header").style;
         x.paddingBottom = "10px";
         x.paddingTop = "30px";
-
         //header nuscrolinus fixed virsuj
         var z = document.getElementsByClassName("container")[0].style;
         z.backgroundColor = "#ffffff";
@@ -52,36 +54,29 @@ window.onscroll = function() {
         // link (LOGO) color change on scrolled
         var y = document.querySelector(".container>header a").style;
         y.color = "#000000";
-
         // menu uzrasu spalvos keitimas
         let lengthLinks = document.querySelectorAll(".container>header p").length;
         for (let i = 0; i < lengthLinks; i++) {
             document.querySelectorAll(".container>header p")[i].style.color = "#000000";
         }
-
         // papildomi pakeitimai
         document.getElementById("particles-js").style.height = "690px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "-10px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#000";
-
     } else {
         // jei nenuscrolitna, virsus
-
         // header uzrasai apacion
         var x = document.querySelector("header").style;
         x.paddingTop = "40px";
         x.paddingBottom = "0px";
-
         //header grizus i virsu pradingsta is fixed pozicijos
         var z = document.getElementsByClassName("container")[0].style;
         z.backgroundColor = null;
         z.position = "relative";
         z.boxShadow = null;
-
         // link (LOGO) color change on scrolledUp
         var y = document.querySelector(".container>header a").style;
         y.color = "#ffffff";
-
         // menu uzrasu spalvos keitimas
         if (window.innerWidth >= 800) {
             let lengthLinks = document.querySelectorAll(".container>header p").length;
@@ -89,7 +84,6 @@ window.onscroll = function() {
                 document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
             }
         }
-
         // papildomi pakeitimai
         document.getElementById("particles-js").style.height = "752px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "0px";
@@ -97,12 +91,10 @@ window.onscroll = function() {
     }
     // Reikia pridet pabraukimus po pasirinkta meniu dalim !!!!!!!!!!!!
     // pabraukimas apacioj
-
     let lengthLinks = document.querySelectorAll(".container>header p").length;
     for (let i = 0; i < lengthLinks; i++) {
         document.querySelectorAll(".container>header p")[i].style.borderBottom = null;
     }
-
     // pabraukimas apacioj menu
     if (window.innerWidth > 800) {
         let totalHeightMenu = -200;
@@ -122,6 +114,7 @@ window.onscroll = function() {
         }
     }
 }
+
 
 
 // teksto spausdinimas visu triju besikeicianciu
