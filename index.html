@@ -14,6 +14,8 @@
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/fontface.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- components -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -111,7 +113,7 @@
                 </div>
             </div> <!-- about_content -->
         </div>
-        <!--about progress-->
+        <!-- about_content -->
     </div>
     <!--- row-->
     </div> <!-- container-->
@@ -131,7 +133,16 @@
     <!-- works -->
     <div class="container works">
         <div class="row works">
-            WORKS
+            <h2>Portfolio.</h2>
+            <div class="filter-buttons">
+                <span data-category="all" class="active">All</span>
+                <span data-category="brand">Brand</span>
+                <span data-category="design">Design</span>
+                <span data-category="graphic">Graphic</span>
+     </div>
+         <div class="gallery gallery-items">
+             <div class="overlay"></div>
+         </div>
         </div>
     </div>
     <!-- clients -->
@@ -139,16 +150,52 @@
         <div class="row clients">
             <section class="testimonials">
                 <h1>Testimonials.</h1>
-                <img src="./img/alex.jpg" alt="Alex-photo">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus, non placeat ut
-                    sed ab nemo illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
-                    consequatur laboriosam adipisci, voluptatibus quibusdam!</p>
-                <h3>Alex Smith</h3>
-                <p>Envato Customer</p>
+                <div class="clientSlider">
+                    <div class="sliding owl-carousel owl-theme">
+                        <!-- <input type="radio" name="quote" id="i1" checked>
+                        <input type="radio" name="quote" id="i2">
+                        <input type="radio" name="quote" id="i3"> -->
+                        <div class="clientSlide" id="one">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="two">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                        <div class="clientSlide" id="three">
+                            <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                illum
+                                distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                consequatur!
+                            </p>
+                            <h3>Alex Smith</h3>
+                            <p>Envato Customer</p>
+                        </div>
+                    </div>
+                    <!-- <div class="nav">
+                        <label for="i1" class="dotsBtn" id="dot1"></label>
+                        <label for="i2" class="dotsBtn" id="dot2"></label>
+                        <label for="i3" class="dotsBtn" id="dot3"></label>
+                    </div> -->
+                </div>
                 <div class="clientButtons">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <span id="checked1" class="dot"></span>
+                    <span id="checked2" class="dot"></span>
+                    <span id="checked3" class="dot"></span>
                 </div>
             </section>
         </div>
@@ -296,6 +343,10 @@
     <script src="./js/particles.min.js"></script>
     <script src="./js/app_particles.js"></script>
     <script src="./js/clients.js"></script>
+    <script src="./js/works.js"></script>
+    <script src="./js/jquery.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/clientsOwlCarousel.js"></script>
 </body>
 
 </html>
