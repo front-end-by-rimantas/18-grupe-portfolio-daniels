@@ -30,9 +30,9 @@
 .clientSlider {
     display: flex;
 }
-#i1, #i2, #i3 {
+/* #i1, #i2, #i3 {
     display: none;
-}
+} */
 .nav {
     height: 100px;
     width: 100%;
@@ -99,15 +99,15 @@
     width: 900px;
 }
 
-#i1:checked ~ #one{
+/* #i1:checked ~ .one{
     margin-left: 1.5%;
 }
-#i2:checked ~ #one{
+#i2:checked ~ .one{
     margin-left: -98.5%;
 }
-#i3:checked ~ #one{
+#i3:checked ~ .one{
     margin-left: -199%;
-}
+} */
 
 .dotsBtn:hover {
     background-color: #869791;
@@ -182,7 +182,7 @@
         margin-left: 122px;
         text-align: center;
     }
-    #one {
+    .one {
         position: relative;
         width: 100%;
     }
@@ -236,7 +236,9 @@
         margin-left: 0px;
     }
 
+
 }
+
 @media only screen and (max-width: 900px) {
     .testimonials .clientSlide>p:first-of-type {
         width: 65%;
@@ -255,11 +257,9 @@
         margin-top: 10px;
         margin-left: -20px;
     }
-    #i3:checked ~ #one{
+    /* #i3:checked ~ .one{
         margin-left: -202%;
-    }
-
-
+    } */
     .clientNumbers {
         height: 850px;
     }
@@ -304,13 +304,12 @@
         margin-top: 35px;
         margin-left: -91px;
     }
-    #i1:checked ~ #one{
+    /* #i1:checked ~ .one{
         margin-left: 2%;
     }
-    #i2:checked ~ #one{
+    #i2:checked ~ .one{
         margin-left: -98%;
-    }
-
+    } */
 }
 @media only screen and (max-width: 560px) {
     .testimonials .clientSlide>p:first-of-type {
@@ -331,10 +330,10 @@
         margin-left: -145px;
     }
 
-    #i2:checked ~ #one{
+    /* #i2:checked ~ .one{
         margin-left: -98.5%;
     }
-    #i3:checked ~ #one{
+    #i3:checked ~ .one{
         margin-left: -202%;
-    }
-}        
+    } */
+}
