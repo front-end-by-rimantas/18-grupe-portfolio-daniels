@@ -3,16 +3,16 @@ const speed = 900;
 let z = 0;
 
 
-window.onscroll = () => {
+window.onscroll = function numbersOnScroll() {
     const windowHeight = window.pageYOffset;
     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
-    if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 5)) {
+    if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 4)) {
 
 
         clientNumbers.forEach(counter => {
 
 
-            const updateCount = () => {
+            function updateCount() {
                 const windowHeight = window.pageYOffset;
                 {
                     const target = +counter.getAttribute('data-target');
@@ -38,6 +38,9 @@ window.onscroll = () => {
         })
     }
 };
+
+// export default numbersOnScroll;
+// export default updateCount
 
 // onscroll logikos pavyzdys
 
