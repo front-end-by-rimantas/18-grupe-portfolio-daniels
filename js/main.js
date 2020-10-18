@@ -15,9 +15,16 @@ window.onscroll = () => menuScroll(menuDate);
 import { dropDownMenu } from './header/dropDownMenu.js';
 dropDownMenu();
 import { scrollTo } from './header/scrollTo.js';
+import { menuOnResize } from './header/menuOnResize.js';
 scrollTo();
-window.onresize = scrollTo;
 
 //home
 import { textPrint } from './home/textPrint.js';
 textPrint();
+
+// visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
+window.onresize = function() {
+    //header
+    scrollTo();
+    menuOnResize();
+}
