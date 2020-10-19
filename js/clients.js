@@ -1,45 +1,38 @@
 const clientNumbers = document.querySelectorAll('.counter');
 const speed = 900;
-let z = 0;
 
 
-window.onscroll = function numbersOnScroll() {
+function numbersOnScroll() {
     const windowHeight = window.pageYOffset;
     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
     if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 4)) {
 
 
         clientNumbers.forEach(counter => {
-
-
             function updateCount() {
-                const windowHeight = window.pageYOffset;
-                {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
 
-                    const loadSpeed = target / speed;
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const loadSpeed = target / speed;
 
-                    if (count < target && target !== 9450) {
-                        counter.innerText = Math.ceil(count + loadSpeed);
-                        setTimeout(updateCount, 1)
-                    } if (count < target && target == 9450) {
-                        counter.innerText = Math.floor(count + loadSpeed);
-                        setTimeout(updateCount, 1)
-                    }
-                    else {
-                        count.innerText = target;
-                    }
+                if (count < target && target !== 9450) {
+                    counter.innerText = Math.ceil(count + loadSpeed);
+                    setTimeout(updateCount, 1)
+                } if (count < target && target == 9450) {
+                    counter.innerText = Math.floor(count + loadSpeed);
+                    setTimeout(updateCount, 1)
                 }
-
+                else {
+                    target;
+                }
             }
-
             updateCount()
         })
     }
 };
 
-// export default numbersOnScroll;
+
+export default numbersOnScroll;
 // export default updateCount
 
 // onscroll logikos pavyzdys
