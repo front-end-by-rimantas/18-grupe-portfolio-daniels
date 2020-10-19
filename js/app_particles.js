@@ -33,11 +33,6 @@ particlesJS('particles-js',
                 },
                 "polygon": {
                     "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 10,
-                    "height": 10
                 }
             },
             "opacity": {
