@@ -7,11 +7,10 @@ renderServices(services);
 renderContact(contactUs);
 
 // header
-import { menuDate } from './data/menuData.js';
+import { headerData } from './data/headerData.js';
 import { createMenu } from './header/createMenu.js';
-createMenu(menuDate);
+createMenu(headerData);
 import { menuScroll } from './header/menuScroll.js';
-window.onscroll = () => menuScroll(menuDate);
 import { dropDownMenu } from './header/dropDownMenu.js';
 dropDownMenu();
 import { scrollTo } from './header/scrollTo.js';
@@ -37,3 +36,12 @@ window.onresize = function() {
     scrollTo();
     menuOnResize();
 }
+
+// visos funkcijos kurios turi but paleidziamos kaskart scrollinant
+window.onscroll = function() {
+    //header
+    menuScroll(headerData);
+}
+
+//tests data
+// import {} from './isHeaderDataValid.test.js'; (js/header/createMenu.js)
