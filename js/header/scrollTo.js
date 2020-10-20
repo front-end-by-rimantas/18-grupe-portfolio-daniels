@@ -5,7 +5,6 @@ function scrollTo(data) {
 
     data = data.toLowerCase();
     const scrollHeight = document.querySelector(`.container .${data}`).offsetTop;
-    console.log(scrollHeight, `.container .${data}`);
     window.scrollTo(0, scrollHeight - 60);
 }
 
