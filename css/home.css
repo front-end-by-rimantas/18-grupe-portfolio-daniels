@@ -1,6 +1,6 @@
 .container.home {
-    background-color: grey;
     background-image: url("/img/bg.jpg");
+    background-color: grey;
     margin-top: -62px;
     height: 752px;
     background-size: cover;
@@ -53,26 +53,10 @@
 }
 
 .row.home #iam #endtext {
-    overflow: hidden;
     width: 10px;
     margin-top: -7px;
     font-weight: 700;
 }
-
-.row.home #endtext {
-    margin-top: -20px;
-}
-
-
-/* 
-.row.home #one,
-.row.home #two,
-.row.home #three {
-    overflow: hidden;
-    display: inline;
-    height: 60px;
-    width: 0px;
-} */
 
 .row.home .icons {
     position: relative;
