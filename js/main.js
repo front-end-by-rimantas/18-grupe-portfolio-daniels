@@ -1,11 +1,3 @@
-import data from './data.js';
-import renderServices from './renderServices.js';
-import renderContact from './renderContact.js';
-const { services, contactUs } = data;
-
-renderServices(services);
-renderContact(contactUs);
-
 // header
 import { headerData } from './data/headerData.js';
 import { createMenu } from './header/createMenu.js';
@@ -42,6 +34,17 @@ window.onscroll = function() {
     //header
     menuScroll(headerData);
 }
+
+// services - contacts 
+
+import data from './data/services-contactsData.js';
+import renderServices from './components/services/renderServices.js';
+import renderContact from './components/contact/renderContact.js';
+const { services, contactUs } = data;
+
+renderServices(services);
+renderContact(contactUs);
+
 
 //tests data
 // import {} from './isHeaderDataValid.test.js'; (js/header/createMenu.js)
