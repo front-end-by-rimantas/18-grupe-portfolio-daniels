@@ -7,10 +7,12 @@
 }
 .testimonials>h1 {
     display: inline-block;
+    color: rgb(52,52,52);
     text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
-    font-size: 50px;
+    font-size: 40px;
+    transform: translate(0%, 0px);
     font-weight: 900;
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -27,9 +29,6 @@
     left: 0;
     z-index: -1;
 }
-.clientSlider {
-    display: flex;
-}
 #i1, #i2, #i3 {
     display: none;
 }
@@ -38,6 +37,7 @@
     width: 100%;
     text-align: center;
     position: absolute;
+    transform: translate(0.5%, 50px);
 }
 .dotsBtn {
     width: 10px;
@@ -46,14 +46,15 @@
     border-radius: 50%;
     display: inline-block;
     background: #D6D6D6;
-    position: relative;
     top: 280px;
+
 }
 
-.sliding {
+.renderClients {
     overflow: hidden;
     display: flex;
-    margin-left: 280px;
+    /* margin-left: 280px; */
+    transform: translate(31%, 0px);
     width: 936px;
     cursor: grab;
 }
@@ -97,7 +98,7 @@
     color: #7C8889;
     width: 900px;
 }
-
+/* 
 #i1:checked ~ .one{
     margin-left: 1.5%;
 }
@@ -106,7 +107,7 @@
 }
 #i3:checked ~ .one{
     margin-left: -199%;
-}
+} */
 
 .dotsBtn:hover {
     background-color: #869791;
@@ -173,8 +174,8 @@
         position: absolute;
     }
     .sliding {
-        margin-left: 122px;
         text-align: center;
+        transform: translate(0%, 0px);
     }
     .one {
         position: relative;
@@ -182,10 +183,9 @@
     }
     .testimonials>h1 {
         position: relative;
-        margin-left: 120px;
     }
     .nav {
-        margin-left: 50px;
+        /* margin-left: 50px; */
 
     }
     .clientNumbers>.happyCustomers {
@@ -214,7 +214,7 @@
         margin-left: 100px;
     }
     .nav {
-        margin-left: 25px;
+        margin-left: 35px;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -227,7 +227,7 @@
         margin-left: 10px;
     }
     .nav {
-        margin-left: 0px;
+        margin-left: 5px;
     }
 
 
@@ -249,11 +249,11 @@
     }
     .nav {
         margin-top: 10px;
-        margin-left: -20px;
+        margin-left: -10px;
     }
-    #i3:checked ~ .one{
+    /* #i3:checked ~ .one{
         margin-left: -202%;
-    }
+    } */
     .clientNumbers {
         height: 850px;
     }
@@ -291,15 +291,15 @@
         margin-left: -155px;
     }
     .nav {
-        margin-top: 35px;
-        margin-left: -91px;
+        margin-top: 10px;
+        margin-left: -10px;
     }
-    #i1:checked ~ .one{
+    /* #i1:checked ~ .one{
         margin-left: 2%;
     }
     #i2:checked ~ .one{
         margin-left: -98%;
-    }
+    } */
 }
 @media only screen and (max-width: 560px) {
     .testimonials .clientSlide>p:first-of-type {
@@ -313,14 +313,14 @@
         margin-left: -258px;
     }
     .nav {
-        margin-top: 55px;
-        margin-left: -145px;
+        margin-top: 0px;
+        margin-left: -135px;
     }
 
-    #i2:checked ~ .one{
+    /* #i2:checked ~ .one{
         margin-left: -98.5%;
     }
     #i3:checked ~ .one{
         margin-left: -202%;
-    }
+    } */
 }

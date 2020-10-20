@@ -1,15 +1,15 @@
 const clientNumbers = document.querySelectorAll('.counter');
 const speed = 900;
 
-
-function numbersOnScroll() {
+// window.onscroll = numbersOnScroll();
+// function numbersOnScroll() {
+window.onscroll = () => {
     const windowHeight = window.pageYOffset;
     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
-    if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 4)) {
-
+    if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 5)) {
 
         clientNumbers.forEach(counter => {
-            function updateCount() {
+            const updateCount = () => {
 
                 const target = +counter.getAttribute('data-target');
                 const count = +counter.innerText;
@@ -23,7 +23,7 @@ function numbersOnScroll() {
                     setTimeout(updateCount, 1)
                 }
                 else {
-                    target;
+                    count.innerText = target;
                 }
             }
             updateCount()
@@ -32,7 +32,10 @@ function numbersOnScroll() {
 };
 
 
-export default numbersOnScroll;
+
+
+
+// export default numbersOnScroll;
 // export default updateCount
 
 // onscroll logikos pavyzdys
