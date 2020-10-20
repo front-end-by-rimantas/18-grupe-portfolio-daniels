@@ -11,7 +11,11 @@ renderContact(contactUs);
 renderClients(clientSlide);
 
 // Clients import
-// import numbersOnScroll from './clients.js';
+import numbersOnScroll from './clients.js';
 // // Clients function
-// window.onscroll = numbersOnScroll();
+window.addEventListener('scroll', numbersOnScroll);
+
+
+
+
 renderTestimonials('#clients_block', clientSlide);
