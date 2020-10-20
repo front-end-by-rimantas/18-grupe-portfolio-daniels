@@ -5,9 +5,9 @@ createMenu(headerData);
 import { menuScroll } from './header/menuScroll.js';
 import { dropDownMenu } from './header/dropDownMenu.js';
 dropDownMenu();
-import { scrollTo } from './header/scrollTo.js';
+import { scrollToSet } from './header/scrollToSet.js';
 import { menuOnResize } from './header/menuOnResize.js';
-scrollTo();
+scrollToSet(headerData);
 
 //home
 import { textPrint } from './home/textPrint.js';
@@ -25,7 +25,6 @@ include('./js/home/particles.min.js');
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
 window.onresize = function() {
     //header
-    scrollTo();
     menuOnResize();
 }
 
