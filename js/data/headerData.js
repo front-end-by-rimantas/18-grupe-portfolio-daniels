@@ -1,4 +1,4 @@
-const menuDate = [
+const headerData = [
     { menuTitle: 'Home' },
     { menuTitle: 'About' },
     { menuTitle: 'Services' },
@@ -7,4 +7,4 @@ const menuDate = [
     { menuTitle: 'Blog' },
     { menuTitle: 'Contact' }
 ]
-export { menuDate }
+export { headerData }

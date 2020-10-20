@@ -1,6 +1,13 @@
+import { isHeaderDateValid } from '../header/isHeaderDataValid.js';
+// import {} from './isHeaderDataValid.test.js';
+
 // sukuria meniu is datos
 function createMenu(menuDate) {
+
     for (let i = 0; i < menuDate.length; i++) {
+        if (!isHeaderDateValid(menuDate[i])) {
+            return '';
+        }
         let nameThisMenu = menuDate[i].menuTitle;
         document.querySelector("nav").innerHTML += `<p>${nameThisMenu}</p>`;
     }
