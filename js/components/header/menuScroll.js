@@ -26,7 +26,7 @@ function menuScroll(menuDate) {
         }
 
         // papildomi pakeitimai
-        document.getElementById("particles-js").style.height = "690px";
+        document.getElementsByClassName("particles-js")[0].style.height = "690px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "-10px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#000";
 
@@ -57,7 +57,7 @@ function menuScroll(menuDate) {
         }
 
         // papildomi pakeitimai
-        document.getElementById("particles-js").style.height = "752px";
+        document.getElementsByClassName("particles-js")[0].style.height = "752px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "0px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#fff";
     }

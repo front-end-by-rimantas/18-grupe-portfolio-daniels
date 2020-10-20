@@ -7,9 +7,9 @@ createMenu(headerData);
 import { menuScroll } from './components/header/menuScroll.js';
 import { dropDownMenu } from './components/header/dropDownMenu.js';
 dropDownMenu();
-import { scrollTo } from './components/header/scrollTo.js';
+import { scrollToSet } from './components/header/scrollToSet.js';
 import { menuOnResize } from './components/header/menuOnResize.js';
-scrollTo();
+scrollToSet(headerData);
 
 
 //home
