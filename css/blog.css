@@ -43,10 +43,11 @@
 ================== */
 .row.blog .item {
     position: relative;
+    width: 31%;
     overflow: hidden;
     float: left;
     height: 410px;
-    margin-right: 30px;
+    margin-left: 20px;
     margin-bottom: 30px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
 }
@@ -59,8 +60,8 @@
 
 .row.blog .item>img {
     position: relative;
-    display: block;
     width: 100%;
+    display: block;
     height: 220px;
     transition: transform .5s ease;
 }
@@ -106,6 +107,36 @@
     font-family: "Poppins";
     text-decoration: none;
     border-bottom: solid 2px #333;
+}
+
+/* dots 
+====================*/
+
+.blog>.blog_dots {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.blog_dots>.blog_dot {
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+}
+
+.blog_dot>.dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    display: block;
+    border-radius: 30px;
+    background: #d6d6d6;
+    display: inline-block;
+    zoom: 1;
+    text-align: center;
+    font-weight: 400;
 }
 
 
