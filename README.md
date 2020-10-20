@@ -2,8 +2,8 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-# Mitech
-### 18b group personal website project
+# Daniels
+### 18a group personal website project
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
@@ -13,10 +13,13 @@ Design: [Daniels porftolio template](http://www.innovationplans.com/idesign/dani
 
 
 ## Project features
-- 
 - responsive design
 - one page
 - repetitive content is generated/rendered
 - no AJAX
 ## Authors
-[Lenar Garifulin](https://github.com/legarifulin), [Kristijonas Jurksas](https://github.com/KristijonasJurk), [Edvardas Nugaris](https://github.com/qreilas), [Marek Jankovskij](https://github.com/mjankovskij), [Eimantas Andrejevas](https://github.com/eimuc)
+[Lenar Garifulin](https://github.com/legarifulin)
+[Kristijonas Jurksas](https://github.com/KristijonasJurk)
+[Edvardas Nugaris](https://github.com/qreilas)
+[Marek Jankovskij](https://github.com/mjankovskij)
+[Eimantas Andrejevas](https://github.com/eimuc)

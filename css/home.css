@@ -34,32 +34,28 @@
 .row.home #iam {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     color: #ffffff;
-    margin: 40px;
-    font-size: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
     opacity: 1;
+    width: 400px;
 }
 
-.row.home span {
-    margin-left: 5px;
-    font-weight: 700;
-}
-
-.row.home #one,
-.row.home #two,
-.row.home #three {
+.row.home #iam span {
     overflow: hidden;
-    display: inline;
+    width: 10px;
+    font-weight: 700;
     white-space: nowrap;
-    height: 60px;
-    width: 0px;
+    animation-timing-function: linear;
 }
 
-.row.home #endtext {
-    margin-top: -20px;
-    margin-left: -10px;
+.row.home #iam #endtext {
+    width: 10px;
+    margin-top: -7px;
+    font-weight: 700;
 }
 
 .row.home .icons {
@@ -67,7 +63,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
 }
 
 .row.home .fa {
@@ -80,4 +75,16 @@
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .row.home #iam {
+        font-size: 30px;
+    }
+    .row.home #iam {
+        width: 300px;
+    }
+    .row.home #iam #endtext {
+        margin-top: -5px;
+    }
 }

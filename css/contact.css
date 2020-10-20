@@ -79,9 +79,9 @@
     margin-top: 15px;
 
 }
-.contact>.form-group>#form_message {
-    width: 935px;
-    max-width: 935px;
+.contact>.form-group>.form_message {
+    width: 970px;
+    max-width: 970px;
     height: 150px;
     max-height: 150px;
     border: 0;
