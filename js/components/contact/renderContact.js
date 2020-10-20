@@ -1,4 +1,4 @@
-import renderSingleContact from './renderSingleContact.js';
+import renderSingleContact from '../contact/renderSingleContact.js';
 
 function renderContact(data) {
     let HTML = '';
