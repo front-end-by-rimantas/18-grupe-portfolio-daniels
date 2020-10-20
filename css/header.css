@@ -43,6 +43,30 @@
     margin-left: 45px;
     display: block;
     cursor: pointer;
+    position: relative;
+    transition: after 3s;
+}
+
+.container>header>nav p::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition-timing-function: linear;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background: #000;
+}
+
+.container>header>nav p:first-child::after {
+    background: #fff;
+}
+
+.container>header>nav p.active::after {
+    width: 100%;
 }
 
 .container>header>.menuChoices {
