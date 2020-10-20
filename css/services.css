@@ -1,33 +1,46 @@
 .container.services {
     background-color: #F7F7F7;
-    position: relative;
 }
+
+.services>.row {
+    grid-column: 1 / 4;
+    background: #f7f7f7;
+    padding: 40px 0;
+}
+
 .services>.renderedServices {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    width: 1180px;
+    margin: auto;
+    transition: 0.5s;
 }
+
 .services>.renderedServices>.item {
-    display: inline-block;
+    display: block;
+    float: left;
     background-color: white;
-    width: 320px;
-    height: 270px;
+    width: 360px;
+    height: 290px;
     padding: 50px 20px;
     text-align: center;
-    margin-left: 30px;
-    margin-bottom: 40px;
+    margin: 15px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    transition: 0.5s;
 }
+
 .services>h1 {
     font-size: 40px;
     text-align: center;
     color: #343434;
     position: absolute;
-    top: 80px;
-    right: 650px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
     font-family: "Montserrat";
     font-weight: 900;
 }
+
 .services>.renderedServices>.item>.fa {
     font-size: 30px;
     margin-bottom: 20px;
@@ -38,10 +51,12 @@
     border-radius: 50%;
     transition: all .5s;
 }
+
 .services>.renderedServices>.item:hover .fa {
     background-color: black;
     color: white;
 }
+
 .services>.renderedServices>.item>h2 {
     margin-bottom: 15px;
     font-size: 18px;
@@ -49,9 +64,39 @@
     font-family: "Montserrat";
     font-weight: 800;
 }
+
 .services>.renderedServices>.item>p {
     font-size: 14px;
     color: #81888D;
     font-family: "Poppins";
     font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px) {
+    .services>.renderedServices {
+        width: 990px;
+    }
+    .services>.renderedServices>.item {
+        width: 300px;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .services>.renderedServices {
+        width: 90%;
+    }
+    .services>.renderedServices>.item {
+        width: 96%;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .services>.renderedServices {
+        width: 100%;
+    }
+    .services>.renderedServices>.item {
+        margin-left: 2%;
+    }
 }

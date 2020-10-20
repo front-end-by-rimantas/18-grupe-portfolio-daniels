@@ -11,6 +11,7 @@ import { scrollTo } from './components/header/scrollTo.js';
 import { menuOnResize } from './components/header/menuOnResize.js';
 scrollTo();
 
+
 //home
 import { textPrint } from './components/home/textPrint.js';
 textPrint();
@@ -27,7 +28,6 @@ include('./js/components/home/particles.min.js');
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
 window.onresize = function() {
     //header
-    scrollTo();
     menuOnResize();
 }
 
