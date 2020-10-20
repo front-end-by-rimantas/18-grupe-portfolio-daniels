@@ -1,42 +1,8 @@
-// scrollinimas iki nustatyto aukscio
-function scrollUp(whichItem) {
-    let totalHeightMenu = -120;
-    //for mobile scrollHeight
-    if (window.innerWidth <= 800) { totalHeightMenu -= 520; }
-    // check scrollHeight everytime on scroll, because can be resized
-    for (let i = 0; i <= whichItem; i++) {
-        totalHeightMenu += document.querySelectorAll(".container")[i].scrollHeight;
-    }
-    // scroll to choosen height
-    window.scrollTo(0, totalHeightMenu);
-}
+//scrollinant pasidaro menu fixed virsuje
 
-// TODO: perkelti i data
-const menuDate = [
-    { menuTitle: 'Home' },
-    { menuTitle: 'About' },
-    { menuTitle: 'Services' },
-    { menuTitle: 'Works' },
-    { menuTitle: 'Clients' },
-    { menuTitle: 'Blog' },
-    { menuTitle: 'Contact' }
-]
-
-// prideda meniu i 
-window.onload = function() {
-    for (let i = 0; i < menuDate.length; i++) {
-        let nameThisMenu = menuDate[i].menuTitle;
-        document.querySelector("nav").innerHTML += `<p onclick=scrollUp(${i})>${nameThisMenu}</p>`;
-    }
-    // uzkraunant Home pabraukiamas
-    document.querySelectorAll("nav p")[0].style.borderBottom = "solid 2px #fff";
-    textPrint();
-}
-
-window.onscroll = function() {
+function menuScroll(menuDate) {
     // per mobile menu, jei pasirenka, auto uzdaro ji
     document.querySelector("nav").style.height = `0px`;
-    dropdowns = 0;
     // jei nenuscrolinta
     if (document.documentElement.scrollTop > 620) {
         // header uzrasai virsun
@@ -123,82 +89,4 @@ window.onscroll = function() {
     }
 }
 
-
-// teksto spausdinimas visu triju besikeicianciu
-let sizeTextLoad = 0;
-var wordWhich = 0;
-let wordDiv = "";
-
-// teksto spausdinimas
-function textPrint() {
-    if (wordWhich == 0) {
-        wordDiv = "one";
-        wordWidth = 290;
-    }
-    if (wordWhich == 1) {
-        wordDiv = "two";
-        wordWidth = 251;
-    }
-    if (wordWhich == 2) {
-        wordDiv = "three";
-        wordWidth = 222;
-    }
-    sizeTextLoad += 10;
-    if (sizeTextLoad < wordWidth) {
-        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
-        setTimeout(textPrint);
-    } else {
-        setTimeout(textDelete, 5000);
-    }
-}
-// teksto trinimas po 5 sec
-function textDelete() {
-    sizeTextLoad -= 10;
-    if (sizeTextLoad > -10) {
-        document.querySelector(`#${wordDiv}`).style.width = `${sizeTextLoad}px`;
-        setTimeout(textDelete);
-    } else {
-        if (wordWhich < 2) { wordWhich++; } else { wordWhich = 0; }
-        setTimeout(textPrint);
-    }
-}
-
-// dropdown menu funkcijos
-// dropdown menu uzdarymas/atidarymas
-let dropdowns = 0;
-document.getElementsByClassName("menuChoices")[0].addEventListener("click", function() {
-    if (dropdowns < 1) {
-        dropdowns++;
-        document.querySelector("nav").style.transition = `0.5s`;
-        document.querySelector("nav").style.height = `500px`;
-
-    } else {
-        dropdowns = 0;
-        document.querySelector("nav").style.transition = `0.5s`;
-        document.querySelector("nav").style.height = `0px`;
-    }
-});
-
-
-// dropdown papildymas
-window.onresize = function() {
-    if (window.innerWidth > 800) {
-        document.querySelector("nav").style.transition = `0s`;
-        if (document.documentElement.scrollTop < 620) {
-            let lengthLinks = document.querySelectorAll(".container>header p").length;
-            for (let i = 0; i < lengthLinks; i++) {
-                document.querySelectorAll(".container>header p")[i].style.color = "#ffffff";
-            }
-
-            document.querySelector("nav").style.height = `0px`;
-        }
-    } else {
-        let lengthLinks = document.querySelectorAll(".container>header p").length;
-        for (let i = 0; i < lengthLinks; i++) {
-            document.querySelectorAll(".container>header p")[i].style.color = "#000000";
-            document.querySelectorAll("nav p")[i].style.borderBottom = null;
-        }
-        document.querySelectorAll("nav p")[0].style.borderBottom = "solid 2px #fff";
-    }
-
-}
+export { menuScroll }
