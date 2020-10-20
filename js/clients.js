@@ -8,9 +8,9 @@ function numbersOnScroll() {
     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
     // console.log(windowHeight);
     if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 5)) {
-        console.log(clientNumbers);
+        // console.log(clientNumbers);
         for (const counter of clientNumbers) {
-            console.log(counter);
+            // console.log(counter);
             let i = 0;
             const interval = setInterval(() => {
 
@@ -18,7 +18,7 @@ function numbersOnScroll() {
                 const target = parseInt(counter.getAttribute('data-target'));
                 const loadSpeed = Math.floor(target / speed);
                 count += loadSpeed;
-                console.log(count);
+                // console.log(count);
                 if (count < target) {
                     counter.innerText = `${count}`;
                 }
