@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-#particles-js {
+.particles-js {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
     z-index: 0;
 }
 
-.row.home #hello {
+.row.home .hello {
     position: relative;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     font-weight: 700;
 }
 
-.row.home #iam {
+.row.home .iam {
     position: relative;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@
     width: 400px;
 }
 
-.row.home #iam span {
+.row.home .iam span {
     overflow: hidden;
     width: 10px;
     font-weight: 700;
@@ -52,7 +52,7 @@
     animation-timing-function: linear;
 }
 
-.row.home #iam #endtext {
+.row.home .iam .endtext {
     width: 10px;
     margin-top: -7px;
     font-weight: 700;
@@ -78,13 +78,13 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .row.home #iam {
+    .row.home .iam {
         font-size: 30px;
     }
-    .row.home #iam {
+    .row.home .iam {
         width: 300px;
     }
-    .row.home #iam #endtext {
+    .row.home .iam .endtext {
         margin-top: -5px;
     }
 }

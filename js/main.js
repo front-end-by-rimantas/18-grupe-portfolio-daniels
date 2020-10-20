@@ -1,16 +1,18 @@
+// To turn TESTS on go to js/isTestsOn.js
+
 // header
 import { headerData } from './data/headerData.js';
-import { createMenu } from './header/createMenu.js';
+import { createMenu } from './components/header/createMenu.js';
 createMenu(headerData);
-import { menuScroll } from './header/menuScroll.js';
-import { dropDownMenu } from './header/dropDownMenu.js';
+import { menuScroll } from './components/header/menuScroll.js';
+import { dropDownMenu } from './components/header/dropDownMenu.js';
 dropDownMenu();
-import { scrollTo } from './header/scrollTo.js';
-import { menuOnResize } from './header/menuOnResize.js';
+import { scrollTo } from './components/header/scrollTo.js';
+import { menuOnResize } from './components/header/menuOnResize.js';
 scrollTo();
 
 //home
-import { textPrint } from './home/textPrint.js';
+import { textPrint } from './components/home/textPrint.js';
 textPrint();
 
 function include(file) {
@@ -20,7 +22,7 @@ function include(file) {
     script.defer = true;
     document.getElementsByTagName('head').item(0).appendChild(script);
 }
-include('./js/home/particles.min.js');
+include('./js/components/home/particles.min.js');
 
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
 window.onresize = function() {
@@ -44,7 +46,3 @@ const { services, contactUs } = data;
 
 renderServices(services);
 renderContact(contactUs);
-
-
-//tests data
-// import {} from './isHeaderDataValid.test.js'; (js/header/createMenu.js)
