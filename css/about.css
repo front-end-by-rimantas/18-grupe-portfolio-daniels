@@ -178,10 +178,6 @@
 
 @media (max-width: 900px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 750px;
         height: 1500px;
         margin-left: calc((100% - 750px) / 2);
@@ -203,10 +199,6 @@
 
 @media (max-width: 800px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 550px;
         height: 1400px;
         margin-left: calc((100% - 550px) / 2);
@@ -228,10 +220,6 @@
 
 @media (max-width: 600px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 450px;
         height: 1300px;
         margin-left: calc((100% - 450px) / 2);
@@ -252,10 +240,6 @@
 }
 @media (max-width: 500px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 350px;
         height: 1300px;
         margin-left: calc((100% - 350px) / 2);
