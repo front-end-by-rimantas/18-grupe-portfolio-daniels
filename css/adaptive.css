@@ -3,7 +3,6 @@
         display: grid;
         grid-template-columns: 90px 1fr 90px;
     }
-    /*----------- Services  -----------*/
     .container>.services>.renderedServices>.item {
         width: 355px;
         margin-left: 26px;
@@ -11,11 +10,13 @@
     .container>.services>h1{
         right: 570px;
     }
-    /*----------- Contact  -----------*/
     .container>.contact>.renderedDiv>.contact-row {
         margin-left: 65px;
     }
     .container>.contact>.form>.form-name {
+        margin-left: 65px;
+    }
+    .container>.contact>.form>.form-email {
         margin-left: 65px;
     }
     .container>.contact>.form-group {
@@ -25,176 +26,35 @@
         margin-left: 65px;
     }
 }
-@media only screen and (max-width: 1300px) {
-    .container {
-        display: grid;
-        grid-template-columns: 30px 1fr 30px;
-    }
-    /*----------- Services  -----------*/
-    .container>.services>h1 {
-        right: 515px;
-    }
-}
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
      .container {
          display: grid;
-         grid-template-columns: 55px 1fr 55px;
+         grid-template-columns: 100px 1fr 100px;
      }
-     /*----------- Services  -----------*/
-     .container>.services>h1 {
-        right: 440px;
-    }
-    .container>.services>.renderedServices>.item {
-        width: 290px;
-        height: 300px;
-    }
-    /*----------- Contact  -----------*/
-    .container>.contact>.renderedDiv {
-        width: 800px;
-        margin-left: calc((100% - 800px) / 2);
-    }
-    .container>.contact>.renderedDiv>.contact-row {
-        width: 230px;
-        margin-left: 25px;
-    }
-    .container>.contact>.form>.form-name {
-        margin-left: 60px;
-        width: 400px;
-    }
-    .container>.contact>.form>.form-email {
-        margin-left: 20px;
-        width: 400px;
-    }
-    .container>.contact>.form-group {
-        margin-left: 60px;
-    }
-    .container>.contact>.form-group>#form_message {
-        width: 825px;
-        max-width: 825px;
-    }
-    .container>.contact>.btn {
-        margin-left: 60px;
-    }
  }
- @media only screen and (max-width: 1000px) {
-    .container {
-        display: grid;
-        grid-template-columns: 75px 1fr 75px;
-    }
-    /*----------- Services  -----------*/
-    .container>.services>h1 {
-       right: 350px;
-    }
-    .container>.services>.renderedServices>.item {
-       width: 700px;
-    }
-    /*----------- Contact  -----------*/
-    .container>.contact>.renderedDiv>.contact-row {
-        width: 750px;
-    }
-    .container>.contact>.form>.form-name {
-        margin-left: 25px;
-        width: 750px;
-        margin-bottom: 15px;
-    }
-    .container>.contact>.form>.form-email {
-        margin-left: 25px;
-        width: 750px;
-    }
-    .container>.contact>.form-group {
-        margin-left: 25px;
-    }
-    .container>.contact>.form-group>#form_message {
-        width: 750px;
-        max-width: 750px;
-    }
-    .container>.contact>.btn {
-        margin-left: 25px;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .container {
+ 
+ @media only screen and (max-width: 1100px) {
+     .container {
          display: grid;
-         grid-template-columns: 10px 1fr 10px;
-     }
-     /*----------- Services  -----------*/
-    .container>.services>h1 {
-        right: 290px;
-    }
-    .container>.services>.renderedServices>.item {
-        width: 720px;
-        margin-left: 15px;
-     }
-     /*----------- Contact  -----------*/
-     .container>.contact> {
-        width: 100%;
-    }
-     .container>.contact>.renderedDiv {
-         width: 100%;
-         margin: 0px;
-     }
-     .container>.contact>.renderedDiv>.contact-row {
-         width: 720px;
-     }
-     .container>.contact>.form>.form-name {
-         margin-left: 25px;
-         width: 720px;
-         margin-bottom: 15px;
-     }
-     .container>.contact>.form>.form-email {
-         margin-left: 25px;
-         width: 720px;
-     }
-     .container>.contact>.form-group {
-         margin-left: 25px;
-     }
-     .container>.contact>.form-group>#form_message {
-         width: 720px;
-         max-width: 750px;
-     }
-     .container>.contact>.btn {
-         margin-left: 25px;
+         grid-template-columns: 50px 1fr 50px;
      }
  }
-@media only screen and (max-width: 700px) {
+ 
+ @media only screen and (max-width: 900px) {
+     .container {
+         display: grid;
+         grid-template-columns: 20px 1fr 20px;
+     }
+ }
+ 
+ @media only screen and (max-width: 700px) {
      .container {
          display: grid;
          grid-template-columns: 0px 1fr 0px;
          min-width: 250px;
      }
-      /*----------- Header  -----------*/
-      .container>header>a {
-        margin-left: 20px;
-    }
-     /*----------- Services  -----------*/
-     .container>.services>h1 {
-         right: 240px;
-    }
-    .container>.services>.renderedServices>.item {
-        width: 645px;
-        margin-left: 15px;
-     }
-     /*----------- Contact  -----------*/
-     .container>.contact>.renderedDiv>.contact-row {
-        width: 645px;
-     }
-     .container>.contact>.form>.form-name {
-         margin-left: 25px;
-         width: 645px;
-         margin-bottom: 15px;
-     }
-     .container>.contact>.form>.form-email {
-         margin-left: 25px;
-         width: 645px;
-     }
-     .container>.contact>.form-group {
-         margin-left: 25px;
-     }
-     .container>.contact>.form-group>#form_message {
-        width: 645px;
-         max-width: 750px;
-     }
-     .container>.contact>.btn {
-         margin-left: 25px;
+     /* header */
+     .container>header>a {
+         margin-left: 20px;
      }
  }

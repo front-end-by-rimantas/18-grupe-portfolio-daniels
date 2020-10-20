@@ -1,5 +1,3 @@
-// ---------------- Services Data
-
 const services = [
     {
         icon: 'fa fa-laptop',
@@ -39,8 +37,6 @@ const services = [
     }
 ]
 
-// ---------------- Contact Data
-
 const contactUs = [
     {
         icon2: 'fa fa-location-arrow',
@@ -59,6 +55,5 @@ const contactUs = [
     }
 ]
 
-// ---------------- Isreiskiama objektu, kad butu galima 2 skirtingas datas per viena exporta paimt
-const data = {services, contactUs};
+const data = { services, contactUs };
 export default data;
