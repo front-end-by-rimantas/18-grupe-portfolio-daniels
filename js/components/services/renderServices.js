@@ -1,4 +1,4 @@
-import renderSingleServices from './renderSingleServices.js';
+import renderSingleServices from '../services/renderSingleServices.js';
 
 function renderServices(data) {
     let HTML = '';
