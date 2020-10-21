@@ -43,6 +43,29 @@
     margin-left: 45px;
     display: block;
     cursor: pointer;
+    position: relative;
+}
+
+.container>header>nav p::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    /* transition-delay: 0.1s; */
+    background: #000;
+}
+
+.container>header>nav p:first-child::after {
+    background: #fff;
+}
+
+.container>header>nav p.active::after {
+    width: 100%;
 }
 
 .container>header>.menuChoices {
@@ -66,6 +89,7 @@
         left: 0;
         z-index: 1;
         width: 100%;
+        cursor: pointer;
     }
     .container>header>nav p {
         float: left;
