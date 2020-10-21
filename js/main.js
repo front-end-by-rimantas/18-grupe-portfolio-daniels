@@ -23,14 +23,14 @@ function include(file) {
 include('./js/home/particles.min.js');
 
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
-window.onresize = function() {
+window.onresize = function () {
     //header
     scrollTo();
     menuOnResize();
 }
 
 // visos funkcijos kurios turi but paleidziamos kaskart scrollinant
-window.onscroll = function() {
+window.onscroll = function () {
     //header
     menuScroll(headerData);
 }
@@ -48,3 +48,14 @@ renderContact(contactUs);
 
 //tests data
 // import {} from './isHeaderDataValid.test.js'; (js/header/createMenu.js)
+
+
+// blogs carousel/slideshow 
+
+import showSlides from './blog.js'
+import plusSlides from './blog.js'
+import currentSlide from './blog.js'
+
+showSlides();
+plusSlides();
+currentSlide();
