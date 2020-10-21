@@ -2,6 +2,7 @@
     display: inline-block;
     text-align: center;
     padding-bottom: 50px;
+    transition: all 0.5s;
 }
 
  .row.works {
@@ -23,10 +24,10 @@
 .row.works > h2::after {
     background: url(../img/dots.png);
     content: "";
-    right: 5px;
+    right: auto;
     position: absolute;
     top: 25px;
-    left: -20px;
+    left: 0px;
     z-index: -2;
     display: inline-block;
     width: 100%;
