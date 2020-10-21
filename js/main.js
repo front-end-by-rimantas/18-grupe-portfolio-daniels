@@ -46,3 +46,11 @@ const { services, contactUs } = data;
 
 renderServices(services);
 renderContact(contactUs);
+
+// Works
+
+import { lightboxImg } from './works.js';
+import { galleryImages } from './works.js';
+
+galleryImages(filter);
+lightboxImg();

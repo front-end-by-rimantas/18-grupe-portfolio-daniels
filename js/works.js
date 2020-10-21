@@ -67,3 +67,5 @@ function lightboxImg () {
   })
 }
 
+export { lightboxImg };
+export { galleryImages };
