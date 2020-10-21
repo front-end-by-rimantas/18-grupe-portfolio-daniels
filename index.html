@@ -14,8 +14,6 @@
     <!-- 3rd party -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/fontface.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- components -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -45,14 +43,12 @@
     <!-- Home -->
     <div class="container home">
         <div class="row home">
-            <div id="particles-js">
+            <div class="particles-js">
             </div>
-            <div id="hello">Hello</div>
-            <div id="iam">I Am
-                <span id="one">BIT student</span>
-                <span id="two">Developer</span>
-                <span id="three">Designer</span>
-                <span id="endtext">|</span>
+            <div class="hello">Hello</div>
+            <div class="iam">I Am
+                <span class="textplace"></span>
+                <span class="endtext">|</span>
             </div>
             <div class="icons">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -74,12 +70,11 @@
                 <h6 class="content">About Me.</h6>
                 <span class="sub_title">UI / UX DESIGNER & WEB DEVELOPER</span>
                 <p class="about_text">
-                    I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printi
-                    ng and typesetting industry. Lorem Ipsum has been the industry's standard
-                    dummy text ever It has survived not only five centuries, but also the
-                    leap into electronic but also the leap into electronic typesetting
-                    , remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing
+                    I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printi ng and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five
+                    centuries, but also the leap into electronic
+                    but also the leap into electronic typesetting , remaining essentially unchanged. It was popularised
+                    in the 1960s with the release of Letraset sheets containing
                 </p>
                 <div class="progress_bar">
                     <div class="items">
@@ -111,12 +106,14 @@
                     <a href="#">Download C.V</a>
                     <a href="#">Contact Me</a>
                 </div>
-            </div> <!-- about_content -->
+            </div>
+            <!-- about_content -->
         </div>
         <!-- about_content -->
     </div>
     <!--- row-->
-    </div> <!-- container-->
+    </div>
+    <!-- container-->
 
 
 
@@ -154,37 +151,75 @@
                     <input class="i1" type="radio" name="quote" id="i1" checked>
                     <input class="i2" type="radio" name="quote" id="i2">
                     <input class="i3" type="radio" name="quote" id="i3">
+                    <div class="clientSlider">
+                        <div class="sliding owl-carousel owl-theme">
+                            <!-- <input type="radio" name="quote" id="i1" checked>
+                        <input type="radio" name="quote" id="i2">
+                        <input type="radio" name="quote" id="i3"> -->
+                            <div class="clientSlide" id="one">
+                                <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                    illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                    consequatur!
+                                </p>
+                                <h3>Alex Smith</h3>
+                                <p>Envato Customer</p>
+                            </div>
+                            <div class="clientSlide" id="two">
+                                <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                    illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                    consequatur!
+                                </p>
+                                <h3>Alex Smith</h3>
+                                <p>Envato Customer</p>
+                            </div>
+                            <div class="clientSlide" id="three">
+                                <img class="alex" src="./img/alex.jpg" alt="Alex-photo">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque repellendus,
+                                    illum distinctio necessitatibus dignissimos cum. Consectetur nemo quam modi ratione
+                                    consequatur!
+                                </p>
+                                <h3>Alex Smith</h3>
+                                <p>Envato Customer</p>
+                            </div>
+                        </div>
+                        <!-- <div class="nav">
+                        <label for="i1" class="dotsBtn" id="dot1"></label>
+                        <label for="i2" class="dotsBtn" id="dot2"></label>
+                        <label for="i3" class="dotsBtn" id="dot3"></label>
+                    </div> -->
+                    </div>
+                    <div class="nav">
+                        <label for="i1" class="dotsBtn dot1" id="dot1"></label>
+                        <label for="i2" class="dotsBtn dot2" id="dot2"></label>
+                        <label for="i3" class="dotsBtn dot3" id="dot3"></label>
+                    </div>
                 </div>
-                <div class="nav">
-                    <label for="i1" class="dotsBtn dot1" id="dot1"></label>
-                    <label for="i2" class="dotsBtn dot2" id="dot2"></label>
-                    <label for="i3" class="dotsBtn dot3" id="dot3"></label>
-                </div>
+            </section>
         </div>
-        </section>
-    </div>
-    <div class="row clientNumbers">
-        <div class="happyCustomers">
-            <i class="fa fa-users clientIcon" aria-hidden="true"></i>
-            <div class="counter" data-target="850">0</div>
-            <p>Happy Customers</p>
+        <div class="row clientNumbers">
+            <div class="happyCustomers">
+                <i class="fa fa-users clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="850">0</div>
+                <p>Happy Customers</p>
+            </div>
+            <div class="completeProjects">
+                <i class="fa fa-thumbs-up clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="230">0</div>
+                <p>Complete Projects</p>
+            </div>
+            <div class="linesOfCode">
+                <i class="fa fa-bullhorn clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="9450">0</div>
+                <p>Lines Of Code</p>
+            </div>
+            <div class="filesDownloaded">
+                <i class="fa fa-cloud-download clientIcon" aria-hidden="true"></i>
+                <div class="counter" data-target="780">0</div>
+                <p>Files Downloaded</p>
+            </div>
         </div>
-        <div class="completeProjects">
-            <i class="fa fa-thumbs-up clientIcon" aria-hidden="true"></i>
-            <div class="counter" data-target="230">0</div>
-            <p>Complete Projects</p>
-        </div>
-        <div class="linesOfCode">
-            <i class="fa fa-bullhorn clientIcon" aria-hidden="true"></i>
-            <div class="counter" data-target="9450">0</div>
-            <p>Lines Of Code</p>
-        </div>
-        <div class="filesDownloaded">
-            <i class="fa fa-cloud-download clientIcon" aria-hidden="true"></i>
-            <div class="counter" data-target="780">0</div>
-            <p>Files Downloaded</p>
-        </div>
-    </div>
     </div>
     <!-- blog -->
     <div class="container blog">
@@ -192,7 +227,7 @@
             <div class="blog-head">
                 <h3>Our Blog.</h3>
             </div>
-            <div class="owl-one owl-carousel owl-theme">
+            <div class="row blog">
                 <div class="item">
                     <img src="./img/blog1.jpg" alt="blog1">
                     <div class="content">
@@ -238,7 +273,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <img src="./img/blog4.jpg" alt="blog4">
                     <div class="content">
                         <h6 class="tag">
@@ -252,6 +287,12 @@
                             <a href="#">Read More</a>
                         </span>
                     </div>
+                </div> -->
+            </div>
+            <div class="blog_dots">
+                <div class="blog_dot">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </div>
@@ -266,14 +307,14 @@
             </div>
             <div class="form">
                 <div class="form-name">
-                    <input id="name" type="text" placeholder="Name">
+                    <input type="text" placeholder="Name">
                 </div>
                 <div class="form-email">
-                    <input id="email" type="text" placeholder="Email">
+                    <input type="text" placeholder="Email">
                 </div>
             </div>
             <div class="form-group">
-                <textarea id="form_message" placeholder="Message">
+                <textarea class="form_message" placeholder="Message">
                 </textarea>
             </div>
             <div class="btn">Submit</div>
