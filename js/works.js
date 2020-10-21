@@ -13,7 +13,7 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
   galleryImages(category)
       
   } )
-  })
+  } )
   
 function galleryImages(filter) {
   let HTML = "";

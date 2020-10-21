@@ -1,18 +1,15 @@
 .container.works {
     display: inline-block;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
  .row.works {
      display: inline-block;
      text-align: center;
-     padding-bottom: 50px;
-     }
+     
+ }
 
 .row.works > h2 {
-    padding-top: 80px;
     font-size: 40px;
     position: absolute;
     left: 50%;
@@ -37,7 +34,7 @@
 
 .row.works > .filter-buttons {
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 140px;
     padding-bottom: 50px;
 }
 .row.works > .filter-buttons > span {
@@ -61,26 +58,20 @@
     right: 100%;
     bottom: -3px;
     background-color: #111;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 .row.works > .filter-buttons > span.active::after {
     left: 0;
-    right: 1%;
+    right: 15%;
 }
-.row.works > .gallery {
+.gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 20px;
+    width: 80%;
+    margin: auto;
 }
-    .item {
-        width: 100%;
-        transition: all 0.5s;
-    }
-    .item.active {
-        top: 1%;
-        left: auto;
-    }
 .row.works > .gallery > div > .galerija {
     width: 96%;
 }
@@ -109,7 +100,7 @@
 }
 .overlay:hover > .gallery-title {
     font-size: 14px;
-    transition: all 0.5s;
+    transition: all .5s;
     margin-bottom: 40px;
 }
 .chain, .zoom-in{
@@ -162,7 +153,6 @@
     background-color: black;
     border: 2px solid white;
 }
-
 @media ( max-width: 1300px ) {
     .container.works  {
         width: 1150px;
