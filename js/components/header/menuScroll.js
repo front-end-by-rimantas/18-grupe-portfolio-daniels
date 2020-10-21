@@ -26,7 +26,7 @@ function menuScroll(menuDate) {
         }
 
         // papildomi pakeitimai
-        document.getElementById("particles-js").style.height = "690px";
+        document.getElementsByClassName("particles-js")[0].style.height = "690px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "-10px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#000";
 
@@ -57,7 +57,7 @@ function menuScroll(menuDate) {
         }
 
         // papildomi pakeitimai
-        document.getElementById("particles-js").style.height = "752px";
+        document.getElementsByClassName("particles-js")[0].style.height = "752px";
         document.querySelector(".container>header>.menuChoices").style.marginTop = "0px";
         document.getElementsByClassName("menuChoices")[0].style.color = "#fff";
     }
@@ -66,24 +66,25 @@ function menuScroll(menuDate) {
 
     let lengthLinks = document.querySelectorAll(".container>header p").length;
     for (let i = 0; i < lengthLinks; i++) {
-        document.querySelectorAll(".container>header p")[i].style.borderBottom = null;
+        document.querySelectorAll("nav p")[0].classList.remove("active");
     }
 
     // pabraukimas apacioj menu
     if (window.innerWidth > 800) {
         let totalHeightMenu = -200;
+
+
         for (let i = 0; i <= menuDate.length; i++) {
             totalHeightMenu += document.querySelectorAll(".container")[i].scrollHeight;
-            if (i > 0) {
-                if (document.body.scrollTop >= totalHeightMenu || document.documentElement.scrollTop >= totalHeightMenu) {
-                    document.querySelectorAll("nav p")[i].style.borderBottom = "solid 2px #000";
-                    let x = i - 1;
-                    if (x > -1) {
-                        document.querySelectorAll("nav p")[x].style.borderBottom = "solid 2px #fff";
-                    }
-                }
-            } else {
-                document.querySelectorAll("nav p")[0].style.borderBottom = "solid 2px #fff";
+            // document.querySelectorAll("nav p")[i].classList.remove("active");
+            if (document.body.scrollTop >= totalHeightMenu || document.documentElement.scrollTop >= totalHeightMenu) {
+                let z = i - 1;
+                let x = i + 1;
+                if (z < 1) { z = 0 }
+                if (x > menuDate.length - 2) { x = menuDate.length - 1 }
+                document.querySelectorAll("nav p")[z].classList.remove("active");
+                document.querySelectorAll("nav p")[x].classList.remove("active");
+                document.querySelectorAll("nav p")[i].classList.add("active");
             }
         }
     }
