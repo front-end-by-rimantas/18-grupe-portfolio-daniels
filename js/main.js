@@ -49,8 +49,8 @@ renderContact(contactUs);
 
 // Works
 
-import { lightboxImg } from './works.js';
-import { galleryImages } from './works.js';
+import { lightboxImg } from './components/works/works.js';
+import { galleryImages } from './components/works/works.js';
 
 galleryImages(filter);
 lightboxImg();

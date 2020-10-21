@@ -1,4 +1,4 @@
-import portfolio from './data/worksdata.js';
+import portfolio from '../../data/worksdata.js';
 
 
 const filterbuttons=document.querySelectorAll('.filter-buttons span');
