@@ -1,43 +1,42 @@
 const clientNumbers = document.querySelectorAll('.counter');
-const speed = 900;
-let z = 0;
+const speed = 10;
 
-
-window.onscroll = () => {
+// window.onscroll = numbersOnScroll();
+function numbersOnScroll() {
+    // window.onscroll = () => {
     const windowHeight = window.pageYOffset;
     const clientNumbersHeight = document.querySelector(".clientNumbers").offsetTop;
+    // console.log(windowHeight);
     if (Math.round(windowHeight / 100) > Math.round((clientNumbersHeight / 100) - 5)) {
+        // console.log(clientNumbers);
+        for (const counter of clientNumbers) {
+            // console.log(counter);
+            let i = 0;
+            const interval = setInterval(() => {
 
-
-        clientNumbers.forEach(counter => {
-
-
-            const updateCount = () => {
-                const windowHeight = window.pageYOffset;
-                {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-
-                    const loadSpeed = target / speed;
-
-                    if (count < target && target !== 9450) {
-                        counter.innerText = Math.ceil(count + loadSpeed);
-                        setTimeout(updateCount, 1)
-                    } if (count < target && target == 9450) {
-                        counter.innerText = Math.floor(count + loadSpeed);
-                        setTimeout(updateCount, 1)
-                    }
-                    else {
-                        count.innerText = target;
-                    }
+                let count = parseInt(counter.innerText);
+                const target = parseInt(counter.getAttribute('data-target'));
+                const loadSpeed = Math.floor(target / speed);
+                count += loadSpeed;
+                // console.log(count);
+                if (count < target) {
+                    counter.innerText = `${count}`;
                 }
-
-            }
-
-            updateCount()
-        })
+                else {
+                    counter.innerText = `${target}`;
+                    clearInterval(interval);
+                }
+            }, 50);
+        }
+        window.removeEventListener('scroll', numbersOnScroll);
     }
 };
+
+
+
+
+export default numbersOnScroll;
+// export default updateCount
 
 // onscroll logikos pavyzdys
 
