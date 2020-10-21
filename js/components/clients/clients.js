@@ -33,8 +33,6 @@ function numbersOnScroll() {
 };
 
 
-
-
 export default numbersOnScroll;
 // export default updateCount
 

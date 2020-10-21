@@ -9,7 +9,6 @@ function renderClients(data) {
     const clientsDOM = document.getElementsByClassName('renderClients')[0];
     clientsDOM.innerHTML += HTML;
 }
-
 // function pirmasDot() {
 //     document.querySelector(".testimonials").style.marginLeft = "0%";
 // }
@@ -25,7 +24,6 @@ function renderClients(data) {
 // dot1.addEventListener('click' pirmasDot);
 // dot2.addEventListener('click' antrasDot);
 // dot3.addEventListener('click' treciasDot);
-
 
 
 

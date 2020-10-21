@@ -25,6 +25,17 @@ function include(file) {
 }
 include('./js/components/home/particles.min.js');
 
+
+// clients
+import numbersOnScroll from './components/clients/clients.js';
+
+
+import renderClients from './components/clients/renderClients.js';
+import { clientsData } from './data/clientsData.js';
+renderClients(clientsData);
+import { renderTestimonials } from './components/clients/renderTestimonials.js'
+renderTestimonials();
+
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
 window.onresize = function () {
     //header
@@ -35,6 +46,7 @@ window.onresize = function () {
 window.onscroll = function () {
     //header
     menuScroll(headerData);
+    numbersOnScroll();
 }
 
 // services - contacts 

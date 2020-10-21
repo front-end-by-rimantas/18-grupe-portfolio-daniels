@@ -1,3 +1,16 @@
+
+function renderTestimonials() {
+
+
+
+
+}
+
+
+
+
+export { renderTestimonials };
+
 // import renderSingleClients from './renderSingleClients.js';
 // import renderClients from './renderClients.js';
 
@@ -23,12 +36,6 @@
 //     let HTML = 'hello';
 
 // }
-
-
-
-
-
-
 
 // function renderClients(data) {
 //     let HTML = '';
@@ -61,4 +68,3 @@
 
 
 
-// export default renderTestimonials;
