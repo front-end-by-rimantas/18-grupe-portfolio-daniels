@@ -66,3 +66,4 @@ function lightboxImg () {
     lightbox.classList.remove('active')
   })
 }
+
