@@ -108,3 +108,86 @@
     background: #eee;
     color: #1c1c1c;
 }
+@media only screen and (max-width: 1200px) {
+    .contact>.renderedDiv {
+        width: 990px;
+        padding-left: 75px;
+    }
+    .contact>.renderedDiv>.contact-row {
+        width: 280px;
+        margin-left: 0px;
+    }
+    .contact>.form>.form-name {
+        width: 405px;
+        margin-left: 75px;
+    }
+    .contact>.form>.form-email {
+        width: 405px;
+        margin-left: 25px;
+    }
+    .contact>.form-group {
+        margin-left: 75px;
+    }
+    .contact>.form-group>.form_message {
+        width: 840px;
+        max-width: 840px;
+    }
+    .contact>.btn {
+        margin-left: 75px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact>.renderedDiv {
+        width: 90%;
+    }
+    .contact>.renderedDiv>.contact-row {
+        width: 96%;
+        height: 100px;
+    }
+    .contact>.form>.form-name {
+        width: 645px;
+        margin-left: 75px;
+        margin-bottom: 20px;
+    }
+    .contact>.form>.form-email {
+        width: 645px;
+        margin-left: 75px;
+    }
+    .contact>.form-group {
+        margin-left: 75px;
+    }
+    .contact>.form-group>.form_message {
+        width: 645px;
+        max-width: 645px;
+    }
+    .contact>.btn {
+        margin-left: 75px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .contact>.renderedDiv {
+        width: 100%;
+    }
+    .contact>.renderedDiv>.contact-row {
+        
+    }
+    .contact>.form>.form-name {
+        width: 100px;
+        margin-left: 75px;
+        margin-bottom: 20px;
+    }
+    .contact>.form>.form-email {
+        width: 645px;
+        margin-left: 75px;
+    }
+    .contact>.form-group {
+        margin-left: 75px;
+    }
+    .contact>.form-group>.form_message {
+        width: 645px;
+        max-width: 645px;
+    }
+    .contact>.btn {
+        margin-left: 75px;
+    }
+}

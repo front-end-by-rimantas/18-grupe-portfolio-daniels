@@ -3,21 +3,6 @@
         display: grid;
         grid-template-columns: 90px 1fr 90px;
     }
-    .container>.contact>.renderedDiv>.contact-row {
-        margin-left: 65px;
-    }
-    .container>.contact>.form>.form-name {
-        margin-left: 65px;
-    }
-    .container>.contact>.form>.form-email {
-        margin-left: 65px;
-    }
-    .container>.contact>.form-group {
-        margin-left: 65px;
-    }
-    .container>.contact>.btn {
-        margin-left: 65px;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
