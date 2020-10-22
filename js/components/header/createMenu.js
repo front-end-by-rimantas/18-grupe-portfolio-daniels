@@ -1,5 +1,5 @@
-import { isHeaderDateValid } from '../header/isHeaderDataValid.js';
-// import {} from './isHeaderDataValid.test.js';
+import { isHeaderDateValid } from './isHeaderDataValid.js';
+import {} from './isHeaderDataValid.test.js';
 
 // sukuria meniu is datos
 function createMenu(menuDate) {
@@ -12,7 +12,7 @@ function createMenu(menuDate) {
         document.querySelector("nav").innerHTML += `<p>${nameThisMenu}</p>`;
     }
     // uzkraunant Home pabraukiamas
-    document.querySelectorAll("nav p")[0].style.borderBottom = "solid 2px #fff";
+    document.querySelectorAll("nav p")[0].classList.add("active");
 }
 
 export { createMenu }

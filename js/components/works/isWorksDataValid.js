@@ -1,21 +1,21 @@
-function isHeaderDateValid(headerData) {
+function isWorksDataValid(data) {
     let errors = [];
 
-    if (typeof headerData !== 'object' || headerData === null) {
-        console.log('headerData must be object.');
+    if (typeof data !== 'object' || data === null) {
+        console.log('data must be object.');
         return false;
     }
-    if (headerData.length < 1 || Object.keys(headerData).length < 1) {
+    if (data.length < 1 || Object.keys(data).length < 1) {
         errors.push('here is no data.');
     }
-    if (typeof headerData.menuTitle !== 'string') {
+    if (typeof data.works.title !== 'string') {
         console.log('menu title must be string.');
         return false;
     }
-    if (headerData.menuTitle.length < 2 || headerData.menuTitle.length > 15) {
+    if (data.works.title.length < 2 || data.works.title.length > 15) {
         errors.push('menu title length must be 2-15 symbols.');
     }
-    if (!/^[a-zA-Z]+$/.test(headerData.menuTitle)) {
+    if (!/^[a-zA-Z]+$/.test(data.works.title)) {
         errors.push('Menu title must contains only letters.');
     }
 
@@ -27,4 +27,4 @@ function isHeaderDateValid(headerData) {
     }
     return true;
 }
-export { isHeaderDateValid }
+export { isWorksDataValid }
