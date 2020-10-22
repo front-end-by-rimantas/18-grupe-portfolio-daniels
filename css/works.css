@@ -197,6 +197,9 @@
     .container.works .row.works {
         margin: auto;
     }
+    .overlay {
+        display: none;
+    }
     .gallery {
         display: inline-block;        
     }
@@ -226,7 +229,7 @@
 @media ( max-width: 400px ) {
     .row.works > .filter-buttons > span {
         margin: 0px;
-        padding: 8px;
+        padding: 0px 8px;
     }
     .row.works > .filter-buttons > span.active::after {
         left: 9%;
