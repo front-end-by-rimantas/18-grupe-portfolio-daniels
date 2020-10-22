@@ -6,7 +6,7 @@
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    height: 570px;
+    height: 590px;
 }
 .rowBlog{
     height:420px;
@@ -31,9 +31,8 @@
     color: #343434;
     z-index: 1;
 }  
-.blog .fa-circle{
-    color:blue;
-}
+
+
     .blog-head>h3:after {
         content: '';
         background-image: url(../img/dots.png);
@@ -121,31 +120,31 @@
 /* dots 
 ====================*/
 
-.blog>.blog_dots {
-    position: relative;
-    margin-top: 10px;
-    display: block;
-    text-align: center;
-}
 
-.blog_dots>.blog_dot {
-    display: inline-block;
-    zoom: 1;
+.blog .fa-circle{
+    color: #d6d6d6;
+    width: 14px;
+    height: 5px;
+    margin: 5px 7px;
+    margin-top: 20px;
+    font-weight: 400;
+    transition: color 06 ease;
     cursor: pointer;
 }
 
-.blog_dot>.dot {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
-    border-radius: 30px;
-    background: #d6d6d6;
-    display: inline-block;
-    text-align: center;
-    font-weight: 400;
-    transition: background-color 06 ease;
+
+
+
+.blog .active, .fa-circle:hover {
+    color: #717171;
 }
+
+/* .blog .fa-circle.active {
+    color: #717171;
+} */
+
+
+
 
 .blog_dot>.dot:hover {
     background-color: #717171;

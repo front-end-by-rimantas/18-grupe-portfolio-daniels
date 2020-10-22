@@ -5,7 +5,7 @@ function slidesGenerate() {
     document.querySelector('.rowBlog').style.width = `${widthItem}px`;
     totalItems -= 2;
     for (let i = 0; i < totalItems; i++) {
-        document.querySelector('.blog .slides').innerHTML += `<i class="fa fa-circle" aria-hidden="true"></i>`;
+        document.querySelector('.blog .slides').innerHTML += `<i class="fa fa-circle active" aria-hidden="true"></i>`;
 
     }
     for (let i = 0; i < totalItems; i++) {
@@ -15,7 +15,13 @@ function slidesGenerate() {
 
         });
     }
+    let btns = document.querySelectorAll(".fa-circle");
+    Array.from(btns).forEach(item => {
+        item.addEventListener("click", () => {
+            let selected = document.getElementsByClassName("active");
+            selected[0].className = selected[0].className.replace("active", "");
+            item.className += "active";
+        });
+    });
 }
-
-
 export { slidesGenerate }
