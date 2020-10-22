@@ -128,12 +128,11 @@
     display: inline-block;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-radius: 5px;
     background-color: black;
-    animation-name: loading;
-    animation-duration: 1s;
+    transition: width 1s;
 }
 
 .progress_bar .items .bar span>.barwidth:after {
@@ -144,16 +143,6 @@
     font-size: 12px;
     right: 10px;
 }
-
-@keyframes loading {
-    10% {
-        width: 10%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
 
 /* Navigation
 ========================== */
