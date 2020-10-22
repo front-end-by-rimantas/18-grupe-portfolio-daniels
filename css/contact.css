@@ -12,7 +12,7 @@
     display: inline-block;
     width: 300px;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-bottom: 50px;
 }
 .contact>.renderedDiv>.contact-row:hover .fa {
@@ -50,12 +50,12 @@
 }
 .contact>.form>.form-name {
     display: inline-block;
-    width: 450px;
-    margin-left: 45px;
+    width: 500px;
+    margin-left: 65px;
 }
 .contact>.form>.form-email {
     display: inline-block;
-    width: 450px;
+    width: 495px;
     margin-left: 30px;
 }
 .contact>.form>.form-name>input {
@@ -80,13 +80,13 @@
     display: inline-block;
     width: 400px;
     height: 100px;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-top: 15px;
 
 }
 .contact>.form-group>.form_message {
-    width: 935px;
-    max-width: 935px;
+    width: 1030px;
+    max-width: 1030px;
     height: 150px;
     max-height: 150px;
     border: 0;
@@ -107,7 +107,7 @@
     border-radius: 5px;
     font-size: 13px;
     transition: all .5s;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-top: 70px;
     margin-bottom: 80px;
 }
@@ -145,14 +145,14 @@
 }
 @media only screen and (max-width: 1000px) {
     .contact>.renderedDiv {
-        width: 90%;
+        width: 80%;
     }
     .contact>.renderedDiv>.contact-row {
         width: 96%;
         height: 100px;
     }
     .contact>.form {
-        width: 80%;
+        width: 72%;
         margin-left: 75px;
     }
     .contact>.form>.form-name {
@@ -165,7 +165,7 @@
         margin-left: 0;
     }
     .contact>.form-group {
-        width: 80%;
+        width: 71%;
         margin-left: 75px;
     }
     .contact>.form-group>.form_message {
@@ -177,15 +177,20 @@
     }
 }
 @media only screen and (max-width: 700px) {
+    .contact>h1 {
+        width: 64%;
+    }
     .contact>.renderedDiv {
-        width: 92%;
+        width: 60%;
+        margin-left: 0;
     }
     .contact>.renderedDiv>.contact-row {
         width: 100%;
+        margin-left: 0;
     }
     .contact>.form {
-        width: 80%;
-        margin-left: 75px;
+        width: 60%;
+        margin-left: 0;
     }
     .contact>.form>.form-name {
         width: 100%;
@@ -197,14 +202,14 @@
         margin-left: 0;
     }
     .contact>.form-group {
-        width: 80%;
-        margin-left: 75px;
+        width: 60%;
+        margin-left: 0;
     }
     .contact>.form-group>.form_message {
         width: 100%;
         max-width: 100%;
     }
     .contact>.btn {
-        margin-left: 75px;
+        margin-left: 0;
     }
 }
