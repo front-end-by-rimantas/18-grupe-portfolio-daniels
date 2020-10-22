@@ -1,32 +1,21 @@
-const slideIndex = 1;
-showSlides(slideIndex);
 
-// next/previous controls 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("item");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active ", "");
+function slidesGenerate() {
+    let totalItems = document.querySelectorAll('.row.blog >.item').length;
+    const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 60) * totalItems;
+    document.querySelector('.rowBlog').style.width = `${widthItem}px`;
+    totalItems -= 2;
+    for (let i = 0; i < totalItems; i++) {
+        document.querySelector('.blog .slides').innerHTML += `<i class="fa fa-circle" aria-hidden="true"></i>`;
 
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active ";
+    for (let i = 0; i < totalItems; i++) {
+        document.querySelectorAll('.blog .fa-circle')[i].addEventListener('click', () => {
+            const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 50) * i;
+            document.querySelector('.blog .rowBlog').style.marginLeft = `-${widthItem}px`;
+
+        });
+    }
 }
-export { showSlides }
-export { plusSlides }
-export { currentSlide }
+
+
+export { slidesGenerate }

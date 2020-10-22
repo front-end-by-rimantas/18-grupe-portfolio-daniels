@@ -52,10 +52,6 @@ renderContact(contactUs);
 
 // blogs carousel/slideshow 
 
-import showSlides from './blog.js'
-import plusSlides from './blog.js'
-import currentSlide from './blog.js'
+import { slidesGenerate } from './blog.js'
 
-showSlides();
-plusSlides();
-currentSlide();
+slidesGenerate();

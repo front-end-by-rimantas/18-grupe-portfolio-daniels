@@ -6,14 +6,21 @@
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    margin-left: 15px;
-    margin-right: 15px;
+    height: 570px;
 }
-
+.rowBlog{
+    height:420px;
+    width: 0px;
+    transition: 1s;
+    /* margin-left: -380px; */
+}
 .row.blog>.blog-head {
     margin-bottom: 80px;
     text-align: center;
-    
+}
+.slides{
+    width:100%;
+    text-align: center;
 }
 .blog-head>h3 {
     display: inline-block;
@@ -24,7 +31,9 @@
     color: #343434;
     z-index: 1;
 }  
-
+.blog .fa-circle{
+    color:blue;
+}
     .blog-head>h3:after {
         content: '';
         background-image: url(../img/dots.png);
@@ -41,14 +50,15 @@
 ================== */
 
 
-.row.blog .item {
-    display: none;
-    width: 31%;
+.row.blog >.item {
+    /* display: none; */
+    width: 352px;
     float: left;
     height: 410px;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    margin-right: 20px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block; 
 }
 
 .row.blog .item>.content {
