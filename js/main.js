@@ -29,12 +29,12 @@ include('./js/components/home/particles.min.js');
 // clients
 import numbersOnScroll from './components/clients/clients.js';
 
-
 import renderClients from './components/clients/renderClients.js';
 import { clientsData } from './data/clientsData.js';
 renderClients(clientsData);
 import { renderTestimonials } from './components/clients/renderTestimonials.js'
-renderTestimonials();
+// import { renderTestimonials2 } from './components/clients/renderTestimonials.js'
+renderTestimonials(clientsData);
 
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
 window.onresize = function () {

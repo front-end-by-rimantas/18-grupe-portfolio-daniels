@@ -1,15 +1,30 @@
-
-function renderTestimonials() {
-
-
-
-
-}
+// const dot1 = document.querySelector(".dotsBtn1")
+// const dot2 = document.querySelector(".dotsBtn2")
+// const dot3 = document.querySelector(".dotsBtn3")
 
 
+// function renderTestimonials() {
+//     const dot2 = document.querySelector(".dotsBtn2");
+//     const dot1 = document.querySelector(".dotsBtn1");
+//     const dot3 = document.querySelector(".dotsBtn3");
+//     dot1.addEventListener('click', pirmaSkaidre)
+//     dot2.addEventListener('click', antraSkaidre)
+//     dot3.addEventListener('click', treciaSkaidre)
+// }
+
+// // dot2.addEventListener('click', pirmaSkaidre)
+
+// function pirmaSkaidre() {
+//     return document.querySelector(".clientOne").style.marginLeft = "calc(300px)";
+// }
+// function antraSkaidre() {
+//     return document.querySelector(".clientOne").style.marginLeft = "calc(300px - 34.2%)";
+// }
+// function treciaSkaidre() {
+//     return document.querySelector(".clientOne").style.marginLeft = "calc(300px - 68%)";
+// }
 
 
-export { renderTestimonials };
 
 // import renderSingleClients from './renderSingleClients.js';
 // import renderClients from './renderClients.js';
@@ -68,3 +83,23 @@ export { renderTestimonials };
 
 
 
+function renderTestimonials(data) {
+    let totalItems = data.length;
+    const widthItem = (document.querySelectorAll('.clientSlide')[0].offsetWidth) * totalItems * 3;
+
+    // document.querySelector('.renderClients').style.width = `${widthItem}px`;
+    for (let i = 0; i < totalItems; i++) {
+        document.querySelector('.clients .nav').innerHTML += `<i class="fa fa-circle" aria-hidden="true"></i>`;
+
+    }
+    for (let i = 0; i < totalItems; i++) {
+        document.querySelectorAll('.clients .nav .fa-circle')[i].addEventListener('click', () => {
+            const widthItem = (document.querySelectorAll('.clientSlide')[0].offsetWidth) * i;
+            document.querySelector('.renderClients').style.marginLeft = `-${widthItem}px`;
+
+        });
+    }
+}
+
+
+export { renderTestimonials };
