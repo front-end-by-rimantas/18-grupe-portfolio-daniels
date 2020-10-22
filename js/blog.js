@@ -1,7 +1,7 @@
 
 function slidesGenerate() {
     let totalItems = document.querySelectorAll('.row.blog >.item').length;
-    const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 60) * totalItems;
+    const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 50) * totalItems;
     document.querySelector('.rowBlog').style.width = `${widthItem}px`;
     totalItems -= 2;
     for (let i = 0; i < totalItems; i++) {
@@ -10,7 +10,7 @@ function slidesGenerate() {
     }
     for (let i = 0; i < totalItems; i++) {
         document.querySelectorAll('.blog .fa-circle')[i].addEventListener('click', () => {
-            const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 50) * i;
+            const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 60) * i;
             document.querySelector('.blog .rowBlog').style.marginLeft = `-${widthItem}px`;
 
         });

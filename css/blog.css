@@ -6,12 +6,12 @@
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    height: 590px;
+    height: 610px;
 }
 .rowBlog{
     height:420px;
     width: 0px;
-    transition: 1s;
+    transition: .5s;
     /* margin-left: -380px; */
 }
 .row.blog>.blog-head {
@@ -51,10 +51,11 @@
 
 .row.blog >.item {
     /* display: none; */
-    width: 352px;
+    width: 340px;
     float: left;
     height: 410px;
-    margin-right: 20px;
+    margin-right: 0;
+    margin-left: 35px;
     box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: inline-block; 
@@ -121,6 +122,10 @@
 ====================*/
 
 
+.blog .slides {
+    margin-top: 15px;
+}
+
 .blog .fa-circle{
     color: #d6d6d6;
     width: 14px;
@@ -131,9 +136,6 @@
     transition: color 06 ease;
     cursor: pointer;
 }
-
-
-
 
 .blog .active, .fa-circle:hover {
     color: #717171;
