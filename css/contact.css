@@ -118,7 +118,7 @@
 @media only screen and (max-width: 1200px) {
     .contact>.renderedDiv {
         width: 990px;
-        padding-left: 75px;
+        margin-left: 75px;
     }
     .contact>.renderedDiv>.contact-row {
         width: 280px;
@@ -145,43 +145,41 @@
 }
 @media only screen and (max-width: 1000px) {
     .contact>.renderedDiv {
-        width: 80%;
+        width: 95%;
+        margin-left: 2.5%;
     }
     .contact>.renderedDiv>.contact-row {
         width: 96%;
         height: 100px;
     }
     .contact>.form {
-        width: 72%;
-        margin-left: 75px;
+        width: 94%;
+        margin-left: 0px;
     }
     .contact>.form>.form-name {
-        width: 98%;
+        width: 97.3%;
         margin-bottom: 20px;
-        margin-left: 0;
+        margin-left: 2.7%;
     }
     .contact>.form>.form-email {
-        width: 98%;;
-        margin-left: 0;
+        width: 97.3%;;
+        margin-left: 2.7%;
     }
     .contact>.form-group {
-        width: 71%;
-        margin-left: 75px;
+        width: 91.3%;
+        margin-left: 2.7%;
     }
     .contact>.form-group>.form_message {
-        width: 98%;
+        width: 100%;
         max-width: 100%;
     }
     .contact>.btn {
-        margin-left: 75px;
+        margin-left: 2.5%;
     }
 }
 @media only screen and (max-width: 700px) {
-    .contact>h1 {
-        width: 64%;
-    }
     .contact>.renderedDiv {
-        width: 60%;
+        width: 100%;
         margin-left: 0;
     }
     .contact>.renderedDiv>.contact-row {
@@ -189,7 +187,7 @@
         margin-left: 0;
     }
     .contact>.form {
-        width: 60%;
+        width: 100%;
         margin-left: 0;
     }
     .contact>.form>.form-name {
@@ -202,7 +200,7 @@
         margin-left: 0;
     }
     .contact>.form-group {
-        width: 60%;
+        width: 100%;
         margin-left: 0;
     }
     .contact>.form-group>.form_message {
