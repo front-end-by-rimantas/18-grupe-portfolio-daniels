@@ -45,9 +45,9 @@
     margin: 0 18px;
     position: relative;
     color: #222;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -55,17 +55,17 @@
     display: inline-block;
     content: '';
     position: absolute;
-    height: 2px;
+    height: 1px;
     left: 0;
     right: 100%;
-    bottom: -3px;
+    bottom: -2px;
     background-color: #111;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .row.works > .filter-buttons > span.active::after {
     left: 0;
-    right: 3%;
+    right: 2%;
 }
 .gallery {
     display: grid;
@@ -94,7 +94,7 @@
     height: 100%;
     left: 0%;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 .overlay:hover{ 
     opacity: 0.6;
