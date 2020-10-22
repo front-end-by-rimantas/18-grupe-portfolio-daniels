@@ -65,7 +65,7 @@
 
 .row.works > .filter-buttons > span.active::after {
     left: 0;
-    right: 1%;
+    right: 3%;
 }
 .gallery {
     display: grid;

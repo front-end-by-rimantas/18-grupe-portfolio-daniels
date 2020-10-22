@@ -13,7 +13,7 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
   galleryImages(category)
       
   } )
-  } )
+  })
   
 function galleryImages(filter) {
   let HTML = "";
@@ -46,7 +46,7 @@ galleryImages("all");
 
 function lightboxImg () {
   const lightbox = document.createElement('div')
-  lightbox.className = 'lightbox'
+  lightbox.classList = 'lightbox'
   document.body.appendChild(lightbox)
   const images = document.querySelectorAll('.gallery .item');
 
