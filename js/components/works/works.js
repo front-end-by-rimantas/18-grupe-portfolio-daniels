@@ -1,37 +1,4 @@
-"use strict";
-
-const portfolio = [
-  {
-    img: "./img/1.jpg",
-    title: "Web Design",
-    category: ["all", "brand"],
-  },
-  {
-    img: "./img/2.jpg",
-    title: "Web Design",
-    category: ["all", "graphic"],
-  },
-  {
-    img: "./img/3.jpg",
-    title: "Web Design",
-    category: ["all", "design"],
-  },
-  {
-    img: "./img/4.jpg",
-    title: "Web Design",
-    category: ["all", "brand"],
-  },
-  {
-    img: "./img/5.jpg",
-    title: "Web Design",
-    category: ["all", "graphic"],
-  },
-  {
-    img: "./img/6.jpg",
-    title: "Web Design",
-    category: ["all", "design"],
-  },
-];
+import portfolio from '../../data/worksdata.js';
 
 
 const filterbuttons=document.querySelectorAll('.filter-buttons span');
@@ -46,7 +13,7 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
   galleryImages(category)
       
   } )
-  })
+  } )
   
 function galleryImages(filter) {
   let HTML = "";
@@ -79,7 +46,7 @@ galleryImages("all");
 
 function lightboxImg () {
   const lightbox = document.createElement('div')
-  lightbox.id = 'lightbox'
+  lightbox.className = 'lightbox'
   document.body.appendChild(lightbox)
   const images = document.querySelectorAll('.gallery .item');
 
@@ -99,3 +66,6 @@ function lightboxImg () {
     lightbox.classList.remove('active')
   })
 }
+
+export { lightboxImg };
+export { galleryImages };
