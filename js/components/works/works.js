@@ -28,7 +28,7 @@ function galleryImages(filter) {
         <img src="${image.img}" alt="images" data-category="${image.category}" class="galerija">
             <div class="overlay">
                 <div>
-                <span class="gallery-title"> ${image.title} <span>
+                <span class="gallery-title"> ${image.title} </span>
                 <div class="gallery-icons">
                 <i class="chain fa fa-chain-broken" aria-hidden="true" ></i>
                 <i class="zoom-in fa fa-search-plus" ></i>
