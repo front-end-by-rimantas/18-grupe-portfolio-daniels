@@ -64,6 +64,22 @@ renderServices(services);
 renderContact(contactUs);
 
 
+//tests data
+// import {} from './isHeaderDataValid.test.js'; (js/header/createMenu.js)
+
+
+// blogs carousel/slideshow 
+
+import blogData from './data/blogData.js'
+import renderBlog from './components/blog/renderBlog.js';
+
+renderBlog(blogData);
+
+import { slidesGenerate } from './components/blog/blog.js'
+
+slidesGenerate();
+
+
 // Works
 
 import { lightboxImg } from './components/works/works.js';
