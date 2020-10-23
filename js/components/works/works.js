@@ -6,7 +6,7 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
 
   filterbuttons.forEach(btn => {
     btn.addEventListener('click', function() {
-    document.querySelector('.active').classList.remove("active")
+    document.querySelector('.filter-buttons .active').classList.remove("active")
     btn.classList.toggle("active");
 
   const category = btn.dataset.category
