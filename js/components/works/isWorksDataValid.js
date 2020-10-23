@@ -1,23 +1,21 @@
-import portfolio from "../../data/worksdata";
-
-function isWorksDataValid(portfolio) {
+function isWorksDataValid(data) {
     let errors = [];
 
-    if (typeof portfolio !== 'object' || portfolio === null) {
-        console.log('data must be object.');
+    if (typeof data !== 'object' || data === null) {
+        console.log('Data must be object.');
         return false;
     }
-    if (portfolio.length < 1 || Object.keys(portfolio).length < 1) {
-        errors.push('here is no data.');
+    if (data.length < 1 || Object.keys(data).length < 1) {
+        errors.push('Data not found.');
     }
-    if (typeof portfolio.works.title !== 'string') {
-        console.log('menu title must be string.');
+    if (typeof data.textPrinted !== 'string') {
+        console.log('Menu title must be string.');
         return false;
     }
-    if (portfolio.works.title.length < 2 || portfolio.works.title.length > 15) {
-        errors.push('menu title length must be 2-15 symbols.');
+    if (data.textPrinted.length < 2 || data.textPrinted.length > 15) {
+        errors.push('Menu title length must be 2-15 symbols.');
     }
-    if (!/^[a-zA-Z]+$/.test(portfolio.works.title)) {
+    if (!/^[a-zA-Z ]+$/.test(data.textPrinted)) {
         errors.push('Menu title must contains only letters.');
     }
 
@@ -29,4 +27,4 @@ function isWorksDataValid(portfolio) {
     }
     return true;
 }
-export { isWorksDataValid }
+export { isWorksDataValid };
