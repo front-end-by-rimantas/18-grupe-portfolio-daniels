@@ -26,6 +26,15 @@ function include(file) {
 include('./js/components/home/particles.min.js');
 
 
+// clients
+import numbersOnScroll from './components/clients/clients.js';
+
+import renderClients from './components/clients/renderClients.js';
+import { clientsData } from './data/clientsData.js';
+renderClients(clientsData);
+import { renderTestimonials } from './components/clients/renderTestimonials.js'
+// import { renderTestimonials2 } from './components/clients/renderTestimonials.js'
+renderTestimonials(clientsData);
 
 // about onscroll
 import { aboutOnScroll } from './about.js';
@@ -40,6 +49,7 @@ window.onresize = function () {
 window.onscroll = function () {
     //header
     menuScroll(headerData);
+    numbersOnScroll();
     aboutOnScroll();
 }
 
