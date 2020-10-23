@@ -60,6 +60,11 @@ renderContact(contactUs);
 
 // blogs carousel/slideshow 
 
+import blogData from './data/blogData.js'
+import renderBlog from './components/blog/renderBlog.js';
+
+renderBlog(blogData);
+
 import { slidesGenerate } from './components/blog/blog.js'
 
 slidesGenerate();

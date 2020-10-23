@@ -1,7 +1,7 @@
 
 function slidesGenerate() {
-    let totalItems = document.querySelectorAll('.row.blog >.item').length;
-    const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 50) * totalItems;
+    let totalItems = document.querySelectorAll('.rowBlog >.blog-items').length;
+    const widthItem = (document.querySelectorAll('.blog-items')[0].offsetWidth + 50) * totalItems;
     document.querySelector('.rowBlog').style.width = `${widthItem}px`;
     totalItems -= 2;
     for (let i = 0; i < totalItems; i++) {
@@ -12,12 +12,12 @@ function slidesGenerate() {
     }
     for (let i = 0; i < totalItems; i++) {
         document.querySelectorAll('.blog .fa-circle')[i].addEventListener('click', () => {
-            const widthItem = (document.querySelectorAll('.item')[0].offsetWidth + 30) * i;
+            const widthItem = (document.querySelectorAll('.blog-items')[0].offsetWidth + 60) * i;
             document.querySelector('.blog .rowBlog').style.marginLeft = `-${widthItem}px`;
             for (let z = 0; z < totalItems; z++) {
-                document.querySelectorAll('.blog .fa-circle')[z].classList.remove("active");
+                document.querySelectorAll('.fa-circle')[z].classList.remove("active");
             }
-            document.querySelectorAll('.blog .fa-circle')[i].classList.add("active");
+            document.querySelectorAll('.fa-circle')[i].classList.add("active");
 
         });
 
