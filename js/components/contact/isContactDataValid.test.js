@@ -1,7 +1,10 @@
 import { Tester } from '../Tester.js';
 import { isContactDataValid } from './isContactDataValid.js';
+import { isTestsOn } from '../../isTestsOn.js';
 
-const test = new Tester('Services');
+
+if (isTestsOn() == true) {
+    const test = new Tester('Services');
 
 test.excepted(isContactDataValid({}), false);
 test.excepted(isContactDataValid([]), false);
@@ -39,3 +42,4 @@ test.excepted(isContactDataValid({ title: `Zoro` }), true);
 test.excepted(isContactDataValid({ title: `Zoro` }), true);
 
 test.runTest();
+}
