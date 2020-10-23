@@ -15,7 +15,7 @@
     font-size: 40px;
     position: absolute;
     left: 50%;
-    margin-top: 50px;
+    margin-top: 60px;
     color: #343434;
     transform: translate(-50%, 0);
     font-family: 'Montserrat', sans-serif;
@@ -163,6 +163,10 @@
     .container.works  {
         width: 1150px;
         margin: 80px calc(50% - 575px);
+        margin-top: 0px;
+    }
+    .row.works > h2 {
+        margin-top: 60px;
     }
 }
 @media ( max-width: 1200px ) {
