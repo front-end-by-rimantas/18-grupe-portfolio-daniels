@@ -114,6 +114,7 @@
     width: 35px;
     height: 35px;
     margin-top: 10px;
+    cursor: pointer;
     color: white;
     border-radius: 50%;
     border: 1px solid black;
