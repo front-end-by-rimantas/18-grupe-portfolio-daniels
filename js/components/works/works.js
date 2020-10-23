@@ -1,4 +1,6 @@
 import portfolio from '../../data/worksData.js';
+import { isWorksDataValid } from './isWorksDataValid.js';
+import {} from './isWorksDataValid.test.js';
 
 
 const filterbuttons=document.querySelectorAll('.filter-buttons span');
@@ -22,7 +24,12 @@ function galleryImages(filter) {
 
 
   portfolio.forEach(image => {
+    if (!isWorksDataValid(image)) {
+      return '';
+  }
    if (image.category.includes(filter)){
+
+
     HTML = `
     <div class="item" data-src="${image.img}">
         <img src="${image.img}" alt="images" data-category="${image.category}" class="galerija">

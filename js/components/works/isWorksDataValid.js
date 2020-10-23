@@ -1,3 +1,4 @@
+
 function isWorksDataValid(data) {
     let errors = [];
 
@@ -5,20 +6,26 @@ function isWorksDataValid(data) {
         console.log('Data must be object.');
         return false;
     }
-    if (data.length < 1 || Object.keys(data).length < 1) {
-        errors.push('Data not found.');
+    if (!/^[a-zA-Z0-9./]+$/.test(data.img)) {
+        errors.push('Image linkas turi neleistinu simboliu.');
     }
-    if (typeof data.textPrinted !== 'string') {
-        console.log('Menu title must be string.');
-        return false;
+    if (!/^[a-zA-Z ]+$/.test(data.title)) {
+        errors.push('Image pavadinimas turi neleistinu simboliu.');
     }
-    if (data.textPrinted.length < 2 || data.textPrinted.length > 15) {
-        errors.push('Menu title length must be 2-15 symbols.');
+    if (!Array.isArray(data.category)) {
+    errors.push('Pateikita forma neatitinka reikalavimu!');
     }
-    if (!/^[a-zA-Z ]+$/.test(data.textPrinted)) {
-        errors.push('Menu title must contains only letters.');
+    if(data.category!==undefined){
+    for (let i = 0; i < data.category.length; i++) {
+        if (!/^[a-z]+$/.test(data.category[i])) {
+            errors.push('Image kategorija turi neleistiniu simboliu');
+        }
     }
+}else{
+    console.log('Nepateikta kategoriju informacija');
+    return false;
 
+}
     if (errors.length > 0) {
         for (let i = 0; i < errors.length; i++) {
             console.log("Error: ", errors[i]);
