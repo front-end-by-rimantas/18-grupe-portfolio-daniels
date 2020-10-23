@@ -128,7 +128,7 @@
     border-radius: 50%;
 }
 
-.fa-search-plus:before{
+.fa-search-plus:before {
     display: inline-block;
     margin-top: 8px;
 }
@@ -200,8 +200,11 @@
     .overlay {
         display: none;
     }
-    .gallery {
-        display: inline-block;        
+    .row.works > .gallery > div > .galerija {
+        width: 100%;
+    }
+    .row.works > .gallery > div > .galerija:hover {
+        width: 100%;
     }
     .gallery > .item {
         margin-bottom: 10px;
