@@ -146,12 +146,6 @@
 } */
 
 
-
-
-.blog_dot>.dot:hover {
-    background-color: #717171;
-}
-
 @media (max-width: 1200px) {
     .row.blog .item {
        width: 270px;

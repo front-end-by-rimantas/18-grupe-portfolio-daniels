@@ -60,7 +60,7 @@ renderContact(contactUs);
 
 // blogs carousel/slideshow 
 
-import { slidesGenerate } from './blog.js'
+import { slidesGenerate } from './components/blog/blog.js'
 
 slidesGenerate();
 
