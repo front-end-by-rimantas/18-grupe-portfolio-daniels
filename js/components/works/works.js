@@ -48,7 +48,6 @@ function galleryImages(filter) {
   })
   lightboxImg()
 }
-galleryImages("all");
 
 
 function lightboxImg () {
@@ -74,5 +73,4 @@ function lightboxImg () {
   })
 }
 
-export { lightboxImg };
 export { galleryImages };

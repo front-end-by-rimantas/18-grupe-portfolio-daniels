@@ -82,9 +82,7 @@ slidesGenerate();
 
 // Works
 
-import { lightboxImg } from './components/works/works.js';
 import { galleryImages } from './components/works/works.js';
+galleryImages("all");
 
-galleryImages;
-lightboxImg;
 
