@@ -49,7 +49,7 @@ window.onresize = function() {
 window.onscroll = function() {
     //header
     menuScroll(headerData);
-    numbersOnScroll();
+    // numbersOnScroll();
     aboutOnScroll();
 }
 
