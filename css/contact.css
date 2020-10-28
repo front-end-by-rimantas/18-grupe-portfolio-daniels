@@ -12,7 +12,7 @@
     display: inline-block;
     width: 300px;
     text-align: center;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-bottom: 50px;
 }
 .contact>.renderedDiv>.contact-row:hover .fa {
@@ -46,15 +46,16 @@
 }
 .contact>.form {
     display: inline-block;
+    
 }
 .contact>.form>.form-name {
     display: inline-block;
-    width: 450px;
-    margin-left: 45px;
+    width: 500px;
+    margin-left: 65px;
 }
 .contact>.form>.form-email {
     display: inline-block;
-    width: 450px;
+    width: 495px;
     margin-left: 30px;
 }
 .contact>.form>.form-name>input {
@@ -63,6 +64,8 @@
     border-radius: 5px;
     padding: 10px;
     background: #f4f4f4;
+    font-family: inherit;
+    font-size: inherit;
 }
 .contact>.form>.form-email>input {
     width: 100%;
@@ -70,24 +73,28 @@
     border-radius: 5px;
     padding: 10px;
     background: #f4f4f4;
+    font-family: inherit;
+    font-size: inherit;
 }
 .contact>.form-group {
     display: inline-block;
     width: 400px;
     height: 100px;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-top: 15px;
 
 }
-.contact>.form-group>#form_message {
-    width: 935px;
-    max-width: 935px;
+.contact>.form-group>.form_message {
+    width: 1030px;
+    max-width: 1030px;
     height: 150px;
     max-height: 150px;
     border: 0;
     border-radius: 5px;
     padding: 10px;
     background: #f4f4f4;
+    font-family: inherit;
+    font-size: inherit;
 }
 .contact>.btn {
     width: 120px;
@@ -100,11 +107,107 @@
     border-radius: 5px;
     font-size: 13px;
     transition: all .5s;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-top: 70px;
     margin-bottom: 80px;
 }
 .contact>.btn:hover {
     background: #eee;
     color: #1c1c1c;
+}
+@media only screen and (max-width: 1200px) {
+    .contact>.renderedDiv {
+        width: 990px;
+        margin-left: 75px;
+    }
+    .contact>.renderedDiv>.contact-row {
+        width: 280px;
+        margin-left: 0px;
+    }
+    .contact>.form>.form-name {
+        width: 405px;
+        margin-left: 75px;
+    }
+    .contact>.form>.form-email {
+        width: 405px;
+        margin-left: 25px;
+    }
+    .contact>.form-group {
+        margin-left: 75px;
+    }
+    .contact>.form-group>.form_message {
+        width: 840px;
+        max-width: 840px;
+    }
+    .contact>.btn {
+        margin-left: 75px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contact>.renderedDiv {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .contact>.renderedDiv>.contact-row {
+        width: 96%;
+        height: 100px;
+    }
+    .contact>.form {
+        width: 94%;
+        margin-left: 0px;
+    }
+    .contact>.form>.form-name {
+        width: 97.3%;
+        margin-bottom: 20px;
+        margin-left: 2.7%;
+    }
+    .contact>.form>.form-email {
+        width: 97.3%;;
+        margin-left: 2.7%;
+    }
+    .contact>.form-group {
+        width: 91.3%;
+        margin-left: 2.7%;
+    }
+    .contact>.form-group>.form_message {
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact>.btn {
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .contact>.renderedDiv {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact>.renderedDiv>.contact-row {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact>.form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact>.form>.form-name {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .contact>.form>.form-email {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact>.form-group {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact>.form-group>.form_message {
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact>.btn {
+        margin-left: 0;
+    }
 }

@@ -1,10 +1,10 @@
-
 .container>.about {
     padding: 100px 0px;
     z-index: 0;
     background: white;
     padding-bottom: 70px;
     height: 700px;
+    margin-top: 2px;
 }
 
 .row>.about {
@@ -20,12 +20,14 @@
     width: 41%;
     padding: 0 15px 30px;
 }
-  .about_img>.hero_image {
+
+.about_img>.hero_image {
     position: relative;
     width: 100%;
     height: auto;
     vertical-align: middle;
 }
+
 .about_img::before {
     background-image: url(../img/dots.png);
     content: '';
@@ -38,17 +40,19 @@
     z-index: -1;
 }
 
+
 /* Tekstas
 ========================= */
 
 .about>.about_content {
     display: inline-block;
-    float:left;
+    float: left;
     width: 58%;
     padding-right: 15px;
     padding-left: 15px;
     margin-bottom: 30px;
 }
+
 .about_content>.content {
     font-weight: 800;
     margin-bottom: 5px;
@@ -58,12 +62,14 @@
     margin: 0 0 5px;
     color: #343434;
 }
+
 .about_content>.sub_title {
     font-size: 14px;
     font-family: sans-serif;
     margin-bottom: 20px;
     color: #999999;
 }
+
 .about_content>.about_text {
     font-size: 16px;
     font-family: sans-serif;
@@ -71,18 +77,23 @@
     margin-top: 20px;
     line-height: 1.6;
 }
+
 .about_text>b {
     font-family: sans-serif;
 }
+
+
 /* Progress bar
 ========================== */
 
 .about_content>.progress_bar {
     margin-top: 30px;
 }
+
 .progress_bar>.items {
     margin-bottom: 30px;
 }
+
 .items>.bar {
     width: 100%;
     padding: 5px 10px;
@@ -91,6 +102,7 @@
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
     position: relative;
 }
+
 .bar>h6 {
     font-size: 13px;
     color: #fff;
@@ -100,6 +112,7 @@
     margin: 0;
     font-weight: 500;
 }
+
 .progress_bar>.items>.bar>span {
     position: absolute;
     display: inline-block;
@@ -115,13 +128,13 @@
     display: inline-block;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-radius: 5px;
     background-color: black;
-    animation-name: loading;
-    animation-duration: 1s;
+    transition: width 1s;
 }
+
 .progress_bar .items .bar span>.barwidth:after {
     content: attr(data-value);
     position: absolute;
@@ -129,15 +142,6 @@
     color: white;
     font-size: 12px;
     right: 10px;
-}
-
-@keyframes loading {
-    10% {
-        width: 10%;
-    }
-    100% {
-        width: 100%;
-    }
 }
 
 /* Navigation
@@ -154,19 +158,22 @@
     border-radius: 5px;
     font-size: 15px;
     font-weight: 400;
-    color:white;
+    color: white;
     background-color: black;
     transition: all .5s;
 }
+
 .about_nav>a:last-of-type {
     color: black;
     line-height: 1.4;
     background-color: white;
 }
+
 .about_nav>a:hover {
     background: white;
     color: black;
 }
+
 .about_nav>a:last-of-type:hover {
     background: black;
     color: white;
@@ -178,99 +185,84 @@
 
 @media (max-width: 900px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 750px;
         height: 1500px;
         margin-left: calc((100% - 750px) / 2);
         margin-right: calc((100% - 750px) / 2);
     }
-       .about>.about_img {
-           position: relative;
-           width: 100%;
-        }
-       .about>.about_content {
-          width: 100%;
-          margin-top: 30px;
-       }
-       .about_img::before {
-           bottom: 0px;
-           left: -10px;
-       }
+    .about>.about_img {
+        position: relative;
+        width: 100%;
+    }
+    .about>.about_content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about_img::before {
+        bottom: 0px;
+        left: -10px;
+    }
 }
 
 @media (max-width: 800px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 550px;
         height: 1400px;
         margin-left: calc((100% - 550px) / 2);
         margin-right: calc((100% - 550px) / 2);
     }
-       .about>.about_img {
-           position: relative;
-           width: 100%;
-        }
-       .about>.about_content {
-          width: 100%;
-          margin-top: 30px;
-       }
-       .about_img::before {
-           bottom: 0px;
-           left: -10px;
-       }
+    .about>.about_img {
+        position: relative;
+        width: 100%;
+    }
+    .about>.about_content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about_img::before {
+        bottom: 0px;
+        left: -10px;
+    }
 }
 
 @media (max-width: 600px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 450px;
         height: 1300px;
         margin-left: calc((100% - 450px) / 2);
         margin-right: calc((100% - 450px) / 2);
     }
-       .about>.about_img {
-           position: relative;
-           width: 100%;
-        }
-       .about>.about_content {
-          width: 100%;
-          margin-top: 30px;
-       }
-       .about_img::before {
-           bottom: 0px;
-           left: -10px;
-       }
+    .about>.about_img {
+        position: relative;
+        width: 100%;
+    }
+    .about>.about_content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about_img::before {
+        bottom: 0px;
+        left: -10px;
+    }
 }
+
 @media (max-width: 500px) {
     .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 350px;
         height: 1300px;
         margin-left: calc((100% - 350px) / 2);
         margin-right: calc((100% - 350px) / 2);
     }
-       .about>.about_img {
-           position: relative;
-           width: 100%;
-        }
-       .about>.about_content {
-          width: 100%;
-          margin-top: 30px;
-       }
-       .about_img::before {
-           bottom: 0px;
-           left: -10px;
-       }
+    .about>.about_img {
+        position: relative;
+        width: 100%;
+    }
+    .about>.about_content {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about_img::before {
+        bottom: 0px;
+        left: -10px;
+    }
 }

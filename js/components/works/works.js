@@ -1,37 +1,6 @@
-"use strict";
-
-const portfolio = [
-  {
-    img: "./img/1.jpg",
-    title: "Web Design",
-    category: ["all", "brand"],
-  },
-  {
-    img: "./img/2.jpg",
-    title: "Web Design",
-    category: ["all", "graphic"],
-  },
-  {
-    img: "./img/3.jpg",
-    title: "Web Design",
-    category: ["all", "design"],
-  },
-  {
-    img: "./img/4.jpg",
-    title: "Web Design",
-    category: ["all", "brand"],
-  },
-  {
-    img: "./img/5.jpg",
-    title: "Web Design",
-    category: ["all", "graphic"],
-  },
-  {
-    img: "./img/6.jpg",
-    title: "Web Design",
-    category: ["all", "design"],
-  },
-];
+import portfolio from '../../data/worksData.js';
+import { isWorksDataValid } from './isWorksDataValid.js';
+import {} from './isWorksDataValid.test.js';
 
 
 const filterbuttons=document.querySelectorAll('.filter-buttons span');
@@ -39,7 +8,7 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
 
   filterbuttons.forEach(btn => {
     btn.addEventListener('click', function() {
-    document.querySelector('.active').classList.remove("active")
+    document.querySelector('.filter-buttons .active').classList.remove("active")
     btn.classList.toggle("active");
 
   const category = btn.dataset.category
@@ -55,13 +24,18 @@ function galleryImages(filter) {
 
 
   portfolio.forEach(image => {
+    if (!isWorksDataValid(image)) {
+      return '';
+  }
    if (image.category.includes(filter)){
+
+
     HTML = `
     <div class="item" data-src="${image.img}">
         <img src="${image.img}" alt="images" data-category="${image.category}" class="galerija">
             <div class="overlay">
                 <div>
-                <span class="gallery-title"> ${image.title} <span>
+                <span class="gallery-title"> ${image.title} </span>
                 <div class="gallery-icons">
                 <i class="chain fa fa-chain-broken" aria-hidden="true" ></i>
                 <i class="zoom-in fa fa-search-plus" ></i>
@@ -74,12 +48,11 @@ function galleryImages(filter) {
   })
   lightboxImg()
 }
-galleryImages("all");
 
 
 function lightboxImg () {
   const lightbox = document.createElement('div')
-  lightbox.id = 'lightbox'
+  lightbox.classList = 'lightbox'
   document.body.appendChild(lightbox)
   const images = document.querySelectorAll('.gallery .item');
 
@@ -99,3 +72,5 @@ function lightboxImg () {
     lightbox.classList.remove('active')
   })
 }
+
+export { galleryImages };

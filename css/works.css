@@ -1,21 +1,21 @@
 .container.works {
     display: inline-block;
     text-align: center;
-    width: 1200px;   
-    margin: 80px calc(50% - 600px) ;
+    padding-bottom: 50px;
+    transition: all 1.5s;
 }
 
  .row.works {
      display: inline-block;
      text-align: center;
-     
+     width: 90%;
  }
 
 .row.works > h2 {
     font-size: 40px;
     position: absolute;
     left: 50%;
-    margin-top: 0px;
+    margin-top: 60px;
     color: #343434;
     transform: translate(-50%, 0);
     font-family: 'Montserrat', sans-serif;
@@ -24,10 +24,10 @@
 .row.works > h2::after {
     background: url(../img/dots.png);
     content: "";
-    right: 5px;
+    right: auto;
     position: absolute;
     top: 25px;
-    left: -20px;
+    left: 0px;
     z-index: -2;
     display: inline-block;
     width: 100%;
@@ -36,7 +36,7 @@
 
 .row.works > .filter-buttons {
     justify-content: center;
-    padding-top: 140px;
+    padding-top: 180px;
     padding-bottom: 50px;
 }
 .row.works > .filter-buttons > span {
@@ -45,32 +45,37 @@
     margin: 0 18px;
     position: relative;
     color: #222;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
-.row.works > .filter-buttons > span:after {
+.row.works > .filter-buttons > span::after {
     display: inline-block;
     content: '';
     position: absolute;
-    height: 3px;
+    height: 1px;
     left: 0;
     right: 100%;
-    bottom: -3px;
+    bottom: -2px;
     background-color: #111;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .row.works > .filter-buttons > span.active::after {
     left: 0;
-    right: 15%;
+    right: 2%;
 }
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+.item {
+    margin-bottom: 15px;
 }
 .row.works > .gallery > div > .galerija {
     width: 96%;
@@ -89,7 +94,7 @@
     height: 100%;
     left: 0%;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 .overlay:hover{ 
     opacity: 0.6;
@@ -109,6 +114,7 @@
     width: 35px;
     height: 35px;
     margin-top: 10px;
+    cursor: pointer;
     color: white;
     border-radius: 50%;
     border: 1px solid black;
@@ -123,7 +129,7 @@
     border-radius: 50%;
 }
 
-.fa-search-plus:before{
+.fa-search-plus:before {
     display: inline-block;
     margin-top: 8px;
 }
@@ -131,7 +137,7 @@
     display: inline-block;
     margin-top: 8px;
 }
-#lightbox {
+.lightbox {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -140,16 +146,117 @@
     background-color: rgba(0, 0, 0, .8);
     display: none;
 }
-#lightbox.active {
+.lightbox.active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#lightbox .galerija {
+.lightbox .galerija {
     max-width: 90%;
     max-height: 80%;
     padding: 4px;
     background-color: black;
     border: 2px solid white;
+}
+@media ( max-width: 1300px ) {
+    .container.works  {
+        width: 1150px;
+        margin: 80px calc(50% - 575px);
+        margin-top: 0px;
+    }
+    .row.works > h2 {
+        margin-top: 60px;
+    }
+}
+@media ( max-width: 1200px ) {
+    .container.works  {
+        width: 1000px;
+        margin: 80px calc(50% - 500px);
+    }
+}
+@media ( max-width: 1024px ) {
+    .container.works  {
+        width: 800px;
+        margin: 80px calc(50% - 400px);
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media ( max-width: 800px ) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .row.works > .gallery > div > img {
+        width: 100%;
+    }
+    .row.works > .gallery > div > img:hover {
+        width: 100%;
+    }
+}
+
+    @media ( max-width: 740px ) {
+    .container.works .row.works {
+        margin: auto;
+    }
+    .overlay {
+        display: none;
+    }
+    .row.works > .gallery > div > .galerija {
+        width: 100%;
+    }
+    .row.works > .gallery > div > .galerija:hover {
+        width: 100%;
+    }
+    .gallery > .item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .row.works > .gallery > div > img {
+        width: 60%;
+    }
+    .row.works > .gallery > div > img:hover {
+        width: 60%;
+    }
+}
+@media ( max-width: 610px ) {
+
+    .gallery {
+        width: 80%;
+    }
+}
+@media ( max-width: 580px ) {
+
+    .gallery {
+        width: 55%;
+    }
+}
+@media ( max-width: 400px ) {
+   .container.works {
+       width: 50%;
+   }
+    .row.works {
+        width: 400px;
+    }
+    .row.works > .filter-buttons > span {
+        width: 50%;
+        margin-left: 310px;
+        padding-top: 10px;
+        bottom: -1px;
+    }
+    .row.works > .filter-buttons > span:nth-of-type(1) {
+        width: 20%;
+        margin-left: 370px;
+    }
+    .row.works > .filter-buttons > span.active::after {
+        left: 35%;
+        right: 35%;
+    }
+    .gallery {
+        margin-left: 255px;
+        width: 71%;
+    }
 }
