@@ -1,5 +1,5 @@
 // TEST MODE (true - ON, false - off)
 const isTestsOn = () => {
-    return true;
+    return false;
 }
 export { isTestsOn }
