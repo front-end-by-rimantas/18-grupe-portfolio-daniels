@@ -27,29 +27,29 @@ include('./js/components/home/particles.min.js');
 
 
 // clients
-import numbersOnScroll from './components/clients/clients.js';
+// import numbersOnScroll from './components/clients/clients.js';
 
-import renderClients from './components/clients/renderClients.js';
-import { clientsData } from './data/clientsData.js';
-renderClients(clientsData);
-import { renderTestimonials } from './components/clients/renderTestimonials.js'
-// import { renderTestimonials2 } from './components/clients/renderTestimonials.js'
-renderTestimonials(clientsData);
+// import renderClients from './components/clients/renderClients.js';
+// import { clientsData } from './data/clientsData.js';
+// renderClients(clientsData);
+// import { renderTestimonials } from './components/clients/renderTestimonials.js'
+// // import { renderTestimonials2 } from './components/clients/renderTestimonials.js'
+// renderTestimonials(clientsData);
 
 // about onscroll
 import { aboutOnScroll } from './about.js';
 
 // visos funkcijos kurios turi but paleidziamos is naujo, pakeiciant ekrano ploti
-window.onresize = function () {
+window.onresize = function() {
     //header
     menuOnResize();
 }
 
 // visos funkcijos kurios turi but paleidziamos kaskart scrollinant
-window.onscroll = function () {
+window.onscroll = function() {
     //header
     menuScroll(headerData);
-    numbersOnScroll();
+    // numbersOnScroll();
     aboutOnScroll();
 }
 
@@ -82,9 +82,5 @@ slidesGenerate();
 
 // Works
 
-import { lightboxImg } from './components/works/works.js';
 import { galleryImages } from './components/works/works.js';
-
-galleryImages();
-lightboxImg();
-
+galleryImages("all");
