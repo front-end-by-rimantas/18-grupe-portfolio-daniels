@@ -3,7 +3,7 @@ import { isHomeDataValid } from './isHomeDataValid.js';
 import { isTestsOn } from '../../isTestsOn.js';
 
 if (isTestsOn() == true) {
-    const test = new Tester('Header');
+    const test = new Tester('Home');
 
     test.excepted(isHomeDataValid({}), false);
     test.excepted(isHomeDataValid([]), false);
