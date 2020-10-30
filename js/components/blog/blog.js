@@ -15,9 +15,9 @@ function slidesGenerate() {
             const widthItem = (document.querySelectorAll('.blog-items')[0].offsetWidth + 60) * i;
             document.querySelector('.blog .rowBlog').style.marginLeft = `-${widthItem}px`;
             for (let z = 0; z < totalItems; z++) {
-                document.querySelectorAll('.fa-circle')[z].classList.remove("active");
+                document.querySelectorAll('.blog .fa-circle')[z].classList.remove("active");
             }
-            document.querySelectorAll('.fa-circle')[i].classList.add("active");
+            document.querySelectorAll('.blog .fa-circle')[i].classList.add("active");
 
         });
 
